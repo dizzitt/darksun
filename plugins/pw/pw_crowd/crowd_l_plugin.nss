@@ -44,7 +44,7 @@ void OnLibraryLoad()
 
     // ----- Area Events -----
     RegisterLibraryScript("crowd_OnAreaEnter", 2);
-    RegisterLibraryScript("crowd_onAreaExit",  3);
+    RegisterLibraryScript("crowd_OnAreaExit",  3);
 
     // ----- Timer Events -----
     RegisterLibraryScript("crowd_OnTimerExpired", 4);

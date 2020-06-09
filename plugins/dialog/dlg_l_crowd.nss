@@ -35,19 +35,17 @@ object oPC = GetPCSpeaker();
 
 void SpeakOneLiner(string sResponse)
 {
-    Warning("sResponse = " + sResponse);
     ClearAllActions();
     ActionDoCommand(SetFacingPoint(GetPosition(oPC)));
     SpeakString(sResponse, TALKVOLUME_TALK);
     ActionWait(1.5f);
 }
 
-int CrowdDialog_Start()
+int GetSpeakOneLine()
 {
     int nResponse = Random(10) + 1;
     string sResponse;
 
-    Warning("Figuring out what to do. nResponse = " + IntToString(nResponse));
     if (nResponse >= 8)
         return FALSE;
 
@@ -105,7 +103,6 @@ int CrowdDialog_Start()
             }                
         }
 
-        Warning("sReponse (1)");
         SpeakOneLiner(sResponse);
         return TRUE;        
     }
@@ -128,16 +125,10 @@ int CrowdDialog_Start()
                 default: sResponse = "Not now.  I must be going.";                
             }
 
-            Warning("sResponse (2)");
             SpeakOneLiner(sResponse);
             return TRUE; 
         }
 
-        /*string sDialog  = GetLocalString(OBJECT_SELF, DLG_DIALOG);
-        int    bPrivate = GetLocalInt   (OBJECT_SELF, DLG_PRIVATE);
-        int    bNoHello = GetLocalInt   (OBJECT_SELF, DLG_NO_HELLO);
-
-        StartDialog(oPC, oNPC, sDialog, bPrivate, TRUE, TRUE);*/
         return FALSE;
     }
 }
@@ -146,8 +137,6 @@ void CrowdDialog_Init()
 {
     if (GetDialogEvent() != DLG_EVENT_INIT)
         return;
-
-    Warning("Initializing crowd conversation.");
 
     SetDialogPage(CROWD_PAGE_MAIN);
     AddDialogPage(CROWD_PAGE_MAIN, "Hello <sir/madam>!  Welcome to our small town.  We don't get to see strangers much " +
@@ -165,7 +154,6 @@ void CrowdDialog_Init()
         "pocket that you're willing to part with, the Astoria is just up the road and around the corner.  Tell Margie " +
         "I said hi!");
     SetDialogNodes(CROWD_PAGE_LODGING, CROWD_PAGE_MAIN);
-    FilterDialogNodes(1);
     EnableDialogEnd("Thanks for the info, I'll be on my way.", CROWD_PAGE_LODGING);
 
     AddDialogPage(CROWD_PAGE_TEMPLE, "Oh yes!  Brother John up in the Sun Temple is having quite the hard time keeping " +
@@ -174,7 +162,6 @@ void CrowdDialog_Init()
         "\n\n Of course, really, any of the temples here would be quite grateful for your patronage and support.  With the " +
         "wars and famine that have swept through in recent years, everyone is on their heels.");
     SetDialogNodes(CROWD_PAGE_TEMPLE, CROWD_PAGE_MAIN);
-    FilterDialogNodes(2);
     EnableDialogEnd("Thanks for the info, I'll be sure to visit one of your temples.", CROWD_PAGE_TEMPLE);
 
     AddDialogPage(CROWD_PAGE_POOR, "Well, you'll likely find many beggars and street performers here.  Please support them " +
@@ -183,7 +170,6 @@ void CrowdDialog_Init()
         "military experience.  I'm sure they would love to accompany you on your adventures if you pay well enough to make it " +
         "worth their while.");
     SetDialogNodes(CROWD_PAGE_POOR, CROWD_PAGE_MAIN);
-    FilterDialogNodes(3);
     EnableDialogEnd("Thanks for the information, I'll do what I can.", CROWD_PAGE_POOR);
 }
 
@@ -191,27 +177,21 @@ void CrowdDialog_Page()
 {
     string sPage = GetDialogPage();
 
-    if (CrowdDialog_Start())
-    {
-        Warning("Speaking one-liner, deleting dialog nodes.");
-        DeleteDialogNodes(sPage);
-        //DisableDialogNode(DLG_NODE_END, sPage);
-        DoDialogNode(0);
-        return;
-    }
-
     if (sPage == CROWD_PAGE_MAIN)
     {
-        if (GetDialogNode() == DLG_NODE_NONE)
+        if (GetSpeakOneLine())
+            SetDialogState(DLG_STATE_ENDED);
+        else if (GetDialogNode() == DLG_NODE_NONE)
             ActionPlayAnimation(ANIMATION_FIREFORGET_GREETING);
     }
+    else if (sPage == CROWD_PAGE_LODGING)
+        FilterDialogNodes(0);
+    else if (sPage == CROWD_PAGE_TEMPLE)
+        FilterDialogNodes(1);
+    else if (sPage == CROWD_PAGE_POOR)
+        FilterDialogNodes(2);
 
     ClearDialogHistory();
-}
-
-void CrowdDialog_Node()
-{
-
 }
 
 void CrowdDialog_End()
@@ -241,12 +221,10 @@ void OnLibraryLoad()
     RegisterLibraryScript(CROWD_DIALOG);
     RegisterLibraryScript(CROWD_DIALOG_INIT);
     RegisterLibraryScript(CROWD_DIALOG_PAGE);
-    RegisterLibraryScript(CROWD_DIALOG_NODE);
     RegisterLibraryScript(CROWD_DIALOG_END);
 
     RegisterDialogScript(CROWD_DIALOG, CROWD_DIALOG_INIT, DLG_EVENT_INIT);
     RegisterDialogScript(CROWD_DIALOG, CROWD_DIALOG_PAGE, DLG_EVENT_PAGE);
-    RegisterDialogScript(CROWD_DIALOG, CROWD_DIALOG_NODE, DLG_EVENT_NODE);
     RegisterDialogScript(CROWD_DIALOG, CROWD_DIALOG_END,  DLG_EVENT_END | DLG_EVENT_ABORT);
 
     RegisterLibraryScript(GUARD_DIALOG);
@@ -255,8 +233,7 @@ void OnLibraryLoad()
 
 void OnLibraryScript(string sScript, int nEntry)
 {
-    if      (sScript == CROWD_DIALOG)       CrowdDialog_Start();
-    else if (sScript == CROWD_DIALOG_INIT)  CrowdDialog_Init();
+    if      (sScript == CROWD_DIALOG_INIT)  CrowdDialog_Init();
     else if (sScript == CROWD_DIALOG_PAGE)  CrowdDialog_Page();
     else if (sScript == CROWD_DIALOG_END)   CrowdDialog_End();
 
