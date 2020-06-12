@@ -147,6 +147,17 @@
               "__struct_id": 0,
               "NAME": {
                 "type": "cexostring",
+                "value": "Food stall"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "bench002"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
                 "value": "Tapestry03"
               },
               "RESREF": {
