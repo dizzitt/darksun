@@ -98,6 +98,17 @@
               "__struct_id": 0,
               "NAME": {
                 "type": "cexostring",
+                "value": "Markey stall"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "emptywagon002"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
                 "value": "Mud_Wall"
               },
               "RESREF": {
@@ -143,17 +154,6 @@
         "LIST": {
           "type": "list",
           "value": [
-            {
-              "__struct_id": 0,
-              "NAME": {
-                "type": "cexostring",
-                "value": "Food stall"
-              },
-              "RESREF": {
-                "type": "resref",
-                "value": "bench002"
-              }
-            },
             {
               "__struct_id": 0,
               "NAME": {
