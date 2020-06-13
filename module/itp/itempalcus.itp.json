@@ -215,6 +215,17 @@
                       "type": "dword",
                       "value": 13249
                     }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Bite2d8"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_crewps028"
+                    }
                   }
                 ]
               },
@@ -274,6 +285,28 @@
                     "STRREF": {
                       "type": "dword",
                       "value": 13270
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Claw1d8"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_crewpsp018"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Claw1d8"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_crewpsp019"
                     }
                   }
                 ]

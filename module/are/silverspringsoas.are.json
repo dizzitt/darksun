@@ -22,7 +22,7 @@
   },
   "DayNightCycle": {
     "type": "byte",
-    "value": 0
+    "value": 1
   },
   "Expansion_List": {
     "type": "list",
@@ -34,7 +34,7 @@
   },
   "FogClipDist": {
     "type": "float",
-    "value": 85.0
+    "value": 9999.0
   },
   "Height": {
     "type": "int",
@@ -50,7 +50,7 @@
   },
   "LightingScheme": {
     "type": "byte",
-    "value": 6
+    "value": 0
   },
   "LoadScreenID": {
     "type": "word",
@@ -70,19 +70,19 @@
   },
   "MoonDiffuseColor": {
     "type": "dword",
-    "value": 1722449
+    "value": 13132900
   },
   "MoonFogAmount": {
     "type": "byte",
-    "value": 10
+    "value": 0
   },
   "MoonFogColor": {
     "type": "dword",
-    "value": 2178364
+    "value": 6566450
   },
   "MoonShadows": {
     "type": "byte",
-    "value": 0
+    "value": 1
   },
   "Name": {
     "type": "cexolocstring",
@@ -128,19 +128,19 @@
   },
   "SunAmbientColor": {
     "type": "dword",
-    "value": 3952475
+    "value": 6566450
   },
   "SunDiffuseColor": {
     "type": "dword",
-    "value": 33023
+    "value": 16777215
   },
   "SunFogAmount": {
     "type": "byte",
-    "value": 10
+    "value": 0
   },
   "SunFogColor": {
     "type": "dword",
-    "value": 4890809
+    "value": 9535080
   },
   "SunShadows": {
     "type": "byte",
@@ -17115,7 +17115,7 @@
         },
         "Tile_ID": {
           "type": "int",
-          "value": 332
+          "value": 331
         },
         "Tile_MainLight1": {
           "type": "byte",
@@ -17170,7 +17170,7 @@
         },
         "Tile_Orientation": {
           "type": "int",
-          "value": 2
+          "value": 3
         },
         "Tile_SrcLight1": {
           "type": "byte",
@@ -17330,7 +17330,7 @@
         },
         "Tile_ID": {
           "type": "int",
-          "value": 189
+          "value": 14
         },
         "Tile_MainLight1": {
           "type": "byte",
@@ -17342,7 +17342,7 @@
         },
         "Tile_Orientation": {
           "type": "int",
-          "value": 3
+          "value": 1
         },
         "Tile_SrcLight1": {
           "type": "byte",
@@ -18706,7 +18706,7 @@
         },
         "Tile_ID": {
           "type": "int",
-          "value": 189
+          "value": 8
         },
         "Tile_MainLight1": {
           "type": "byte",
@@ -18718,7 +18718,7 @@
         },
         "Tile_Orientation": {
           "type": "int",
-          "value": 1
+          "value": 2
         },
         "Tile_SrcLight1": {
           "type": "byte",
