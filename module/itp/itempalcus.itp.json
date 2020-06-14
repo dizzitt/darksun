@@ -771,33 +771,33 @@
                     "__struct_id": 0,
                     "NAME": {
                       "type": "cexostring",
-                      "value": "crowd_kreg"
+                      "value": "crowd_start"
                     },
                     "RESREF": {
                       "type": "resref",
-                      "value": "crowd_kreg"
+                      "value": "crowd_start"
                     }
                   },
                   {
                     "__struct_id": 0,
                     "NAME": {
                       "type": "cexostring",
-                      "value": "crowd_kregguard"
+                      "value": "crowd_start2"
                     },
                     "RESREF": {
                       "type": "resref",
-                      "value": "crowd_kregguard"
+                      "value": "crowd_start2"
                     }
                   },
                   {
                     "__struct_id": 0,
                     "NAME": {
                       "type": "cexostring",
-                      "value": "crowd_start"
+                      "value": "crowd_start3"
                     },
                     "RESREF": {
                       "type": "resref",
-                      "value": "crowd_start"
+                      "value": "crowd_start3"
                     }
                   },
                   {

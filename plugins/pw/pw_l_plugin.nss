@@ -35,7 +35,7 @@ void OnLibraryLoad()
         SetDescription(oPlugin,
             "This plugin controls basic functions of the HCR2-base persistent world system and " +
             "loads all pw subsystems.");
-        SetPluginLibraries(oPlugin, "pw_l_plugin, crowd_l_plugin, bleed_l_plugin, corpse_l_plugin, diety_l_plugin, " +
+        SetPluginLibraries(oPlugin, "crowd_l_plugin, bleed_l_plugin, corpse_l_plugin, diety_l_plugin, " +
             "fugue_l_plugin, htf_l_plugin, loot_l_plugin, rest_l_plugin, torch_l_plugin, unid_l_plugin");
 
         // ----- Module Events -----

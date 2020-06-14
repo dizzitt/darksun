@@ -196,24 +196,97 @@ void CrowdDialog_Page()
 
 void CrowdDialog_End()
 {
-    ResumeCommonerBehavior(oNPC);
+    ResumeCrowdMemberActivity(oNPC);
 }
 
-const string GUARD_DIALOG = "GuardDialog";
+// -----------------------------------------------------------------------------
+//                                  Guard Default
+// -----------------------------------------------------------------------------
+// This dialog is assigned as a demonstration dialog for the crowd designated
+//  as guards in the start area.
+// -----------------------------------------------------------------------------
+
+const string GUARD_DIALOG    = "GuardDialog";
+const string GUARD_PAGE_NULL = "GUARD_PAGE_NULL";
 
 void GuardDialog()
 {
-    if (GetDialogEvent() != DLG_EVENT_INIT)
-        return;
+    switch (GetDialogEvent())
+    {
+        case DLG_EVENT_INIT:
+            SetDialogPage(GUARD_PAGE_NULL);
+            AddDialogPage(GUARD_PAGE_NULL, ""); 
+        case DLG_EVENT_PAGE:
+            SpeakOneLiner("Can't you see I'm a guard?  I've got guarding to do.  " +
+                "Go away.  guard guard guard");
+            SetDialogState(DLG_STATE_ENDED);
+            break;
+        case DLG_EVENT_ABORT:
+            ResumeCrowdMemberActivity(oNPC);
+            break;
+        default:
+            break;
+    }
 }
 
-const string NOBLE_DIALOG = "NobleDialog";
+// -----------------------------------------------------------------------------
+//                                  Noble Dialog
+// -----------------------------------------------------------------------------
+// This dialog is assigned as a demonstration dialog for the crowd designated
+//  as nobles in the start area.
+// -----------------------------------------------------------------------------
+
+const string NOBLE_DIALOG    = "NobleDialog";
+const string NOBLE_PAGE_NULL = "NOBLE_PAGE_NULL";
 
 void NobleDialog()
 {
-    if (GetDialogEvent() != DLG_EVENT_INIT)
-        return;
+    switch (GetDialogEvent())
+    {
+        case DLG_EVENT_INIT:
+            SetDialogPage(NOBLE_PAGE_NULL);
+            AddDialogPage(NOBLE_PAGE_NULL, ""); 
+        case DLG_EVENT_PAGE:
+            SpeakOneLiner("I'm too busy for the likes of you.  I've got much too much " +
+                "nobilitying, er..., nobling, er.. " +
+                "Shut up, those are words!  Bah!  I'm richer than you, go away!");
+            SetDialogState(DLG_STATE_ENDED);
+            break;
+        case DLG_EVENT_ABORT:
+            ResumeCrowdMemberActivity(oNPC);
+            break;
+        default:
+            break;
+    }
+}
 
+// -----------------------------------------------------------------------------
+//                                  Crowd Default
+// -----------------------------------------------------------------------------
+// This dialog is assigned to crowd members when the builder did not assign a
+//  custom conversation.  The NPC will speak a one-liner, then resume their
+//  previous activity.
+// -----------------------------------------------------------------------------
+const string CROWD_DEFAULT_DIALOG       = "CrowdDefaultDialog";
+const string CROWD_DEFAULT_PAGE_NULL    = "CROWD_DEFAULT_PAGE_NULL";
+
+void CrowdDefault()
+{
+    switch (GetDialogEvent())
+    {
+        case DLG_EVENT_INIT:
+            SetDialogPage(CROWD_DEFAULT_PAGE_NULL);
+            AddDialogPage(CROWD_DEFAULT_PAGE_NULL, ""); 
+        case DLG_EVENT_PAGE:
+            SpeakOneLiner("I'm sorry, I must be going.");
+            SetDialogState(DLG_STATE_ENDED);
+            break;
+        case DLG_EVENT_ABORT:
+            ResumeCrowdMemberActivity(oNPC);
+            break;
+        default:
+            break;
+    }
 }
 
 void OnLibraryLoad()
@@ -228,7 +301,13 @@ void OnLibraryLoad()
     RegisterDialogScript(CROWD_DIALOG, CROWD_DIALOG_END,  DLG_EVENT_END | DLG_EVENT_ABORT);
 
     RegisterLibraryScript(GUARD_DIALOG);
+    RegisterDialogScript (GUARD_DIALOG);
+
     RegisterLibraryScript(NOBLE_DIALOG);
+    RegisterDialogScript (NOBLE_DIALOG);
+
+    RegisterLibraryScript(CROWD_DEFAULT_DIALOG);
+    RegisterDialogScript (CROWD_DEFAULT_DIALOG);
 }
 
 void OnLibraryScript(string sScript, int nEntry)
@@ -237,6 +316,7 @@ void OnLibraryScript(string sScript, int nEntry)
     else if (sScript == CROWD_DIALOG_PAGE)  CrowdDialog_Page();
     else if (sScript == CROWD_DIALOG_END)   CrowdDialog_End();
 
-    else if (sScript == GUARD_DIALOG)       GuardDialog();
-    else if (sScript == NOBLE_DIALOG)       NobleDialog();
+    else if (sScript == GUARD_DIALOG)           GuardDialog();
+    else if (sScript == NOBLE_DIALOG)           NobleDialog();
+    else if (sScript == CROWD_DEFAULT_DIALOG)   CrowdDefault();
 }

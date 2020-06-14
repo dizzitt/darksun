@@ -30,24 +30,27 @@ void OnLibraryLoad()
     object oPlugin = GetPlugin("pw");
 
     // ----- Module Events -----
-    RegisterEventScripts(oPlugin, MODULE_EVENT_ON_MODULE_LOAD, "crowd_OnModuleLoad");
+    RegisterEventScripts(oPlugin, MODULE_EVENT_ON_MODULE_LOAD,  "crowd_OnModuleLoad");
 
     // ----- Area Events -----
-    RegisterEventScripts(oPlugin, AREA_EVENT_ON_ENTER, "crowd_OnAreaEnter");
-    RegisterEventScripts(oPlugin, AREA_EVENT_ON_EXIT, "crowd_OnAreaExit");
-
+    RegisterEventScripts(oPlugin, AREA_EVENT_ON_ENTER,          "crowd_OnAreaEnter");
+    RegisterEventScripts(oPlugin, AREA_EVENT_ON_EXIT,           "crowd_OnAreaExit");
+ 
     // ----- Timer Events -----
-    RegisterEventScripts(oPlugin, CROWD_EVENT_ON_TIMER_EXPIRED, "crowd_OnTimerExpired", 4.0);
+    RegisterEventScripts(oPlugin, CROWD_EVENT_ON_TIMER_EXPIRED, "crowd_OnTimerExpired");
 
     // ----- Module Events -----
-    RegisterLibraryScript("crowd_OnModuleLoad", 1);
+    RegisterLibraryScript("crowd_OnModuleLoad",    1);
 
     // ----- Area Events -----
-    RegisterLibraryScript("crowd_OnAreaEnter", 2);
-    RegisterLibraryScript("crowd_OnAreaExit",  3);
+    RegisterLibraryScript("crowd_OnAreaEnter",     2);
+    RegisterLibraryScript("crowd_OnAreaExit",      3);
+
+    // ----- Creature Events -----
+    RegisterLibraryScript("crowd_OnCreatureDeath", 4);
 
     // ----- Timer Events -----
-    RegisterLibraryScript("crowd_OnTimerExpired", 4);
+    RegisterLibraryScript("crowd_OnTimerExpired",  5);
 }
 
 void OnLibraryScript(string sScript, int nEntry)
@@ -55,14 +58,17 @@ void OnLibraryScript(string sScript, int nEntry)
     switch (nEntry)
     {
         // ----- Module Events -----
-        case 1: crowd_OnModuleLoad(); break;
+        case 1: crowd_OnModuleLoad();     break;
 
         // ----- Area Events -----
-        case 2: crowd_OnAreaEnter(); break;
-        case 3: crowd_OnAreaExit();  break;
+        case 2: crowd_OnAreaEnter();      break;
+        case 3: crowd_OnAreaExit();       break;
+
+        // ----- Creature Events -----
+        case 4 : crowd_OnCreatureDeath(); break;
 
         // ----- Timer Events -----
-        case 4: crowd_OnTimerExpired(); break;
+        case 5: crowd_OnTimerExpired();   break;
         default: CriticalError("Library function " + sScript + " not found");
     }
 }

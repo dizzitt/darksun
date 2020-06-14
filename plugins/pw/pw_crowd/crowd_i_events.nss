@@ -27,7 +27,7 @@
 // -----------------------------------------------------------------------------
 
 // ---< crowd_OnModuleLoad >---
-// Library and event registered function to initialize crowd/simulate population
+// Library and event registered function to initialize crowd/simulated population
 //  variables based on custom crowd initializer items.
 void crowd_OnModuleLoad();
 
@@ -47,55 +47,91 @@ void crowd_OnAreaExit();
 //  to be spawn/despawned.
 void crowd_OnTimerExpire();
 
+// ---< crowd_OnCreatureDeath >---
+// Event handler for crowd member death.  This procedure ensures the crowd
+//  member is removed from the crowd roster for the specified crowd.
+void crowd_OnCreatureDeath();
+
 // -----------------------------------------------------------------------------
 //                             Function Definitions
 // -----------------------------------------------------------------------------
 
 void crowd_OnModuleLoad()
 {
+    dbg = sDebugPlugin + "crowd_OnModuleLoad:: ";
+    Debug(dbg);
+
     if (!_GetLocalInt(CROWDS, CROWD_ITEM_INITIALIZED))
         InitializeSystem(CROWDS, CROWD_ITEM_INVENTORY, CROWD_ITEM_LOADED_CSV,
-                        CROWD_ITEM_PREFIX, CROWD_ITEM_OBJECT_LIST,
-                        CROWD_ITEM_INITIALIZED, FALSE);
+                         CROWD_ITEM_PREFIX, CROWD_ITEM_OBJECT_LIST,
+                         CROWD_ITEM_INITIALIZED, FALSE);
 }
 
 void crowd_OnAreaEnter()
 {
+    dbg = sDebugPlugin + "crowd_OnAreaEnter:: ";
+    Debug(dbg);
+
     object oPC = GetEnteringObject();
+    object oArea = OBJECT_SELF;
+
     if (!_GetIsPC(oPC))
+    {
+        Error(dbg + "Entering object is not player controlled.");
         return;
+    }
 
     if (!_GetLocalInt(CROWDS, CROWD_ITEM_INITIALIZED))
         crowd_OnModuleLoad();
     
-    string sCrowds = _GetLocalString(OBJECT_SELF, CROWD_CSV);
+    string sCrowds = _GetLocalString(oArea, CROWD_CSV);
 
     if (sCrowds == "")
-        return;
-
-    if (!_GetLocalInt(OBJECT_SELF, CROWD_CHECK_TIMER))
     {
-        int nTimerID = CreateTimer(OBJECT_SELF, CROWD_EVENT_ON_TIMER_EXPIRED, CROWD_CHECK_INTERVAL);
-        StartTimer(nTimerID, TRUE);
-        _SetLocalInt(OBJECT_SELF, CROWD_CHECK_TIMER, nTimerID);
+        Error(dbg + "Crowd variable is blank on " + GetName(oArea));
+        return;
     }
+
+    if (!_GetLocalInt(oArea, AREA_CROWD_ITEM_INITIALIZED))
+        InitializeCrowds(oArea);
+    else
+        SpawnCrowds(oArea);
 }
 
 void crowd_OnAreaExit()
 {
+    dbg = sDebugPlugin + "crowd_OnAreaExit:: ";
+    Debug(dbg);
+
     object oPC = GetExitingObject();
     if (!_GetIsPC(oPC))
+    {
+        Warning(dbg + "Exiting object is not player controlled.");
         return;
+    }
 
     int nTimerID = _GetLocalInt(OBJECT_SELF, CROWD_CHECK_TIMER);
     if (nTimerID)
         KillTimer(nTimerID);
     
     if (!CountObjectList(OBJECT_SELF, AREA_ROSTER))
-        ClearCrowds();
+        ClearCrowds(OBJECT_SELF);
 }
 
 void crowd_OnTimerExpired()
 {
-    SpawnCrowds();
+    dbg = sDebugPlugin + "crowd_OnTimerExpired:: ";
+    Debug(dbg);
+
+    UpdateCrowds(OBJECT_SELF);
+}
+
+void crowd_OnCreatureDeath()
+{
+    dbg = sDebugPlugin + "crowd_OnCreatureDeath:: ";
+    Debug(dbg);
+
+    object oCreature = OBJECT_SELF;
+    object oArea = GetArea(oCreature);
+    RemoveListObject(oArea, oCreature, CROWD_ROSTER + _GetLocalString(oCreature, CROWD_ITEM));
 }

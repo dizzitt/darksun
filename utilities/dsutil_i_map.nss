@@ -10,8 +10,6 @@ int InitializeSystem(object oDatapoint, string INIT_LIST, string LOADED_LIST, st
     object oItem;
     string sItem, sItems;
 
-    Warning("Running System Initialization");
-
     if (GetLocalInt(oDatapoint, INIT_FLAG) && !bForce)
         return TRUE;
 
