@@ -18,6 +18,7 @@
 //   Summary:
 // -----------------------------------------------------------------------------
 
+#include "core_i_constants"
 #include "ds_i_const"
 #include "util_i_debug"     
 
