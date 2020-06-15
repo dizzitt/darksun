@@ -41,7 +41,7 @@
   "LocalizedName": {
     "type": "cexolocstring",
     "value": {
-      "0": "crowd_kregguard"
+      "0": "crowd_start3"
     }
   },
   "ModelPart1": {
@@ -70,11 +70,11 @@
   },
   "Tag": {
     "type": "cexostring",
-    "value": "crowd_kregguard"
+    "value": "crowd_start3"
   },
   "TemplateResRef": {
     "type": "resref",
-    "value": "crowd_kregguard"
+    "value": "crowd_start3"
   },
   "VarTable": {
     "type": "list",
@@ -83,7 +83,7 @@
         "__struct_id": 0,
         "Name": {
           "type": "cexostring",
-          "value": "CommonerCountDay"
+          "value": "PopulationDay"
         },
         "Type": {
           "type": "dword",
@@ -91,14 +91,14 @@
         },
         "Value": {
           "type": "int",
-          "value": 3
+          "value": 10
         }
       },
       {
         "__struct_id": 0,
         "Name": {
           "type": "cexostring",
-          "value": "CommonerCountNight"
+          "value": "PopulationNight"
         },
         "Type": {
           "type": "dword",
@@ -106,14 +106,14 @@
         },
         "Value": {
           "type": "int",
-          "value": 3
+          "value": 8
         }
       },
       {
         "__struct_id": 0,
         "Name": {
           "type": "cexostring",
-          "value": "CommonerCountWeather"
+          "value": "PopulationWeather"
         },
         "Type": {
           "type": "dword",
@@ -121,104 +121,14 @@
         },
         "Value": {
           "type": "int",
-          "value": 3
+          "value": 8
         }
       },
       {
         "__struct_id": 0,
         "Name": {
           "type": "cexostring",
-          "value": "CommonerResrefPrefix"
-        },
-        "Type": {
-          "type": "dword",
-          "value": 3
-        },
-        "Value": {
-          "type": "cexostring",
-          "value": "commoner"
-        }
-      },
-      {
-        "__struct_id": 0,
-        "Name": {
-          "type": "cexostring",
-          "value": "CommonerTemplateCount"
-        },
-        "Type": {
-          "type": "dword",
-          "value": 1
-        },
-        "Value": {
-          "type": "int",
-          "value": 1
-        }
-      },
-      {
-        "__struct_id": 0,
-        "Name": {
-          "type": "cexostring",
-          "value": "RandomizeClothing"
-        },
-        "Type": {
-          "type": "dword",
-          "value": 1
-        },
-        "Value": {
-          "type": "int",
-          "value": 1
-        }
-      },
-      {
-        "__struct_id": 0,
-        "Name": {
-          "type": "cexostring",
-          "value": "ClothingResrefPrefix"
-        },
-        "Type": {
-          "type": "dword",
-          "value": 3
-        },
-        "Value": {
-          "type": "cexostring",
-          "value": "clothing"
-        }
-      },
-      {
-        "__struct_id": 0,
-        "Name": {
-          "type": "cexostring",
-          "value": "CommonerTag"
-        },
-        "Type": {
-          "type": "dword",
-          "value": 3
-        },
-        "Value": {
-          "type": "cexostring",
-          "value": "kreg_guard"
-        }
-      },
-      {
-        "__struct_id": 0,
-        "Name": {
-          "type": "cexostring",
-          "value": "CommonerName"
-        },
-        "Type": {
-          "type": "dword",
-          "value": 3
-        },
-        "Value": {
-          "type": "cexostring",
-          "value": "Kreg Town Guard"
-        }
-      },
-      {
-        "__struct_id": 0,
-        "Name": {
-          "type": "cexostring",
-          "value": "WaypointTag"
+          "value": "ClothingRandom"
         },
         "Type": {
           "type": "dword",
@@ -233,60 +143,30 @@
         "__struct_id": 0,
         "Name": {
           "type": "cexostring",
-          "value": "MinSpawnDelay"
+          "value": "MemberTag"
         },
         "Type": {
           "type": "dword",
-          "value": 2
+          "value": 3
         },
         "Value": {
-          "type": "float",
-          "value": 10.0
+          "type": "cexostring",
+          "value": "crowd2_member"
         }
       },
       {
         "__struct_id": 0,
         "Name": {
           "type": "cexostring",
-          "value": "MaxSpawnDelay"
+          "value": "MemberName"
         },
         "Type": {
           "type": "dword",
-          "value": 2
+          "value": 3
         },
         "Value": {
-          "type": "float",
-          "value": 30.0
-        }
-      },
-      {
-        "__struct_id": 0,
-        "Name": {
           "type": "cexostring",
-          "value": "StationaryCommoners"
-        },
-        "Type": {
-          "type": "dword",
-          "value": 1
-        },
-        "Value": {
-          "type": "int",
-          "value": 0
-        }
-      },
-      {
-        "__struct_id": 0,
-        "Name": {
-          "type": "cexostring",
-          "value": "MaxWalkTime"
-        },
-        "Type": {
-          "type": "dword",
-          "value": 2
-        },
-        "Value": {
-          "type": "float",
-          "value": 120.0
+          "value": "Noble Crowd Member"
         }
       },
       {
@@ -301,7 +181,127 @@
         },
         "Value": {
           "type": "cexostring",
-          "value": "kreg_guard"
+          "value": "wp_crowd"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "SpawnDelayMin"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 2
+        },
+        "Value": {
+          "type": "float",
+          "value": 4.0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "SpawnDelayMax"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 2
+        },
+        "Value": {
+          "type": "float",
+          "value": 15.0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "Stationary"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "WalkTimeLimit"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 2
+        },
+        "Value": {
+          "type": "float",
+          "value": 60.0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "MemberResref"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 3
+        },
+        "Value": {
+          "type": "cexostring",
+          "value": "dlg_demo_poet"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "ClothingResref"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 3
+        },
+        "Value": {
+          "type": "cexostring",
+          "value": ""
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "UpdateInterval"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 2
+        },
+        "Value": {
+          "type": "float",
+          "value": 18.0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "*Dialog"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 3
+        },
+        "Value": {
+          "type": "cexostring",
+          "value": "NobleDialog"
         }
       }
     ]
