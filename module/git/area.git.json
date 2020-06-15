@@ -7630,11 +7630,11 @@
         },
         "LinkedTo": {
           "type": "cexostring",
-          "value": ""
+          "value": "WP_FortSkonz_to_Start"
         },
         "LinkedToFlags": {
           "type": "byte",
-          "value": 0
+          "value": 2
         },
         "LoadScreenID": {
           "type": "word",
@@ -7727,7 +7727,7 @@
         },
         "Tag": {
           "type": "cexostring",
-          "value": "Wall1Gate"
+          "value": "fromSkonz"
         },
         "TemplateResRef": {
           "type": "resref",
@@ -14332,7 +14332,7 @@
           "id": 5732,
           "type": "cexolocstring",
           "value": {
-            "0": "I'm Also a Sign"
+            "0": "Fort Skonz"
           }
         },
         "OnClick": {
