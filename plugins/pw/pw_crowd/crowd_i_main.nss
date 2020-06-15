@@ -249,7 +249,6 @@ void SpawnCrowds(object oArea = OBJECT_SELF)
     }
 }
 
-//Clears all crowds in area as assigned to AREA_CROWDS
 void ClearCrowds(object oArea = OBJECT_SELF)
 {
     dbg = sDebugPlugin + "ClearCrowds:: ";
@@ -270,7 +269,6 @@ void ClearCrowds(object oArea = OBJECT_SELF)
         {
             oMember = GetListObject(oItem, j, CROWD_ROSTER);
             DestroyObject(oMember);
-            //DeleteListObject(oArea, 0, sRoster);  
         }
 
         Debug(dbg + IntToString(j) + " objects removed from CROWD_ROSTER on " + GetName(oItem));
@@ -388,7 +386,6 @@ void SpawnCrowdMember(object oItem)
 
     int nCount, nCrowdWaypointCount = _GetLocalInt(oItem, CROWD_WP_COUNT);
     
-    //Search is faster is we start from a known object in desired area
     object oPC = GetListObject(oArea, 0, AREA_ROSTER);
     if (!GetIsObjectValid(oPC))
     {
@@ -396,7 +393,6 @@ void SpawnCrowdMember(object oItem)
         return;
     }
 
-    //Pick a random waypoint to start from
     object oOrigin = GetNearestObjectByTag(_GetLocalString(oItem, CROWD_WAYPOINT_TAG), oPC, Random(nCrowdWaypointCount) + 1);
     if (!GetIsObjectValid(oOrigin))
     {
@@ -405,7 +401,6 @@ void SpawnCrowdMember(object oItem)
         return;
     }
 
-    //Pick a random crowd member NPC template
     string sCrowd = _GetLocalString(oItem, CROWD_MEMBER_RESREF);
     if (!(nCount = CountList(sCrowd)))
     {

@@ -83,12 +83,12 @@ void     _DeleteLocalVector  (object oObject, string sVarName,                  
 
 int _GetIsDM(object oPC)
 {
-    return (GetIsDM(oPC) || GetIsDMPossessed(oPC));
+    return _GetLocalInt(oPC, IS_DM) || (GetIsDM(oPC) || GetIsDMPossessed(oPC));
 }
 
 int _GetIsPC(object oPC)
 {
-    return (GetIsPC(oPC) && !_GetIsDM(oPC));
+    return _GetLocalInt(oPC, IS_PC) || (GetIsPC(oPC) && !_GetIsDM(oPC));
 }
 
 int _GetIsPartyMember(object oPC, object oKnownPartyMember)

@@ -77,7 +77,7 @@ void crowd_OnAreaEnter()
 
     if (!_GetIsPC(oPC))
     {
-        Error(dbg + "Entering object is not player controlled.");
+        Notice(dbg + "Entering object is not player controlled.");
         return;
     }
 
@@ -106,14 +106,10 @@ void crowd_OnAreaExit()
     object oPC = GetExitingObject();
     if (!_GetIsPC(oPC))
     {
-        Warning(dbg + "Exiting object is not player controlled.");
+        Notice(dbg + "Exiting object is not player controlled.");
         return;
     }
 
-    int nTimerID = _GetLocalInt(OBJECT_SELF, CROWD_CHECK_TIMER);
-    if (nTimerID)
-        KillTimer(nTimerID);
-    
     if (!CountObjectList(OBJECT_SELF, AREA_ROSTER))
         ClearCrowds(OBJECT_SELF);
 }
