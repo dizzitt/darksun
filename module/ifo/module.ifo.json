@@ -69,6 +69,13 @@
           "type": "resref",
           "value": "silverspringsoas"
         }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "fortskonz"
+        }
       }
     ]
   },
@@ -108,19 +115,19 @@
   },
   "Mod_Entry_Dir_X": {
     "type": "float",
-    "value": 0.4929
+    "value": 0.492900013923645
   },
   "Mod_Entry_Dir_Y": {
     "type": "float",
-    "value": 0.8701
+    "value": 0.8701000213623047
   },
   "Mod_Entry_X": {
     "type": "float",
-    "value": 15.6026
+    "value": 15.60260009765625
   },
   "Mod_Entry_Y": {
     "type": "float",
-    "value": 17.3967
+    "value": 17.39669990539551
   },
   "Mod_Entry_Z": {
     "type": "float",
