@@ -22,10 +22,9 @@
 #include "crowd_i_const"
 #include "crowd_i_text"
 #include "util_i_math"
+#include "core_i_framework"
 #include "dsutil_i_data"
 #include "dsutil_i_varlist"
-#include "core_i_constants"
-#include "core_i_framework"
 
 // -----------------------------------------------------------------------------
 //                              Function Prototypes
@@ -408,7 +407,7 @@ void SpawnCrowdMember(object oItem)
         return;
     }    
 
-    string sMember = GetListItem(sCrowd, Random(CountList(sCrowd)));
+    string sExceptions, sMember = GetListItem(sCrowd, Random(CountList(sCrowd)));
     object oMember = CreateObject(OBJECT_TYPE_CREATURE, sMember, GetLocation(oOrigin), FALSE, _GetLocalString(oItem, CROWD_MEMBER_TAG));
     AddListObject(oItem, oMember, CROWD_ROSTER);
     _SetLocalObject(oMember, CROWD_OWNER, oItem);
@@ -435,6 +434,10 @@ void SpawnCrowdMember(object oItem)
     _SetLocalInt(oItem, CROWD_QUEUE, _GetLocalInt(oItem, CROWD_QUEUE) - 1);
     _SetLocalString(oMember, CROWD_CONVERSATION, _GetLocalString(oItem, CROWD_CONVERSATION));
     _SetLocalString(oMember, CREATURE_EVENT_ON_DEATH, CROWD_CREATURE_DEATH_SCRIPT);
+
+    //sExceptions = CREATURE_EVENT_ON_DEATH + "," + CREATURE_EVENT_ON_CONVERSATION;
+    //Debug(dbg + "sExceptions = " + sExceptions);
+    //SetDispatchExceptions(oMember, sExceptions, TRUE);
 
     if (!_GetLocalInt(oItem, CROWD_STATIONARY))
         WalkCrowdMember(oMember, oOrigin, oItem);
