@@ -54,7 +54,7 @@ Nasher is a command-line tool that uses and extends Neverwinter Tools to unpack,
 If you do not want to install [nimble](#nimble), [neverwinter](#neverwinter) and [nasher](#nasher) onto your machine, there is a [docker option](#docker).
 
 #### Nimble
-Nimble is a programming language.  Although you will probably only directly use this once during this setup, it is a pre-requistie for installing Nasher.
+Nimble is a package manager for the Nim programming language.  Although you will probably only directly use this once during this setup, it is a pre-requistie for installing Nasher.
 
 1. Install choosenim to make installing nimble exceptionally easy.  Go to the [choosenim releases page](https://github.com/dom96/choosenim/releases) and download the appropriate release for your operating system.  If you selected a zipped file, unzip the files to your preferred location (they cannot be run directly from the zip file) and run the `runme.bat` batch file.  This will install choosenim and add the nimble directory to your system PATH variable.
 
