@@ -58,7 +58,7 @@ As a volunteer project, we fully expect that any person that works on this proje
 
 ## Data Management System
 
-Saving variables and determining who a player is are two of the most common functions in nwscript.  To that end, we're provided alias functions for them to prevent overloading the Module and PC objects, and to quickly determine the identify of a PC.  Just about every script in the module should have an include reference to `dsutil_i_data`.  This script itself includes [`util_i_debug`](../framework/src/utils/util_i_debug.nss) and [`dsutil_i_comms`](../utilities/dsutil_i_comms), so including `dsutil_i_data` should provide you with a great portion of the functionality to set variables, determine identities, provide debug information and send messages around the module.
+Saving variables and determining who a player is are two of the most common functions in nwscript.  To that end, we're provided alias functions for them to prevent overloading the Module and PC objects, and to quickly determine the identify of a PC.  Just about every script in the module should have an include reference to `util_i_data`.  This script itself includes [`util_i_debug`](../framework/src/utils/util_i_debug.nss) and [`dsutil_i_comms`](../utilities/dsutil_i_comms), so including `util_i_data` should provide you with a great portion of the functionality to set variables, determine identities, provide debug information and send messages around the module.
 
 Here are the basic functions it provides:
 * `_GetIsPC()` - a replacement for nwscript's `GetIsPC()`.  Our version determines whether the character is player-controlled (PC) and not a DM.  So if you're trying to determine if a player is a PC and not a DM, use this function.
@@ -67,7 +67,7 @@ Here are the basic functions it provides:
 
 * `[_Get|_Set|_Delete]Local*` - module-specific replacements for `[Get|Set|Delete]Local*`.  For now, these are just wrappers, however, they will be used later for object/variable inheritance and other functions, so best to start using them now.  To set a variable on the module, the object `MODULE` should be passed:  `_SetLocalInt(MODULE, sVarName, nValue)`.  These functions also allows us to replace the HCR2 methodology of using separate functions to set module variables and player-persistent variables.  Just call our version and it'll figure it out for you.  If none of the special conditions are met (i.e. for PCs, inheritance, GetModule(), etc.), it just processes the variable on the passed object as the normal Bioware function would.
 
-To learn more and understand exactly how the functions work, open up [`dsutil_i_data`](../utilities/dsutil_i_data.nss) and take a look!
+To learn more and understand exactly how the functions work, open up [`util_i_data`](../utilities/util_i_data.nss) and take a look!
 
 *Acknowledgement:  As acknowledged in our [acknowledgements document](acknowledgements.md/#hcr2), many of these functions are taken directly from Edward Beck's HCR2 system and modified for our use.*
 

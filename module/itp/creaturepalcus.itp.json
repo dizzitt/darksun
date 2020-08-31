@@ -41,22 +41,6 @@
                       "type": "byte",
                       "value": 6
                     },
-                    "LIST": {
-                      "type": "list",
-                      "value": [
-                        {
-                          "__struct_id": 0,
-                          "NAME": {
-                            "type": "cexostring",
-                            "value": "Ztal"
-                          },
-                          "RESREF": {
-                            "type": "resref",
-                            "value": "chicken001"
-                          }
-                        }
-                      ]
-                    },
                     "STRREF": {
                       "type": "dword",
                       "value": 6696
@@ -114,13 +98,21 @@
                         },
                         {
                           "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 6.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
                           "NAME": {
                             "type": "cexostring",
                             "value": "Erdlu"
                           },
                           "RESREF": {
                             "type": "resref",
-                            "value": "bearkodiak002"
+                            "value": "bearkodiak004"
                           }
                         },
                         {
@@ -880,6 +872,25 @@
                     "RESREF": {
                       "type": "resref",
                       "value": "dlg_demo_poet"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "CR": {
+                      "type": "float",
+                      "value": 0.25
+                    },
+                    "FACTION": {
+                      "type": "cexostring",
+                      "value": "Commoner"
+                    },
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Shop Keep"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "gypfemale001"
                     }
                   }
                 ]

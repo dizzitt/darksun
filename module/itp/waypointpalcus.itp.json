@@ -89,6 +89,39 @@
                 "type": "resref",
                 "value": "wp_commoner"
               }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "H2_FUGUE"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "h2_fugue"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "H2_PLAYERCORPSE"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "h2_playercorpse"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "H2_WP_DIETY_REZ"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "h2_wp_diety_rez"
+              }
             }
           ]
         },

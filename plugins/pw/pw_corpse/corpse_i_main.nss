@@ -1,8 +1,6 @@
 // -----------------------------------------------------------------------------
 //    File: corpse_i_items.nss
 //  System: PC Corpse (core)
-//     URL: 
-// Authors: Edward A. Burke (tinygiant) <af.hog.pilot@gmail.com>
 // -----------------------------------------------------------------------------
 // Description:
 //  Primary functions for PW Subsystem.
@@ -10,19 +8,15 @@
 // Builder Use:
 //  Nothing!  Leave me alone.
 // -----------------------------------------------------------------------------
-// Acknowledgment:
-// -----------------------------------------------------------------------------
-//  Revision:
-//      Date:
-//    Author:
-//   Summary:
-// -----------------------------------------------------------------------------
 
 #include "x2_inc_switches"
 #include "corpse_i_const"
 #include "corpse_i_config"
 #include "corpse_i_text"
 #include "pw_i_core"
+#include "x0_i0_position"
+#include "core_i_database"
+
 
 // -----------------------------------------------------------------------------
 //                              Function Prototypes
@@ -64,7 +58,8 @@ int h2_GoldCostForRessurection(object oCaster, int spellID);
 void h2_RaiseSpellCastOnCorpseToken(int spellID, object oToken = OBJECT_INVALID);
 
 // ---< h2_PerformOffLineRessurectionLogin >---
-//
+// Sets up all variables for the PC so that the next time the PC logs in,
+//  he will be resurrected as if he'd be logged in when it happened.
 void h2_PerformOffLineRessurectionLogin(object oPC, location ressLoc);
 
 // -----------------------------------------------------------------------------
@@ -76,10 +71,9 @@ void h2_PickUpPlayerCorpse(object oCorpseToken)
     string uniquePCID = _GetLocalString(oCorpseToken, H2_DEAD_PLAYER_ID);
     object oDC = GetObjectByTag(H2_CORPSE + uniquePCID);
     object oWayPt = GetObjectByTag(H2_WP_DEATH_CORPSE);
-    object oDC2;
+
     if (GetIsObjectValid(oDC))
     {
-        oDC2 = CopyObject(oDC, GetLocation(oWayPt));
         AssignCommand(oDC, SetIsDestroyable(TRUE, FALSE));
         DestroyObject(oDC);
     }
@@ -88,9 +82,8 @@ void h2_PickUpPlayerCorpse(object oCorpseToken)
 void h2_DropPlayerCorpse(object oCorpseToken)
 {
     string uniquePCID = _GetLocalString(oCorpseToken, H2_DEAD_PLAYER_ID);
-    object oDC = GetObjectByTag(H2_CORPSE + uniquePCID);
-    //TODO: randomize location a bit to prevent corpse stacking?
-    object oDeathCorpse;
+    object oDeathCorpse, oDC = GetObjectByTag(H2_CORPSE + uniquePCID);
+
     if (GetIsObjectValid(oDC))
     {   //if the dead player corpse copy exists, use it & the invisible object DC container
         object oDC2 = CopyObject(oDC, GetLocation(oCorpseToken));
@@ -98,9 +91,8 @@ void h2_DropPlayerCorpse(object oCorpseToken)
         DestroyObject(oDC);
     }
     else
-    {   //if the dead player corpse copy doesn't exist, use the alternate plague body placeable as the DC container
-        oDeathCorpse = CreateObject(OBJECT_TYPE_PLACEABLE, H2_DEATH_CORPSE2, GetLocation(oCorpseToken));
-    }
+        oDeathCorpse = CreateObject(OBJECT_TYPE_PLACEABLE, H2_DEATH_CORPSE2, GetRandomLocation(GetArea(oCorpseToken), oCorpseToken, 3.0));
+
     SetName(oDeathCorpse, GetName(oCorpseToken));
     object oNewToken = CopyItem(oCorpseToken, oDeathCorpse, TRUE);
     _SetLocalLocation(oNewToken, H2_LAST_DROP_LOCATION, GetLocation(oDeathCorpse));
@@ -110,8 +102,17 @@ void h2_DropPlayerCorpse(object oCorpseToken)
 void h2_CreatePlayerCorpse(object oPC)
 {
     string uniquePCID = _GetLocalString(oPC, H2_UNIQUE_PC_ID);
+    
+    object oDC = GetObjectByTag(H2_CORPSE_DC + uniquePCID);
+    if (GetIsObjectValid(oDC))
+        return;
+
+    object oDeadPlayer = GetObjectByTag(H2_CORPSE + uniquePCID);
+    if (GetIsObjectValid(oDeadPlayer))
+        return;
+
     location loc = _GetLocalLocation(oPC, H2_LOCATION_LAST_DIED);
-    object oDeadPlayer = CopyObject(oPC, loc, OBJECT_INVALID, H2_CORPSE + uniquePCID);
+    oDeadPlayer = CopyObject(oPC, loc, OBJECT_INVALID, H2_CORPSE + uniquePCID);
     SetName(oDeadPlayer, H2_TEXT_CORPSE_OF + GetName(oPC));
     ChangeToStandardFaction(oDeadPlayer, STANDARD_FACTION_COMMONER);
     // remove gold, inventory & equipped items from dead player corpse copy
@@ -120,8 +121,8 @@ void h2_CreatePlayerCorpse(object oPC)
     h2_MoveEquippedItems(oDeadPlayer);
     AssignCommand(oDeadPlayer, SetIsDestroyable(FALSE, FALSE));
     AssignCommand(oDeadPlayer, ApplyEffectToObject(DURATION_TYPE_INSTANT, EffectDeath(), oDeadPlayer));
-    object oDeathCorpse = CreateObject(OBJECT_TYPE_PLACEABLE, H2_DEATH_CORPSE, GetLocation(oDeadPlayer));
-    object oCorpseToken = CreateItemOnObject(H2_PC_CORPSE_ITEM, oDeathCorpse);
+    object oDeathCorpse = CreateObject(OBJECT_TYPE_PLACEABLE, H2_DEATH_CORPSE, GetLocation(oDeadPlayer), FALSE, H2_CORPSE_DC + uniquePCID);
+    object oCorpseToken = CreateItemOnObject(H2_PC_CORPSE_ITEM, oDeathCorpse, 1, H2_CORPSE_TOKEN + uniquePCID);
     SetName(oCorpseToken, H2_TEXT_CORPSE_OF + GetName(oPC));
     SetName(oDeathCorpse, GetName(oCorpseToken));
     _SetLocalLocation(oCorpseToken, H2_LAST_DROP_LOCATION, GetLocation(oDeathCorpse));
@@ -145,11 +146,13 @@ int h2_XPLostForRessurection(object oRaisedPC)
 {
     int xplevel = 0;
     int i;
+
     for (i = 1; i < GetHitDice(oRaisedPC); i++)
     {
-        xplevel = xplevel + 1000*(i - 1);
+        xplevel = xplevel + 1000 * (i - 1);
     }
-    xplevel = xplevel + 500*(i-1);
+
+    xplevel = xplevel + 500 * (i - 1);
     return GetXP(oRaisedPC) - xplevel;
 }
 
@@ -173,14 +176,17 @@ void h2_RaiseSpellCastOnCorpseToken(int spellID, object oToken = OBJECT_INVALID)
 {
     if (!GetIsObjectValid(oToken))
         oToken = GetSpellTargetObject();
+
     object oCaster = OBJECT_SELF;
     location castLoc = GetLocation(oCaster);
     string uniquePCID = _GetLocalString(oToken, H2_DEAD_PLAYER_ID);
     object oPC = h2_FindPCWithGivenUniqueID(uniquePCID);
+    
     if (!_GetIsDM(oCaster))
     {
         if (H2_ALLOW_CORPSE_RESS_BY_PLAYERS == FALSE && _GetIsPC(oPC))
             return;
+
         if (H2_REQUIRE_GOLD_FOR_RESS && _GetIsPC(oCaster))
         {
             int goldCost = h2_GoldCostForRessurection(oCaster, spellID);
@@ -204,6 +210,7 @@ void h2_RaiseSpellCastOnCorpseToken(int spellID, object oToken = OBJECT_INVALID)
         }
         else
             ApplyEffectToObject(DURATION_TYPE_INSTANT, EffectHeal(GetMaxHitPoints(oPC)), oPC);
+        
         if (H2_APPLY_XP_LOSS_FOR_RESS)
         {
             int lostXP = h2_XPLostForRessurection(oPC);
@@ -217,17 +224,19 @@ void h2_RaiseSpellCastOnCorpseToken(int spellID, object oToken = OBJECT_INVALID)
     ApplyEffectAtLocation(DURATION_TYPE_INSTANT, eVis, castLoc);
     DestroyObject(oToken);
     string sMessage;
+    
     if (_GetIsPC(oCaster))
         sMessage = GetName(oCaster) + "_" + GetPCPlayerName(oCaster);
     else
         sMessage = "NPC " + GetName(oCaster) + " (" + H2_TEXT_CORPSE_TOKEN_USED_BY + GetName(oPC) + "_" + GetPCPlayerName(oPC) + ") ";
 
-    sMessage + H2_TEXT_RESS_PC_CORPSE_ITEM;
+    sMessage += H2_TEXT_RESS_PC_CORPSE_ITEM;
 
     if (GetIsObjectValid(oPC) && _GetIsPC(oPC))
     {
         SendMessageToPC(oPC, H2_TEXT_YOU_HAVE_BEEN_RESSURECTED);
         _SetLocalInt(oPC, H2_PLAYER_STATE, H2_PLAYER_STATE_ALIVE);
+        RunEvent(H2_EVENT_ON_PLAYER_LIVES, oPC, oPC);
         AssignCommand(oPC, JumpToLocation(castLoc));
         sMessage += GetName(oPC) + "_" + GetPCPlayerName(oPC);
     }
@@ -256,6 +265,7 @@ void h2_PerformOffLineRessurectionLogin(object oPC, location ressLoc)
         int lostXP = h2_XPLostForRessurection(oPC);
         GiveXPToCreature(oPC, -lostXP);
     }
+    
     DeleteDatabaseVariable(uniquePCID + H2_RESS_BY_DM);
     string sMessage = GetName(oPC) + "_" + GetPCPlayerName(oPC) + H2_TEXT_OFFLINE_RESS_LOGIN;
     SendMessageToAllDMs(sMessage);

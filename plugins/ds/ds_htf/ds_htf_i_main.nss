@@ -24,6 +24,7 @@
 #include "ds_htf_i_config"
 #include "ds_htf_i_text"
 #include "pw_i_core"
+#include "util_i_color"
 
 // -----------------------------------------------------------------------------
 //                              Function Prototypes
@@ -153,8 +154,8 @@ string _createAssociateHTFBar(int nValue)
     int nMultiple = 100/GetStringLength(DS_HTF_BARS);
 
     int nBreakPoint = ((nValue + nMultiple/2)/nMultiple);
-    string greenBar = h2_ColorText(GetSubString(DS_HTF_BARS, 0, nBreakPoint), H2_COLOR_GREEN);
-    string redBar = h2_ColorText(GetSubString(DS_HTF_BARS, nBreakPoint, GetStringLength(DS_HTF_BARS)-nBreakPoint), H2_COLOR_RED);
+    string greenBar = HexColorString(GetSubString(DS_HTF_BARS, 0, nBreakPoint), COLOR_GREEN);
+    string redBar = HexColorString(GetSubString(DS_HTF_BARS, nBreakPoint, GetStringLength(DS_HTF_BARS)-nBreakPoint), COLOR_RED);
 
     return greenBar + redBar;
 }
@@ -172,9 +173,9 @@ void ds_DisplayAssociateHTFValues(object oCreature, float fThirst, float fHunger
     int currFatigue = FloatToInt(fFatigue);
 
     //TODO color text -> framework color
-    string sOpen = h2_ColorText(DS_TEXT_BRACKET_L, H2_COLOR_WHITE);
-    string sClose = h2_ColorText(DS_TEXT_BRACKET_R, H2_COLOR_WHITE);
-    string sDelimiter = h2_ColorText(DS_TEXT_DELIMITER, H2_COLOR_WHITE);
+    string sOpen = HexColorString(DS_TEXT_BRACKET_L, COLOR_WHITE);
+    string sClose = HexColorString(DS_TEXT_BRACKET_R, COLOR_WHITE);
+    string sDelimiter = HexColorString(DS_TEXT_DELIMITER, COLOR_WHITE);
 
     string sThirst = "T";
     string sHunger = "H";
@@ -198,19 +199,19 @@ void ds_DisplayAssociateHTFValues(object oCreature, float fThirst, float fHunger
         case ASSOCIATE_DISPLAY_LETTERS:
             if (H2_USE_HUNGERTHIRST_SYSTEM)
             {
-                sThirst = currThirst > DS_HTF_THRESHHOLD_CAUTION ? h2_ColorText(sThirst, H2_COLOR_GREEN) : 
-                            currThirst <= DS_HTF_THRESHHOLD_DIRE ? h2_ColorText(sThirst, H2_COLOR_RED) :
-                                                                    h2_ColorText(sThirst, H2_COLOR_YELLOW);
+                sThirst = currThirst > DS_HTF_THRESHHOLD_CAUTION ? HexColorString(sThirst, COLOR_GREEN) : 
+                            currThirst <= DS_HTF_THRESHHOLD_DIRE ? HexColorString(sThirst, COLOR_RED) :
+                                                                    HexColorString(sThirst, COLOR_YELLOW);
 
-                sHunger = currHunger > DS_HTF_THRESHHOLD_CAUTION ? h2_ColorText(sHunger, H2_COLOR_GREEN) : 
-                            currHunger <= DS_HTF_THRESHHOLD_DIRE ? h2_ColorText(sHunger, H2_COLOR_RED) :
-                                                                    h2_ColorText(sHunger, H2_COLOR_YELLOW);
+                sHunger = currHunger > DS_HTF_THRESHHOLD_CAUTION ? HexColorString(sHunger, COLOR_GREEN) : 
+                            currHunger <= DS_HTF_THRESHHOLD_DIRE ? HexColorString(sHunger, COLOR_RED) :
+                                                                    HexColorString(sHunger, COLOR_YELLOW);
             }
 
             if (H2_USE_FATIGUE_SYSTEM)
-                sFatigue = currFatigue > DS_HTF_THRESHHOLD_CAUTION ? h2_ColorText(sFatigue, H2_COLOR_GREEN) : 
-                                currFatigue <= DS_HTF_THRESHHOLD_DIRE ? h2_ColorText(sFatigue, H2_COLOR_RED) :
-                                                                        h2_ColorText(sFatigue, H2_COLOR_YELLOW);
+                sFatigue = currFatigue > DS_HTF_THRESHHOLD_CAUTION ? HexColorString(sFatigue, COLOR_GREEN) : 
+                                currFatigue <= DS_HTF_THRESHHOLD_DIRE ? HexColorString(sFatigue, COLOR_RED) :
+                                                                        HexColorString(sFatigue, COLOR_YELLOW);
 
             sHTFBar = sOpen; 
             if (H2_USE_HUNGERTHIRST_SYSTEM)

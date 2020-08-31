@@ -1,8 +1,7 @@
 // -----------------------------------------------------------------------------
 //    File: pw_i_text.nss
 //  System: Persistent World Administration (text/language configuration script)
-//     URL: 
-// Authors: Edward A. Burke (tinygiant) <af.hog.pilot@gmail.com>
+
 // -----------------------------------------------------------------------------
 // Persistent world text constants.  This script contains user-definable text
 //  constants that are used in-game for the base persistent world (pw)
@@ -29,8 +28,6 @@ const string H2_TEXT_TOTAL_REGISTERED_CHARS = "Total number of registered charac
 const string H2_TEXT_MAX_REGISTERED_CHARS = " Maximum registered characters: ";
 const string H2_TEXT_CURRENT_GAME_DATE_TIME = "Current Game Date and Time: ";
 const string H2_TEXT_YOU_HAVE_DIED = "You have died.";
-const string H2_TEXT_PLAYER_DATA_ITEM_NOT_CREATED = "Player data item could not be created.";
-const string H2_TEXT_PLAYER_DATA_ITEM_CREATED = "Player data item sucessfully created.";
 const string H2_TEXT_RECOVER_WITH_REST_IN = "You can recover spells and health by resting in: ";
 const string H2_TEXT_HOURS = " hours.";
 const string H2_TEXT_SETTINGS_NOT_READ = "The module builder has not read and customized the rule settings for this module.";
@@ -47,7 +44,6 @@ const string H2_TEXT_CANNOT_USE_ON_SELF = "You cannot use that on yourself.";
 const string H2_TEXT_OFFLINE_PLAYER = "Offline player";
 const string H2_TEXT_CANNOT_PLACE_THERE = "You cannot place that there.";
 const string H2_TEXT_CANNOT_USE_ON_TARGET = "You cannot use that on that target.";
-
 
 //GetName(oPC) + "_" + GetPCPlayerName(oPC) + H2_TEXT_LOG_PLAYER_HAS_DIED +
 //GetName(GetLastHostileActor(oPC)) + H2_TEXT_LOG_PLAYER_HAS_DIED2 + GetName(GetGetArea(oPC))

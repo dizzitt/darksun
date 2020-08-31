@@ -1,21 +1,12 @@
 // -----------------------------------------------------------------------------
 //    File: unid_l_plugin.nss
 //  System: UnID Item on Drop (library)
-//     URL: 
-// Authors: Edward A. Burke (tinygiant) <af.hog.pilot@gmail.com>
 // -----------------------------------------------------------------------------
 // Description:
 //  Library functions for PW Subsystem
 // -----------------------------------------------------------------------------
 // Builder Use:
 //  None!  Leave me alone.
-// -----------------------------------------------------------------------------
-// Acknowledgment:
-// -----------------------------------------------------------------------------
-//  Revision:
-//      Date:
-//    Author:
-//   Summary:
 // -----------------------------------------------------------------------------
 
 #include "util_i_library"
@@ -28,6 +19,9 @@
 
 void OnLibraryLoad()
 {
+    if (!H2_USE_UNID_SYSTEM)
+        return;
+
     object oPlugin = GetPlugin("pw");
 
     // ----- Module Events -----

@@ -49,6 +49,17 @@
                       "type": "resref",
                       "value": "clothing003"
                     }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "cloth031"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 12914
+                    }
                   }
                 ]
               },
@@ -218,13 +229,13 @@
                   },
                   {
                     "__struct_id": 0,
-                    "NAME": {
-                      "type": "cexostring",
-                      "value": "Bite2d8"
-                    },
                     "RESREF": {
                       "type": "resref",
                       "value": "it_crewps028"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 13249
                     }
                   }
                 ]
@@ -289,24 +300,24 @@
                   },
                   {
                     "__struct_id": 0,
-                    "NAME": {
-                      "type": "cexostring",
-                      "value": "Claw1d8"
-                    },
                     "RESREF": {
                       "type": "resref",
                       "value": "it_crewpsp018"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 13270
                     }
                   },
                   {
                     "__struct_id": 0,
-                    "NAME": {
-                      "type": "cexostring",
-                      "value": "Claw1d8"
-                    },
                     "RESREF": {
                       "type": "resref",
                       "value": "it_crewpsp019"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 13270
                     }
                   }
                 ]
@@ -456,6 +467,132 @@
                 "type": "byte",
                 "value": 64
               },
+              "LIST": {
+                "type": "list",
+                "value": [
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Bottle of Wine"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "h2_fooditem007"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Bowl of Gruel"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "h2_fooditem003"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Common Meal"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "h2_fooditem009"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Cooked Ham"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "h2_fooditem001"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Egg"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "h2_fooditem008"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Fruit"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "h2_fooditem"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Nuts"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "h2_fooditem006"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Pie"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "h2_fooditem002"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Sausage"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "h2_fooditem004"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Stein of Beer"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "h2_fooditem005"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Trail Rations"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "h2_fooditem010"
+                    }
+                  }
+                ]
+              },
               "STRREF": {
                 "type": "dword",
                 "value": 83602
@@ -528,6 +665,61 @@
                 "value": [
                   {
                     "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Canteen"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "h2_canteen"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Firewood"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "h2_firewood"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Lantern"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "h2_lantern"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Oil Flask"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "h2_oilflask"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Torch"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "h2_torch"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
                     "RESREF": {
                       "type": "resref",
                       "value": "it_torch003"
@@ -542,6 +734,17 @@
                     "RESREF": {
                       "type": "resref",
                       "value": "it_torch004"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 180
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_torch005"
                     },
                     "STRREF": {
                       "type": "dword",
@@ -1404,6 +1607,39 @@
               "__struct_id": 0,
               "NAME": {
                 "type": "cexostring",
+                "value": "Healing Skill"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "h2_healwidget"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Player Corpse Item"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "h2_pccorpseitem"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Player Info and Action Item"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "util_playerdata"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
                 "value": "The One Ring"
               },
               "RESREF": {
@@ -1524,6 +1760,17 @@
                           "STRREF": {
                             "type": "dword",
                             "value": 83310
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "waxhn003"
+                          },
+                          "STRREF": {
+                            "type": "dword",
+                            "value": 1532
                           }
                         }
                       ]

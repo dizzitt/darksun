@@ -22,7 +22,7 @@
 #include "tr_i_const"
 #include "tr_i_text"
 #include "ds_i_const"
-#include "dsutil_i_data"
+#include "util_i_data"
 #include "core_i_constants"
 #include "corpse_i_const"
 #include "loot_i_main"

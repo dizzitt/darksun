@@ -1,28 +1,18 @@
 // -----------------------------------------------------------------------------
 //    File: pw_i_core.nss
 //  System: Persistent World Administration (configuration file)
-//     URL: 
-// Authors: Edward A. Burke (tinygiant) <af.hog.pilot@gmail.com>
 // -----------------------------------------------------------------------------
 // Persistent world configuration settings.  This scripts contains all of the
 //  settings that control high-level pw functions.
 // -----------------------------------------------------------------------------
 // Builder Use.  This script is meant to be modified by the builder in order
 //  to create the desired environment.  This is a high-level configuration file.
-//  Configuration constant for subsystem are in the system-specific (plugin)
-//  configuration files.
-// -----------------------------------------------------------------------------
-// Acknowledgment:
-// This script is a copy of Edward Becks HCR2 script h2_core_c modified and renamed
-//  to work under Michael Sinclair's (Squatting Monk) core-framework system and
-//  for use in the Dark Sun Persistent World.  Some of the HCR2 constants
-//  have been removed because they are duplicates from the core-framework.
-// -----------------------------------------------------------------------------
-// Revisions:
+//  Configuration constants for subsystems are in the system-specific (plugin)
+//  configuration files *_i_config.nss.
 // -----------------------------------------------------------------------------
 
 //The combined length of any player-controlled character's first and last name must
-//  not exceed this value.  player-controlled characters include player-characters
+//  not exceed this value.  Player-controlled characters include player-characters
 //  and Dungeon Masters.  This check is accomplished before OnClientEnter hook scripts
 //  are run.  If the name length exceeds this value, the player is booted.  If booted,
 //  neither the OnClientEnter or OnClientLeave events are triggered.  The purpose of
@@ -50,7 +40,7 @@ const float H2_CLIENT_ENTER_JUMP_DELAY = 1.0;
 
 //Time interval in real-world seconds between each location save for a PC.
 //Default value: 180.0
-const float H2_SAVE_PC_LOCATION_TIMER_INTERVAL = 0.0;
+const float H2_SAVE_PC_LOCATION_TIMER_INTERVAL = 180.0;
 
 //Set the below to true to remove all starting equipment from a newly created character.
 //Default value: FALSE
@@ -60,9 +50,9 @@ const int H2_STRIP_ON_FIRST_LOGIN = FALSE;
 //You should only change this value if you are using a server vault.
 //Recommended settings are from 30.0 (seconds) to 300.0 (five minutes)
 //depending on your server performance.
-//Individual player exports also occur if this value is above 0 whenevr the player rests or levels up.
+//Individual player exports also occur if this value is above 0 whenever the player rests or levels up.
 //The default value is 0.0.
-const float H2_EXPORT_CHARACTERS_INTERVAL = 180.0;
+const float H2_EXPORT_CHARACTERS_INTERVAL = 0.0;
 
 //Set this to the number of registered characters (alive or dead) that you want the player
 //to be allowed to play. When a player chooses to retire a character it becomes unregistered
@@ -74,7 +64,7 @@ const float H2_EXPORT_CHARACTERS_INTERVAL = 180.0;
 //A value of zero means there is no limit to the number of characters they can play.
 //When this value is zero the option to retire a character doesn't display.
 //The default value is 0.
-const int H2_REGISTERED_CHARACTERS_ALLOWED = 0;
+const int H2_REGISTERED_CHARACTERS_ALLOWED = 10;
 
 //Force the game clock to update itself each heartbeat (to fix clock update problem for large modules)
 //Set this to true if your module has trouble with the clock updating to see if it helps.
@@ -85,3 +75,14 @@ const int H2_FORCE_CLOCK_UPDATE = FALSE;
 //entering player to be in the format: DD/MM/YYYY HH:MM instead of MM/DD/YYYY HH:MM.
 //The default value is FALSE.
 const int H2_SHOW_DAY_BEFORE_MONTH_IN_LOGIN = FALSE;
+
+// You can turn off Bioware's default events by setting this to false.  Generally, this should remain
+//  TRUE since it can break the horse system, cause player death problems and create other hidden issues
+//  if all default bioware events aren't handled by custom handlers.
+const int H2_USE_DEFAULT_BIOWARE_EVENTS = TRUE;
+
+// The basic rest system includes a small, configurable dialog.  Without any builder intervention, it has
+//  two options:  rest or don't rest.  If you want the PC to confirm they want to rest before the rest
+//  event occurs, set this to TRUE.  If you don't care or don't plan on adding additiona options, set this 
+//  to FALSE.
+const int H2_USE_REST_DIALOG = FALSE;

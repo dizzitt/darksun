@@ -1,8 +1,6 @@
 // -----------------------------------------------------------------------------
 //    File: corpse_l_plugin.nss
 //  System: PC Corpse (library)
-//     URL: 
-// Authors: Edward A. Burke (tinygiant) <af.hog.pilot@gmail.com>
 // -----------------------------------------------------------------------------
 // Description:
 //  Library functions for PW Subsystem
@@ -10,13 +8,7 @@
 // Builder Use:
 //  None!  Leave me alone.
 // -----------------------------------------------------------------------------
-// Acknowledgment:
-// -----------------------------------------------------------------------------
-//  Revision:
-//      Date:
-//    Author:
-//   Summary:
-// -----------------------------------------------------------------------------
+
 
 #include "util_i_library"
 #include "core_i_framework"
@@ -28,17 +20,22 @@
 
 void OnLibraryLoad()
 {
+    if (!H2_USE_CORPSE_SYSTEM)
+        return;
+
     object oPlugin = GetPlugin("pw");
 
     // --- Module Events ---
     RegisterEventScripts(oPlugin, MODULE_EVENT_ON_CLIENT_ENTER, "corpse_OnClientEnter", 4.0);
     RegisterEventScripts(oPlugin, MODULE_EVENT_ON_CLIENT_LEAVE, "corpse_OnClientLeave", 4.0);
     RegisterEventScripts(oPlugin, MODULE_EVENT_ON_PLAYER_DEATH, "corpse_OnPlayerDeath", 4.0);
+    RegisterEventScripts(oPlugin, H2_EVENT_ON_PLAYER_LIVES,     "corpse_OnPlayerLives", 4.0);
 
     // --- Module Events ---
     RegisterLibraryScript("corpse_OnClientEnter", 1);
     RegisterLibraryScript("corpse_OnClientLeave", 2);
     RegisterLibraryScript("corpse_OnPlayerDeath", 3);
+    RegisterLibraryScript("corpse_OnPlayerLives", 5);
     
     // --- Tag-based Scripting ---
     RegisterLibraryScript(H2_PC_CORPSE_ITEM,     4);
@@ -52,6 +49,7 @@ void OnLibraryScript(string sScript, int nEntry)
         case 1:  corpse_OnClientEnter(); break;
         case 2:  corpse_OnClientLeave(); break;
         case 3:  corpse_OnPlayerDeath(); break;
+        case 5:  corpse_OnPlayerLives(); break;
         
         // ----- Tag-based Scripting -----
         case 4:  corpse_pccorpseitem(); break;

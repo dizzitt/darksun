@@ -1,8 +1,6 @@
 // -----------------------------------------------------------------------------
 //    File: torch_i_events.nss
 //  System: Torch and Lantern (events)
-//     URL: 
-// Authors: Edward A. Burke (tinygiant) <af.hog.pilot@gmail.com>
 // -----------------------------------------------------------------------------
 // Description:
 //  Event functions for PW Subsystem.
@@ -10,16 +8,11 @@
 // Builder Use:
 //  None!  Leave me alone.
 // -----------------------------------------------------------------------------
-// Acknowledgment:
-// -----------------------------------------------------------------------------
-//  Revision:
-//      Date:
-//    Author:
-//   Summary:
-// -----------------------------------------------------------------------------
 
 #include "x2_inc_switches"
 #include "torch_i_main"
+#include "util_i_override"
+#include "util_i_csvlists"
 
 // -----------------------------------------------------------------------------
 //                              Function Prototypes
@@ -40,6 +33,10 @@ void torch_oilflask();
 //  torch when it is equipped/unequipped.
 void torch_torch();
 
+// ---< torch_OnTimerExpire >---
+// This function turns off the equipped light source permanently, forcing the
+// PC to either replace the torch or refill the lantern.
+
 // -----------------------------------------------------------------------------
 //                             Function Definitions
 // -----------------------------------------------------------------------------
@@ -52,12 +49,55 @@ void torch_OnSpellHook()
     int spellID = GetSpellId();
     if (GetTag(oItem) == H2_OILFLASK && GetSpellId() == SPELL_GRENADE_FIRE)
     {
-        if (d2()==1)
+        if (d2() == 1)
         {
             SendMessageToPC(OBJECT_SELF, H2_TEXT_OIL_FLASK_FAILED_TO_IGNITE);
             SetModuleOverrideSpellScriptFinished();
         }
     }
+}
+
+void torch_OnClientLeave()
+{
+    object oItem, oPC = GetExitingObject();
+    string sItem;
+
+    int i;
+    for (i = INVENTORY_SLOT_RIGHTHAND; i <= INVENTORY_SLOT_LEFTHAND; i++)
+    {
+        oItem = GetItemInSlot(i, oPC);
+        sItem = GetTag(oItem);
+        if (sItem == H2_TORCH || sItem == H2_LANTERN)
+        {
+            AssignCommand(oPC, ActionUnequipItem(oItem));
+            Notice("Torch/Lantern Unequipped");
+            Notice("  Variable --> " + (_GetLocalInt(oPC, "TORCH_EQUIPPED") ? "TRUE":"FALSE"));
+            return;
+        }
+    }
+}
+
+void torch_OnClientEnter()
+{
+    object oPC = GetEnteringObject();
+    int i;
+
+    if (_GetIsPC(oPC))
+    {
+        object oItem = GetFirstItemInInventory(oPC);
+        while (GetIsObjectValid(oItem))
+        {
+            if (HasListItem(H2_OLD_TORCH_TAGS, GetTag(oItem)))
+            {
+                DestroyObject(oItem);
+                i++;
+            }
+
+            oItem = GetNextItemInInventory(oPC);
+        }
+    }
+
+    DelayCommand(1.0, _CreateItemOnObject(H2_TORCH, oPC, i));
 }
 
 // ----- Tag-based Scripting -----
@@ -72,7 +112,6 @@ void torch_oilflask()
         object oPC   = GetItemActivator();
         object oItem = GetItemActivated();
         object oTarget = GetItemActivatedTarget();
-        location loc = GetItemActivatedTargetLocation();
         if (GetIsObjectValid(oTarget))
         {
             if (GetTag(oTarget) == H2_LANTERN)
@@ -81,34 +120,24 @@ void torch_oilflask()
                 return;
             }
         }
+
         SendMessageToPC(oPC, H2_TEXT_CANNOT_USE_ON_TARGET);
     }
 }
 
-void torch_lantern()
+void torch_torch()
 {
     int nEvent = GetUserDefinedItemEventNumber();
 
-    // * This code runs when the item is equipped
-    // * Note that this event fires PCs only
     if (nEvent ==  X2_ITEM_EVENT_EQUIP)
-    {
-        h2_EquippedLightSource(FALSE);
-    }
-    // * This code runs when the item is unequipped
-    // * Note that this event fires for PCs only
+        h2_EquippedLightSource(GetTag(GetPCItemLastEquipped()) == H2_LANTERN);
     else if (nEvent == X2_ITEM_EVENT_UNEQUIP)
-    {
-        h2_UnEquipLightSource(FALSE);
-    }
+        h2_UnEquipLightSource(GetTag(GetPCItemLastUnequipped()) == H2_LANTERN);
 }
 
 // ----- Timer Events -----
 
 void torch_OnTimerExpire()
 {
-    if (GetTag(OBJECT_SELF) == H2_LANTERN)
-        h2_BurnOutLightSource(OBJECT_SELF, TRUE);
-    else
-        h2_BurnOutLightSource(OBJECT_SELF, FALSE);
+    h2_BurnOutLightSource(OBJECT_SELF, GetTag(OBJECT_SELF) == H2_LANTERN);
 }

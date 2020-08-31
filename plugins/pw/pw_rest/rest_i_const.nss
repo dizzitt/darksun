@@ -1,21 +1,12 @@
 // -----------------------------------------------------------------------------
 //    File: rest_i_const.nss
 //  System: Rest (constants)
-//     URL: 
-// Authors: Edward A. Burke (tinygiant) <af.hog.pilot@gmail.com>
 // -----------------------------------------------------------------------------
 // Description:
 //  Constants for PW Subsystem.
 // -----------------------------------------------------------------------------
 // Builder Use:
 //  None!  Leave me alone.
-// -----------------------------------------------------------------------------
-// Acknowledgment:
-// -----------------------------------------------------------------------------
-//  Revision:
-//      Date:
-//    Author:
-//   Summary:
 // -----------------------------------------------------------------------------
 
 // -----------------------------------------------------------------------------
@@ -38,8 +29,7 @@ const string H2_REST_TRIGGER = "H2_REST_TRIGGER";
 const string H2_LAST_PC_REST_TIME = "H2_LAST_PC_RESTTIME";
 const string H2_IGNORE_MINIMUM_REST_TIME = "H2_IGNORE_MINIMUM_REST_TIME";
 const string H2_REST_FEEDBACK = "H2_REST_FEEDBACK";
-const string H2_CAMPFIRE_BURN = "H2_CAMPFIRE_BURN";
-const string H2_CAMPFIRE_START_TIME = "H2_CAMPFIRE_START_TIME";
+const string H2_CAMPFIRE_END_TIME = "H2_CAMPFIRE_END_TIME";
 
 // Custom Events
 const string REST_EVENT_ON_TRIGGER_CLICK = "Rest_OnTriggerClick";

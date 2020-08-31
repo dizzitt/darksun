@@ -1,21 +1,12 @@
 // -----------------------------------------------------------------------------
 //    File: bleed_i_main.nss
 //  System: Bleed Persistent World Subsystem (core)
-//     URL: 
-// Authors: Edward A. Burke (tinygiant) <af.hog.pilot@gmail.com>
 // -----------------------------------------------------------------------------
 // Description:
 //  Primary functions for PW Subsystem
 // -----------------------------------------------------------------------------
 // Builder Use:
 //  None!  Leave me alone.
-// -----------------------------------------------------------------------------
-// Acknowledgment:
-// -----------------------------------------------------------------------------
-//  Revision:
-//      Date:
-//    Author:
-//   Summary:
 // -----------------------------------------------------------------------------
 
 #include "pw_i_core"
@@ -57,11 +48,10 @@ void h2_BeginPlayerBleeding(object oPC)
 {
     int nCurrentHitPoints = GetCurrentHitPoints(oPC);
     _SetLocalInt(oPC, H2_LAST_HIT_POINTS, nCurrentHitPoints);
-    int timerID = CreateTimer(oPC, BLEED_ON_TIMER_EXPIRE, H2_BLEED_DELAY);
-    //int timerID = h2_CreateTimer(oPC, H2_BLEED_TIMER_SCRIPT, H2_BLEED_DELAY);
+    
+    int timerID = CreateTimer(oPC, BLEED_EVENT_ON_TIMER_EXPIRE, H2_BLEED_DELAY);
     _SetLocalInt(oPC, H2_BLEED_TIMER_ID, timerID);
-    StartTimer(timerID, TRUE);
-    //h2_StartTimer(timerID);
+    StartTimer(timerID, FALSE);
 }
 
 void h2_MakePlayerFullyRecovered(object oPC)
@@ -72,8 +62,9 @@ void h2_MakePlayerFullyRecovered(object oPC)
         effect eHeal = EffectHeal(1 - nCurrHitPoints);
         ApplyEffectToObject(DURATION_TYPE_INSTANT, eHeal, oPC);
     }
+
     SendMessageToPC(oPC,  H2_TEXT_RECOVERED_FROM_DYING);
-    _DeleteLocalInt(oPC, H2_TIME_OF_LAST_BLEED_CHECK);
+    _DeleteLocalString(oPC, H2_TIME_OF_LAST_BLEED_CHECK);
     _SetLocalInt(oPC, H2_PLAYER_STATE, H2_PLAYER_STATE_ALIVE);
     //TODO: make monsters go hostile to PC again?
 }
@@ -90,26 +81,25 @@ void h2_StabilizePlayer(object oPC, int bNaturalHeal = FALSE)
             _SetLocalInt(oPC, H2_PLAYER_STATE, H2_PLAYER_STATE_STABLE);
         else
             _SetLocalInt(oPC, H2_PLAYER_STATE, H2_PLAYER_STATE_RECOVERING);
-        int timeOfBleedCheck = h2_GetSecondsSinceServerStart();
-        _SetLocalInt(oPC, H2_TIME_OF_LAST_BLEED_CHECK, timeOfBleedCheck);
+        
+        _SetLocalString(oPC, H2_TIME_OF_LAST_BLEED_CHECK, GetSystemTime());
     }
     else if (bNaturalHeal)
-    {
         h2_MakePlayerFullyRecovered(oPC);
-    }
     else
         _SetLocalInt(oPC, H2_PLAYER_STATE, H2_PLAYER_STATE_RECOVERING);
 }
 
 void h2_DoBleedDamageToPC(object oPC)
 {
-    int timeOfBleedCheck = h2_GetSecondsSinceServerStart();
-    _SetLocalInt(oPC, H2_TIME_OF_LAST_BLEED_CHECK, timeOfBleedCheck);
+    _SetLocalString(oPC, H2_TIME_OF_LAST_BLEED_CHECK, GetSystemTime());
     int nCurrentHitPoints = GetCurrentHitPoints(oPC);
     _SetLocalInt(oPC, H2_LAST_HIT_POINTS, nCurrentHitPoints);
     int nPlayerState = _GetLocalInt(oPC, H2_PLAYER_STATE);
+    
     if (nPlayerState == H2_PLAYER_STATE_RECOVERING)
         return;
+
     switch(d6())
     {
         case 1: PlayVoiceChat(VOICE_CHAT_HELP, oPC); break;
@@ -119,6 +109,7 @@ void h2_DoBleedDamageToPC(object oPC)
         case 5: PlayVoiceChat(VOICE_CHAT_HEALME, oPC); break;
         case 6: PlayVoiceChat(VOICE_CHAT_NEARDEATH, oPC); break;
     }
+
     SendMessageToPC(oPC, H2_TEXT_WOUNDS_BLEED);
     effect eBloodloss = EffectDamage(H2_BLEED_BLOOD_LOSS, DAMAGE_TYPE_MAGICAL, DAMAGE_POWER_ENERGY);
     ApplyEffectToObject(DURATION_TYPE_INSTANT, eBloodloss, oPC);
@@ -131,9 +122,10 @@ void h2_CheckForSelfStabilize(object oPC)
     if (nPlayerState == H2_PLAYER_STATE_STABLE || nPlayerState == H2_PLAYER_STATE_RECOVERING)
         stabilizechance = H2_SELF_RECOVERY_CHANCE;
 
-    int lastCheck = _GetLocalInt(oPC, H2_TIME_OF_LAST_BLEED_CHECK);
-    int secondsSinceLastCheck = h2_GetSecondsSinceServerStart() - lastCheck;
-    if (nPlayerState == H2_PLAYER_STATE_DYING || secondsSinceLastCheck >= FloatToInt(H2_STABLE_DELAY))
+    string lastCheck = _GetLocalString(oPC, H2_TIME_OF_LAST_BLEED_CHECK);
+    float secondsSinceLastCheck = GetSystemTimeDifferenceIn(TIME_SECONDS, lastCheck);
+
+    if (nPlayerState == H2_PLAYER_STATE_DYING || secondsSinceLastCheck >= H2_STABLE_DELAY)
     {
         if (d100() <= stabilizechance)
             h2_StabilizePlayer(oPC, TRUE);
@@ -146,6 +138,7 @@ void h2_UseHealWidgetOnTarget(object oTarget)
 {
     object oUser = GetItemActivator();
     int rollResult;
+    
     if (_GetIsPC(oTarget))
     {
         if (oTarget == oUser)
@@ -183,6 +176,7 @@ void h2_UseHealWidgetOnTarget(object oTarget)
                 rollResult = h2_SkillCheck(SKILL_HEAL, oUser, 0);
                 if (rollResult >= H2_LONG_TERM_CARE_DC)
                     _SetLocalInt(oTarget, H2_LONG_TERM_CARE, 1);
+                    
                 SendMessageToPC(oUser, H2_TEXT_ATTEMPT_LONG_TERM_CARE);
                 SendMessageToPC(oTarget, H2_TEXT_RECEIVE_LONG_TERM_CARE);
                 break;

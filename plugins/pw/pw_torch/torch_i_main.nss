@@ -1,8 +1,6 @@
 // -----------------------------------------------------------------------------
 //    File: torch_i_main.nss
 //  System: Torch and Lantern (core)
-//     URL: 
-// Authors: Edward A. Burke (tinygiant) <af.hog.pilot@gmail.com>
 // -----------------------------------------------------------------------------
 // Description:
 //  Core functions for PW Subsystem.
@@ -10,18 +8,12 @@
 // Builder Use:
 //  None!  Leave me alone.
 // -----------------------------------------------------------------------------
-// Acknowledgment:
-// -----------------------------------------------------------------------------
-//  Revision:
-//      Date:
-//    Author:
-//   Summary:
-// -----------------------------------------------------------------------------
 
 #include "torch_i_config"
 #include "torch_i_const"
 #include "torch_i_text"
 #include "pw_i_core"
+#include "util_i_time"
 
 // -----------------------------------------------------------------------------
 //                              Function Prototypes
@@ -83,6 +75,7 @@ void h2_EquippedLightSource(int isLantern)
     object oLight = GetPCItemLastEquipped();
     object oPC = GetPCItemLastEquippedBy();
     int burncount = H2_TORCH_BURN_COUNT;
+
     if (isLantern)
     {
         if (_GetLocalInt(oLight, H2_NEEDS_OIL))
@@ -92,40 +85,44 @@ void h2_EquippedLightSource(int isLantern)
         }
         burncount = H2_LANTERN_BURN_COUNT;
     }
-    int timeEquipped = h2_GetSecondsSinceServerStart();
-    _SetLocalInt(oLight, H2_LIGHT_EQUIPPED, timeEquipped);
+    
+    _SetLocalString(oLight, H2_LIGHT_EQUIPPED, GetSystemTime());
     int elapsedBurn = _GetLocalInt(oLight, H2_ELAPSED_BURN);
     int burnLeft = burncount - elapsedBurn;
     float percentRemaining = (IntToFloat(burnLeft) / IntToFloat(burncount)) * 100.0;
-    SendMessageToPC(oPC, H2_TEXT_REMAINING_BURN + FloatToString(percentRemaining, 5, 1) + "%%");
+    SendMessageToPC(oPC, H2_TEXT_REMAINING_BURN + FloatToString(percentRemaining, 5, 1));
+    
     int timerID = CreateTimer(oLight, TORCH_EVENT_ON_TIMER_EXPIRE, IntToFloat(burnLeft), 1, 0);
-    //int timerID = h2_CreateTimer(oLight, H2_LIGHT_TIMER, IntToFloat(burnLeft));
-    StartTimer(timerID, TRUE);
-    //h2_StartTimer(timerID);
+    StartTimer(timerID, FALSE);
     _SetLocalInt(oLight, H2_LIGHT_TIMERID, timerID);
     _SetLocalObject(oLight, H2_EQUIPPINGPC, oPC);
+    _SetLocalInt(oPC, "TORCH_EQUIPPED", TRUE);
+    Notice("Torch Equipped --> " + (_GetLocalInt(oPC, "TORCH_EQUIPPED") ? "TRUE":"FALSE"));
 }
 
 void h2_UnEquipLightSource(int isLantern)
 {
+    object oPC = GetPCItemLastUnequippedBy();
     object oLight  = GetPCItemLastUnequipped();
     if (isLantern && _GetLocalInt(oLight, H2_NEEDS_OIL))
         return;
-    int timeEquipped = _GetLocalInt(oLight, H2_LIGHT_EQUIPPED);
+
+    string timeEquipped = _GetLocalString(oLight, H2_LIGHT_EQUIPPED);
     int elapsedBurn = _GetLocalInt(oLight, H2_ELAPSED_BURN);
-    int timeUnEquipped = h2_GetSecondsSinceServerStart();
-    elapsedBurn = elapsedBurn + (timeUnEquipped - timeEquipped);
+    elapsedBurn += FloatToInt(GetSystemTimeDifferenceIn(TIME_SECONDS, timeEquipped));
     _SetLocalInt(oLight, H2_ELAPSED_BURN, elapsedBurn);
+    
     int timerID = _GetLocalInt(oLight, H2_LIGHT_TIMERID);
     KillTimer(timerID);
-    //h2_KillTiimer(timerID);
+    _DeleteLocalInt(oPC, "TORCH_EQUIPPED");
+    Notice("Torch Equipped --> " + (_GetLocalInt(oPC, "TORCH_EQUIPPED") ? "TRUE":"FALSE"));
 }
 
 void h2_BurnOutLightSource(object oLight, int isLantern)
 {
     int timerID = _GetLocalInt(oLight, H2_LIGHT_TIMERID);
     KillTimer(timerID);
-    //h2_KillTimer(timerID);
+
     object oPC = _GetLocalObject(oLight, H2_EQUIPPINGPC);
     if (isLantern)
     {
@@ -137,6 +134,7 @@ void h2_BurnOutLightSource(object oLight, int isLantern)
     else
     {
         SendMessageToPC(oPC, H2_TEXT_TORCH_BURNED_OUT);
+        AssignCommand(oPC, ActionUnequipItem(oLight));
         DestroyObject(oLight);
     }
 }

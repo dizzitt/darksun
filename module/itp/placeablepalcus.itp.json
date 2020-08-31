@@ -202,6 +202,17 @@
                 "type": "dword",
                 "value": 68941
               }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Water Well"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "h2_waterwell"
+              }
             }
           ]
         },
@@ -313,6 +324,55 @@
               "ID": {
                 "type": "byte",
                 "value": 4
+              },
+              "LIST": {
+                "type": "list",
+                "value": [
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Campfire"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "h2_campfire"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Death Corpse"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "h2_deathcorpse"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Death Corpse"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "h2_deathcorpse2"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Dropped Items"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "h2_lootbag"
+                    }
+                  }
+                ]
               },
               "STRREF": {
                 "type": "dword",

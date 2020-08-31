@@ -1,21 +1,12 @@
 // -----------------------------------------------------------------------------
 //    File: corpse_i_events.nss
 //  System: PC Corpse (events)
-//     URL: 
-// Authors: Edward A. Burke (tinygiant) <af.hog.pilot@gmail.com>
 // -----------------------------------------------------------------------------
 // Description:
 //  Event functions for PW Subsystem.
 // -----------------------------------------------------------------------------
 // Builder Use:
 //  None!  Leave me alone.
-// -----------------------------------------------------------------------------
-// Acknowledgment:
-// -----------------------------------------------------------------------------
-//  Revision:
-//      Date:
-//    Author:
-//   Summary:
 // -----------------------------------------------------------------------------
 
 #include "corpse_i_main"
@@ -96,7 +87,6 @@ void corpse_OnPlayerDeath()
     object oPC = GetLastPlayerDied();
     object oArea = GetArea(oPC);
 
-    //if some other death subsystem set the player state back to alive before this one, no need to continue
     if (_GetLocalInt(oPC, H2_PLAYER_STATE) != H2_PLAYER_STATE_DEAD)
         return;
 
@@ -107,6 +97,40 @@ void corpse_OnPlayerDeath()
         h2_CreatePlayerCorpse(oPC);
 }
 
+void corpse_OnPlayerLives()
+{
+    object oPC = OBJECT_SELF;
+    string uniquePCID = _GetLocalString(oPC, H2_UNIQUE_PC_ID);
+    
+    object oDC = GetObjectByTag(H2_CORPSE_DC + uniquePCID);
+    if (GetIsObjectValid(oDC))
+    {
+        object oItem = GetFirstItemInInventory(oDC);
+        while (GetIsObjectValid(oItem))
+        {
+            DestroyObject(oItem);
+            oItem = GetNextItemInInventory(oDC);
+        }
+
+        DestroyObject(oDC);        
+    }
+
+    object oDeadPlayer = GetObjectByTag(H2_CORPSE + uniquePCID);
+    if (GetIsObjectValid(oDeadPlayer))
+    {
+        AssignCommand(oDeadPlayer, SetIsDestroyable(TRUE, FALSE));
+        DestroyObject(oDeadPlayer);
+    }
+
+    int i;
+    object oToken = GetObjectByTag(H2_CORPSE_TOKEN + uniquePCID, i++);
+    while (GetIsObjectValid(oToken))
+    {
+        DestroyObject(oToken);
+        oToken = GetObjectByTag(H2_CORPSE_TOKEN + uniquePCID, i++) ;
+    }
+}
+
 // ----- Tag-based Scripting -----
 
 void corpse_pccorpseitem()
@@ -115,21 +139,13 @@ void corpse_pccorpseitem()
     object oPC;
     object oItem;
 
-    // * This code runs when the Unique Power property of the item is used
-    // * Note that this event fires PCs only
     if (nEvent ==  X2_ITEM_EVENT_ACTIVATE)
-    {
         h2_CorpseTokenActivatedOnNPC();
-    }
-    // * This code runs when the item is acquired
-    // * Note that this event fires for PCs only
     else if (nEvent == X2_ITEM_EVENT_ACQUIRE)
     {
         oItem = GetModuleItemAcquired();
         h2_PickUpPlayerCorpse(oItem);
     }
-    // * This code runs when the item is unaquired
-    // * Note that this event fires for PCs only
     else if (nEvent == X2_ITEM_EVENT_UNACQUIRE)
     {
         oItem = GetModuleItemLost();
@@ -144,8 +160,6 @@ void corpse_pccorpseitem()
             DestroyObject(oItem);
         }
     }
-    //* This code runs when a PC or DM casts a spell from one of the
-    //* standard spellbooks on the item
     else if (nEvent == X2_ITEM_EVENT_SPELLCAST_AT)
     {
         int spellID = GetSpellId();

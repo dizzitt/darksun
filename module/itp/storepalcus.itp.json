@@ -9,6 +9,22 @@
           "type": "byte",
           "value": 5
         },
+        "LIST": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "RESREF": {
+                "type": "resref",
+                "value": "storgenral002"
+              },
+              "STRREF": {
+                "type": "dword",
+                "value": 14813
+              }
+            }
+          ]
+        },
         "STRREF": {
           "type": "dword",
           "value": 6789

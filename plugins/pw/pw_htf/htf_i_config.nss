@@ -1,8 +1,6 @@
 // -----------------------------------------------------------------------------
 //    File: htf_i_config.nss
 //  System: Hunger, Thirst, Fatigue (configuration)
-//     URL: 
-// Authors: Edward A. Burke (tinygiant) <af.hog.pilot@gmail.com>
 // -----------------------------------------------------------------------------
 // Description:
 //  Configuration File for PW Subsystem.
@@ -10,13 +8,7 @@
 // Builder Use:
 //  Set the variables below as directed in the comments for each variable.
 // -----------------------------------------------------------------------------
-// Acknowledgment:
-// -----------------------------------------------------------------------------
-//  Revision:
-//      Date:
-//    Author:
-//   Summary:
-// -----------------------------------------------------------------------------
+
 
 // -----------------------------------------------------------------------------
 //                                   Variables
@@ -29,7 +21,7 @@
 //  prevent duplication.  Either way, the original functionality of the system
 //  remains intact.
 
-// Although the systems are now combined, you can elect can use only one or the
+// Although the systems are now combined, you can elect to use only one or the
 //  other.
 const int H2_USE_HUNGERTHIRST_SYSTEM = FALSE;
 const int H2_USE_FATIGUE_SYSTEM = FALSE;

@@ -1,8 +1,6 @@
 // -----------------------------------------------------------------------------
 //    File: rest_i_config.nss
 //  System: Rest (configuration)
-//     URL: 
-// Authors: Edward A. Burke (tinygiant) <af.hog.pilot@gmail.com>
 // -----------------------------------------------------------------------------
 // Description:
 //  Configuration File for PW Subsystem.
@@ -10,17 +8,12 @@
 // Builder Use:
 //  Set the constants below as directed in the comments for each constant.
 // -----------------------------------------------------------------------------
-// Acknowledgment:
-// -----------------------------------------------------------------------------
-//  Revision:
-//      Date:
-//    Author:
-//   Summary:
-// -----------------------------------------------------------------------------
 
 // -----------------------------------------------------------------------------
 //                                   Variables
 // -----------------------------------------------------------------------------
+
+const int H2_USE_REST_SYSTEM = TRUE;
 
 //Minimum Time in real seconds that must pass since the last time a PC rested and
 //recovered spells, feats and health, for them to recover them again when they rest.
@@ -43,3 +36,8 @@ const int H2_SLEEP_EFFECTS = TRUE;
 //Set this to true to only allow resting inside designated trigger zones
 //or within 4 meters of a campfire.
 const int H2_REQUIRE_REST_TRIGGER_OR_CAMPFIRE = FALSE;
+
+//Set this to the number of game hours the campfire will burn once it's lit.  Additionally,
+//  using firewood on an existing campfire will add this amount of burn time to the
+//  campfire.
+const int H2_CAMPFIRE_BURN_TIME = 3;

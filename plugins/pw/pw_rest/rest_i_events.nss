@@ -1,21 +1,12 @@
 // -----------------------------------------------------------------------------
 //    File: rest_i_events.nss
 //  System: Rest (events)
-//     URL: 
-// Authors: Edward A. Burke (tinygiant) <af.hog.pilot@gmail.com>
 // -----------------------------------------------------------------------------
 // Description:
 //  Event functions for PW Subsystem.
 // -----------------------------------------------------------------------------
 // Builder Use:
 //  None!  Leave me alone.
-// -----------------------------------------------------------------------------
-// Acknowledgment:
-// -----------------------------------------------------------------------------
-//  Revision:
-//      Date:
-//    Author:
-//   Summary:
 // -----------------------------------------------------------------------------
 
 #include "x2_inc_switches"
@@ -70,11 +61,28 @@ void rest_firewood();
 
 // ----- Module Events -----
 
+void rest_OnClientEnter()
+{
+    object oPC = GetEnteringObject();
+    if (!_GetIsPC(oPC))
+        return;
+
+    h2_InitializeRecoveryRestTime(oPC);
+}
+
 void rest_OnPlayerRestStarted()
 {
     object oPC = GetLastPCRested();
-    int nRemainingTime = h2_RemainingTimeForRecoveryInRest(oPC);
-    int skipDialog = _GetLocalInt(oPC, H2_SKIP_REST_DIALOG);
+
+    if (!h2_GetAllowRest(oPC))
+        return;
+
+    int skipDialog, nRemainingTime = h2_RemainingTimeForRecoveryInRest(oPC);
+    if (!H2_USE_REST_DIALOG)
+        skipDialog = TRUE;
+    else
+        skipDialog = _GetLocalInt(oPC, H2_SKIP_REST_DIALOG);
+    
     if (H2_REQUIRE_REST_TRIGGER_OR_CAMPFIRE)
     {
         object oRestTrigger = _GetLocalObject(oPC, H2_REST_TRIGGER);
@@ -94,7 +102,7 @@ void rest_OnPlayerRestStarted()
         }
     }
 
-    if (nRemainingTime != 0)
+    if (nRemainingTime > 0)
     {
         if (!skipDialog)
         {
@@ -107,7 +115,7 @@ void rest_OnPlayerRestStarted()
         h2_SetPostRestHealAmount(oPC, 0);
     }
     else
-    {
+    {   
         if (skipDialog && H2_SLEEP_EFFECTS)
             h2_ApplySleepEffects(oPC);
         if (H2_HP_HEALED_PER_REST_PER_LEVEL > -1)

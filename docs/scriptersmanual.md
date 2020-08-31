@@ -78,11 +78,11 @@ As a general philosophy, and I cannot emphasize this enough, a scripter's job is
 
 ## Data Management System
 
-Determining the status of a character is one of the most common functions in nwscript.  To that end, we're provided alias functions for them to reduce code maintenance and help to quickly determine identities/functions.  Just about every script in the module should have an include reference to `dsutil_i_data`.  This script itself includes [`util_i_debug`](../framework/src/utils/util_i_debug.nss) and [`dsutil_i_comms`](../utilities/dsutil_i_comms), so including `dsutil_i_data` should provide you with a great portion of the functionality to set variables, determine identities, provide debug information and send messages around the module.
+Determining the status of a character is one of the most common functions in nwscript.  To that end, we're provided alias functions for them to reduce code maintenance and help to quickly determine identities/functions.  Just about every script in the module should have an include reference to `util_i_data`.  This script itself includes [`util_i_debug`](../framework/src/utils/util_i_debug.nss) and [`dsutil_i_comms`](../utilities/dsutil_i_comms), so including `util_i_data` should provide you with a great portion of the functionality to set variables, determine identities, provide debug information and send messages around the module.
 
 *Note: all wrapper functions intended to replace original Bioware functions should have the same name as the original Bioware function with an underscore in front of them, such as `_GetIsDM()`.  You can also use the underscore to denote a module-wide custom function, such as `_GetIsPartyMember()`.  Module-wide custom functions must be generally applicable to all areas of the module, not a specific subset or system.  Pull requests to change files that start with `dsutil_i_*` will probably not be accepted without extensive testing.  All wrapper functions that are still in testing or are candidates for module-wide use should start with a double-underscore to make them easily identifiable.*
 
-Here are the basic functions `dsutil_i_data` provides:
+Here are the basic functions `util_i_data` provides:
 * `_GetIsPC()` - a replacement for nwscript's `GetIsPC()`.  Our version determines whether the character is player-controlled (PC) and not a DM.  So if you're trying to determine if a player is a PC and not a DM, use this function.
 * `_GetIsDM()` - a replacement for nwscript's `GetIsDM()`.  Our version determines whether the passes character object is a DM or a DM possessing an NPC.
 * `_GetIsPartyMember()` - will return whether the first passed object is a party member of the second passed object.
@@ -91,13 +91,13 @@ It also provide variable handling methods, and show below.
 
 #### Variable Handling
 
-Dark Sun is not using the standard Bioware variable handling functions, at least publicly.  In `dsutil_i_data`, there are similar functions to handle all variables in a manner similar to Bioware's original functions, but allow us to change how variables are set in the future without modifying large amounts of code to change function names.  Any code that uses Bioware's variable handling procedures will either be changed or rejected.  Here's how the custom functions work:
+Dark Sun is not using the standard Bioware variable handling functions, at least publicly.  In `util_i_data`, there are similar functions to handle all variables in a manner similar to Bioware's original functions, but allow us to change how variables are set in the future without modifying large amounts of code to change function names.  Any code that uses Bioware's variable handling procedures will either be changed or rejected.  Here's how the custom functions work:
 
 * For PCs, pass the PC object as the first parameter and the functions will get/set/delete the variables off of the PC's item DATAPOINT per the normal methodology for HCR2 variable handling.
 * For the module, pass the `MODULE` object (literally -> `GetLocalInt(MODULE, ...);`).  The MODULE object is a module-wide pointer to the MODULE datapoint we're using to store module variables.  We are not storing module variables directly on the module object normally obtained by `GetModule()`.
 * For all other objects, just pass the arguments normally and the functions will handle the variables just as if they were using the standard Bioware functions
 
-To learn more and understand exactly how the functions work, open up [`dsutil_i_data`](../utilities/dsutil_i_data.nss) and take a look!  You can ignore the first few functions in the script, they are experimental.
+To learn more and understand exactly how the functions work, open up [`util_i_data`](../utilities/util_i_data.nss) and take a look!  You can ignore the first few functions in the script, they are experimental.
 
 ## Framework System
 

@@ -1,21 +1,12 @@
 // -----------------------------------------------------------------------------
 //    File: htf_l_plugin.nss
 //  System: Hunger Thirst Fatigue (library)
-//     URL: 
-// Authors: Edward A. Burke (tinygiant) <af.hog.pilot@gmail.com>
 // -----------------------------------------------------------------------------
 // Description:
 //  Library functions for PW Subsystem
 // -----------------------------------------------------------------------------
 // Builder Use:
 //  None!  Leave me alone.
-// -----------------------------------------------------------------------------
-// Acknowledgment:
-// -----------------------------------------------------------------------------
-//  Revision:
-//      Date:
-//    Author:
-//   Summary:
 // -----------------------------------------------------------------------------
 
 #include "util_i_library"
@@ -40,6 +31,8 @@ void OnLibraryLoad()
         RegisterEventScripts(oPlugin, MODULE_EVENT_ON_CLIENT_ENTER,         "hungerthirst_OnClientEnter",        4.0);
         RegisterEventScripts(oPlugin, MODULE_EVENT_ON_PLAYER_DEATH,         "hungerthirst_OnPlayerDeath",        4.0);
         RegisterEventScripts(oPlugin, MODULE_EVENT_ON_PLAYER_REST_FINISHED, "hungerthirst_OnPlayerRestFinished", 4.0);
+        RegisterEventScripts(oPlugin, TRIGGER_EVENT_ON_ENTER,               "hungerthirst_OnTriggerEnter",       4.0);
+        RegisterEventScripts(oPlugin, TRIGGER_EVENT_ON_EXIT,                "hungerthirst_OnTriggerExit",        4.0);
         
         // ----- Timer Events -----
         RegisterEventScripts(oPlugin, H2_HT_ON_TIMER_EXPIRE,                "htf_ht_OnTimerExpire",              4.0);
@@ -61,6 +54,8 @@ void OnLibraryLoad()
         RegisterLibraryScript("hungerthirst_OnClientEnter",         1);
         RegisterLibraryScript("hungerthirst_OnPlayerDeath",         2);
         RegisterLibraryScript("hungerthirst_OnPlayerRestFinished",  3);
+        RegisterLibraryScript("hungerthirst_OnTriggerEnter",        11);
+        RegisterLibraryScript("hungerthirst_OnTriggerExit",         12);
         
         // ----- Timer Events -----
         RegisterLibraryScript("htf_ht_OnTimerExpire",               8);
@@ -98,6 +93,8 @@ void OnLibraryScript(string sScript, int nEntry)
         case 3:  hungerthirst_OnPlayerRestFinished(); break;
         case 4:  fatigue_OnClientEnter();             break;
         case 5:  fatigue_OnPlayerRestFinished();      break;
+        case 11: hungerthirst_OnTriggerEnter();       break;
+        case 12: hungerthirst_OnTriggerExit();        break;
 
         // ----- Tag-based Scripting -----
         case 6:  htf_canteen();                       break;

@@ -1,8 +1,6 @@
 // -----------------------------------------------------------------------------
 //    File: crowd_i_events.nss
 //  System: Simulated Population (events)
-//     URL: 
-// Authors: Edward A. Burke (tinygiant) <af.hog.pilot@gmail.com>
 // -----------------------------------------------------------------------------
 // Description:
 //  Event functions for PW Subsystem.
@@ -10,17 +8,11 @@
 // Builder Use:
 //  None!  Leave me alone.
 // -----------------------------------------------------------------------------
-// Acknowledgment:
-// -----------------------------------------------------------------------------
-//  Revision:
-//      Date:
-//    Author:
-//   Summary:
-// -----------------------------------------------------------------------------
+
 
 #include "crowd_i_main"
-#include "dsutil_i_data"
-#include "dsutil_i_map"
+#include "util_i_data"
+#include "util_i_map"
 
 // -----------------------------------------------------------------------------
 //                              Function Prototypes
@@ -102,6 +94,9 @@ void crowd_OnAreaExit()
 {
     dbg = sDebugPlugin + "crowd_OnAreaExit:: ";
     Debug(dbg);
+
+    if (!_GetLocalInt(CROWDS, CROWD_ITEM_INITIALIZED))
+        return;
 
     object oPC = GetExitingObject();
     if (!_GetIsPC(oPC))

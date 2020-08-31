@@ -20,6 +20,44 @@
           "type": "byte",
           "value": 6
         },
+        "LIST": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Hunger Thirst Trigger"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "h2_httrigger"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Rest Zone Trigger"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "h2_resttrigger1"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Rest Zone Trigger  (ignore minimum time)"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "h2_resttrigger"
+              }
+            }
+          ]
+        },
         "STRREF": {
           "type": "dword",
           "value": 6790
