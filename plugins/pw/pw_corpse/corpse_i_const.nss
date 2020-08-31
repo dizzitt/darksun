@@ -1,21 +1,12 @@
 // -----------------------------------------------------------------------------
 //    File: corpse_i_const.nss
 //  System: PC Corpse (constants)
-//     URL: 
-// Authors: Edward A. Burke (tinygiant) <af.hog.pilot@gmail.com>
 // -----------------------------------------------------------------------------
 // Description:
 //  Constants for PW Subsystem.
 // -----------------------------------------------------------------------------
 // Builder Use:
 //  None!  Leave me alone.
-// -----------------------------------------------------------------------------
-// Acknowledgment:
-// -----------------------------------------------------------------------------
-//  Revision:
-//      Date:
-//    Author:
-//   Summary:
 // -----------------------------------------------------------------------------
 
 // -----------------------------------------------------------------------------
@@ -33,4 +24,6 @@ const string H2_DEAD_PLAYER_ID = "H2_DEAD_PLAYER_ID";
 const string H2_PCCORPSE_ITEM_ACTIVATOR = "H2_PCCORPSE_ITEM_ACTIVATOR";
 const string H2_PCCORPSE_ITEM_ACTIVATED = "H2_PCCORPSE_ITEM_ACTIVATED";
 const string H2_CORPSE = "H2_CORPSE";
+const string H2_CORPSE_DC = "H2_CORPSE_DC";
 const string H2_LAST_DROP_LOCATION = "H2_LAST_DROP_LOCATION";
+const string H2_CORPSE_TOKEN = "H2_CORPSE_TOKEN";

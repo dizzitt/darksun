@@ -1,8 +1,6 @@
 // -----------------------------------------------------------------------------
 //    File: torch_i_config.nss
 //  System: Torch and Lantern (configuration)
-//     URL: 
-// Authors: Edward A. Burke (tinygiant) <af.hog.pilot@gmail.com>
 // -----------------------------------------------------------------------------
 // Description:
 //  Configuration File for PW Subsystem.
@@ -10,17 +8,13 @@
 // Builder Use:
 //  Set the variables below as directed in the comments for each variable.
 // -----------------------------------------------------------------------------
-// Acknowledgment:
-// -----------------------------------------------------------------------------
-//  Revision:
-//      Date:
-//    Author:
-//   Summary:
-// -----------------------------------------------------------------------------
 
 // -----------------------------------------------------------------------------
 //                                   Variables
 // -----------------------------------------------------------------------------
+
+// Set this to false if you don't want to use the torch system.
+const int H2_USE_TORCH_SYSTEM = TRUE;
 
 //Time in real-life seconds before a torch burns out.
 //PHB rules is 1 hours of burn time.
@@ -37,6 +31,7 @@ const int H2_TORCH_BURN_COUNT = 3600;
 //(which means a lantern would run out of oil in 12 RL minutes)
 const int H2_LANTERN_BURN_COUNT = 21600;
 
+//TODO add lantern item to system?
 //The tag of your lantern object
 //If you change this be sure to save a new copy of h2_lantern
 //as the new tag name to preserve functionality
@@ -46,3 +41,6 @@ const string H2_LANTERN = "h2_lantern";
 //If you change this be sure to save a new copy of h2_oilflask
 //as the new tag name to preserve functionality
 const string H2_OILFLASK = "h2_oilflask";
+
+//The tag of your torch object
+const string H2_TORCH = "h2_torch";

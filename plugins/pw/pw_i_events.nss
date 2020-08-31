@@ -1,8 +1,6 @@
 // -----------------------------------------------------------------------------
 //    File: pw_i_events.nss
 //  System: PW Administration (events)
-//     URL: 
-// Authors: Edward A. Burke (tinygiant) <af.hog.pilot@gmail.com>
 // -----------------------------------------------------------------------------
 // Description:
 //  Event functions for PW Subsystem.
@@ -10,20 +8,54 @@
 // Builder Use:
 //  None!  Leave me alone.
 // -----------------------------------------------------------------------------
-// Acknowledgment:
-// -----------------------------------------------------------------------------
-//  Revision:
-//      Date:
-//    Author:
-//   Summary:
-// -----------------------------------------------------------------------------
 
 #include "x2_inc_switches"
 #include "pw_i_core"
+#include "core_i_constants"
+#include "core_c_config"
 
 // -----------------------------------------------------------------------------
 //                              Function Prototypes
 // -----------------------------------------------------------------------------
+
+// ---< pw_OnModuleLoad >---
+void pw_OnModuleLoad();
+
+// ---< pw_OnModuleHeartbeat >---
+void pw_OnModuleHeartbeat();
+
+// ---< pw_OnClientEnter >---
+void pw_OnClientEnter();
+
+// ---< pw_OnClientLeave >---
+void pw_OnClientLeave();
+
+// ---< pw_OnPlayerDying >---
+void pw_OnPlayerDying();
+
+// ---< pw_OnPlayerDeath >---
+void pw_OnPlayerDeath();
+
+// ---< pw_OnPlayerReSpawn >---
+void pw_OnPlayerReSpawn();
+
+// ---< pw_OnPlayerLevelUp >---
+void pw_OnPlayerLevelUp();
+
+// ---< pw_OnPlayerRest >---
+void pw_OnPlayerRest();
+
+// ---< pw_playerdataitem >---
+// Tag based scripting for the player-data item.
+void pw_playerdataitem();
+
+// ---< pw_ExportPCs_OnTimerExpire >---
+// Timer expiration event for exporting PCs.
+void pw_ExportPCs_OnTimerExpire();
+
+// ---< pw_SavePCLocation_OnTimerExpire >---
+// Timer expiration event for saving PC location.
+void pw_SavePCLocation_OnTimerExpire();
 
 // -----------------------------------------------------------------------------
 //                             Function Definitions
@@ -33,39 +65,31 @@
 
 void pw_OnModuleLoad()
 {
-    //h2_InitializeDatabase();
-    
-    
-    h2_CreateCoreDataPoint();
-    // ^--- need to change this to use a predefined one unless one doesn't exist, so
-    //  we can use a visual datacenter.
-    
+    h2_SaveServerEpoch();
     h2_RestoreSavedCalendar();
-
-    h2_SaveServerStartTime();  //<--- to core data point
-    //h2_CopyEventVariablesToCoreDataPoint();
-    h2_StartCharExportTimer();  //<--- uses timers, fix!
-    //_SetLocalString(GetModule(), MODULE_VAR_OVERRIDE_SPELLSCRIPT, H2_SPELLHOOK_EVENT_SCRIPT);
-    //Where does spellhook get set in core-framework
+    h2_SaveServerStartTime();
+    h2_StartCharExportTimer();
+    h2_StartSavePCLocationTimer();
 }
 
 void pw_OnModuleHeartbeat()
 {
-    // Forced time update.
     if (H2_FORCE_CLOCK_UPDATE)
         SetTime(GetTimeHour(), GetTimeMinute(), GetTimeSecond(), GetTimeMillisecond());
+    
     h2_SaveCurrentCalendar();
 }
 
 void pw_OnClientEnter()
 {
     object oPC = GetEnteringObject();
-    int bIsDM = _GetIsDM(oPC);
+    h2_CreatePlayerDataItem(oPC);
 
+    int bIsDM = _GetIsDM(oPC);
     int iNameLength = GetStringLength(GetName(oPC));
     if (iNameLength > H2_MAX_LENGTH_PCNAME)
     {
-        _SetLocalInt(oPC, H2_LOGIN_BOOT, TRUE);
+        _SetLocalInt(oPC, LOGIN_BOOT, TRUE);
         h2_BootPlayer(oPC, H2_TEXT_PCNAME_TOO_LONG);
         return;
     }
@@ -75,21 +99,21 @@ void pw_OnClientEnter()
     
     if (sBannedByCDKey != "" || sBannedByIPAddress != "")
     {
-        _SetLocalInt(oPC, H2_LOGIN_BOOT, TRUE);
+        _SetLocalInt(oPC, LOGIN_BOOT, TRUE);
         h2_BootPlayer(oPC, H2_TEXT_YOU_ARE_BANNED);
         return;
     }
 
     if (!bIsDM && h2_MaximumPlayersReached())
     {
-        _SetLocalInt(oPC, H2_LOGIN_BOOT, TRUE);
+        _SetLocalInt(oPC, LOGIN_BOOT, TRUE);
         h2_BootPlayer(oPC, H2_TEXT_SERVER_IS_FULL, 10.0);
         return;
     }
 
     if (!bIsDM && _GetLocalInt(MODULE, H2_MODULE_LOCKED))
     {
-        _SetLocalInt(oPC, H2_LOGIN_BOOT, TRUE);
+        _SetLocalInt(oPC, LOGIN_BOOT, TRUE);
         h2_BootPlayer(oPC, H2_TEXT_MODULE_LOCKED, 10.0);
         return;
     }
@@ -97,7 +121,7 @@ void pw_OnClientEnter()
     int iPlayerState = _GetLocalInt(oPC, H2_PLAYER_STATE);
     if (!bIsDM && iPlayerState == H2_PLAYER_STATE_RETIRED)
     {
-        _SetLocalInt(oPC, H2_LOGIN_BOOT, TRUE);
+        _SetLocalInt(oPC, LOGIN_BOOT, TRUE);
         h2_BootPlayer(oPC, H2_TEXT_RETIRED_PC_BOOT, 10.0);
         return;
     }
@@ -107,41 +131,35 @@ void pw_OnClientEnter()
         int registeredCharCount = GetDatabaseInt(GetPCPlayerName(oPC) + H2_REGISTERED_CHAR_SUFFIX);
         if (registeredCharCount >= H2_REGISTERED_CHARACTERS_ALLOWED)
         {
-            _SetLocalInt(oPC, H2_LOGIN_BOOT, TRUE);
+            _SetLocalInt(oPC, LOGIN_BOOT, TRUE);
             h2_BootPlayer(oPC, H2_TEXT_TOO_MANY_CHARS_BOOT, 10.0);
             return;
         }
     }
-    if (!bIsDM)
-    {
-        int iPlayerCount = _GetLocalInt(MODULE, H2_PLAYER_COUNT);
-        _SetLocalInt(MODULE, H2_PLAYER_COUNT, iPlayerCount + 1);
-    }
-
-    _SetLocalString(oPC, H2_PC_PLAYER_NAME ,GetPCPlayerName(oPC));
+    
+    _SetLocalString(oPC, H2_PC_PLAYER_NAME, GetPCPlayerName(oPC));
     _SetLocalString(oPC, H2_PC_CD_KEY, GetPCPublicCDKey(oPC));
-    h2_CreatePlayerDataItem(oPC);
 
-    string sCurrentGameTime = h2_GetCurrentGameTime(H2_SHOW_DAY_BEFORE_MONTH_IN_LOGIN);
-    SendMessageToPC(oPC, sCurrentGameTime);
     if (!bIsDM)
     {
         h2_SetPlayerID(oPC);
         h2_InitializePC(oPC);
     }
+
+    string sTime = FormatSystemTime("h:mmtt on dddd, MMMM d, yyyy", GetSystemTime());
+    string sMessage = "Welcome to Middle Earth.  Today is " + sTime;
+    SendMessageToPC(oPC, sMessage);
 }
 
 void pw_OnClientLeave()
 {
     object oPC = GetExitingObject();
-    if (_GetLocalInt(oPC, H2_LOGIN_BOOT))
+
+    if (_GetLocalInt(oPC, LOGIN_BOOT))
         return;
+
     if (!_GetIsDM(oPC))
-    {
-        int iPlayerCount = _GetLocalInt(MODULE, H2_PLAYER_COUNT);
-        _SetLocalInt(MODULE, H2_PLAYER_COUNT, iPlayerCount - 1);
         h2_SavePersistentPCData(oPC);
-    }
 }
 
 void pw_OnPlayerDying()
@@ -170,11 +188,13 @@ void pw_OnPlayerReSpawn()
 {
     object oPC = GetLastRespawnButtonPresser();
     _SetLocalInt(oPC, H2_PLAYER_STATE, H2_PLAYER_STATE_ALIVE);
+    RunEvent(H2_EVENT_ON_PLAYER_LIVES, oPC, oPC);
 }
 
 void pw_OnPlayerLevelUp()
 {
     object oPC = GetPCLevellingUp();
+
     if (H2_EXPORT_CHARACTERS_INTERVAL > 0.0)
         ExportSingleCharacter(oPC);
 }
@@ -182,67 +202,54 @@ void pw_OnPlayerLevelUp()
 void pw_OnPlayerRest()
 {
     object oPC = GetLastPCRested();
-    SendMessageToPC(oPC, "REST MESSAGE FROM PLUGIN.");
-    
+
+    h2_SetAllowRest(oPC, TRUE);
+    h2_SetAllowSpellRecovery(oPC, TRUE);
+    h2_SetAllowFeatRecovery(oPC, TRUE);
+    h2_SetPostRestHealAmount(oPC, GetMaxHitPoints(oPC));
+}
+
+void pw_OnPlayerRestStarted()
+{
+    // This function should be the last RestStarted function to run.
+    //  Builders should build their procedure to set whether or not
+    //  the PC is allowed to rest by setting h2_SetAllowRest (assumed
+    //  true) and letting that permission to flow through to this function.
+    // Specifically, do not use SetEventState to change the flow of the
+    //  rest system ... allow this function to do that.
+    // If you set h2_SetAllowRest to false, cancellation events will not run.
+
+    object oPC = GetLastPCRested();
+
+    if (h2_GetAllowRest(oPC) && !_GetLocalInt(oPC, H2_SKIP_REST_DIALOG) && H2_USE_REST_DIALOG)
+        h2_OpenRestDialog(oPC);
+    else if (!h2_GetAllowRest(oPC))
+    {
+        _SetLocalInt(oPC, H2_SKIP_CANCEL_REST, TRUE);
+        AssignCommand(oPC, ClearAllActions());
+        SendMessageToPC(oPC, H2_TEXT_REST_NOT_ALLOWED_HERE);
+    }
+
+    _DeleteLocalInt(oPC, H2_SKIP_REST_DIALOG);
+}
+
+void pw_OnPlayerRestCancelled()
+{
+    object oPC = GetLastPCRested();
+
+    if (_GetLocalInt(oPC, H2_SKIP_CANCEL_REST))
+        SetEventState(EVENT_STATE_ABORT);
+
+    _DeleteLocalInt(oPC, H2_SKIP_CANCEL_REST);
+}
+
+void pw_OnPlayerRestFinished()
+{
+    object oPC = GetLastPCRested();
+
     if (H2_EXPORT_CHARACTERS_INTERVAL > 0.0)
         ExportSingleCharacter(oPC);
-    int nRestEventType = GetLastRestEventType();
-    int i;
-    switch (nRestEventType)
-    {
-        case REST_EVENTTYPE_REST_STARTED:
-            h2_SetAllowRest(oPC, TRUE);
-            h2_SetAllowSpellRecovery(oPC, TRUE);
-            h2_SetAllowFeatRecovery(oPC, TRUE);
-            h2_SetPostRestHealAmount(oPC, GetMaxHitPoints(oPC));
-            _DeleteLocalInt(oPC, H2_PLAYER_REST_MENU_INDEX);
-            for (i = 1; i <= 10; i++) //Wipe out existing Rest Menu options
-            {
-                _DeleteLocalString(oPC, H2_PLAYER_REST_MENU_ITEM_TEXT + IntToString(i));
-                _DeleteLocalString(oPC, H2_PLAYER_REST_MENU_ACTION_SCRIPT + IntToString(i));
-            }
-            //Re-add the default rest menu item.
-            h2_AddRestMenuItem(oPC, H2_REST_MENU_DEFAULT_TEXT);
-            if (h2_GetAllowRest(oPC) && !_GetLocalInt(oPC, H2_SKIP_REST_DIALOG))
-                h2_OpenRestDialog(oPC);
-            else if (!h2_GetAllowRest(oPC))
-            {
-                _SetLocalInt(oPC, H2_SKIP_CANCEL_REST, TRUE);
-                AssignCommand(oPC, ClearAllActions());
-                SendMessageToPC(oPC, H2_TEXT_REST_NOT_ALLOWED_HERE);
-            }
-            _DeleteLocalInt(oPC, H2_SKIP_REST_DIALOG);
-            break;
-        case REST_EVENTTYPE_REST_CANCELLED:
-            if (!_GetLocalInt(oPC, H2_SKIP_CANCEL_REST))
-            _DeleteLocalInt(oPC, H2_SKIP_CANCEL_REST);
-            break;
-        case REST_EVENTTYPE_REST_FINISHED:
-            break;
-    }
 }
-
-// ---- Area Events -----
-
-void pw_OnAreaEnter()
-{
-    if (_GetIsPC(GetEnteringObject()))
-    {
-        int playercount = _GetLocalInt(OBJECT_SELF, H2_PLAYERS_IN_AREA);
-        _SetLocalInt(OBJECT_SELF, H2_PLAYERS_IN_AREA, playercount + 1);
-    }
-}
-
-void pw_OnAreaExit()
-{
-    if (_GetIsPC(GetExitingObject()))
-    {
-        int playercount = _GetLocalInt(OBJECT_SELF, H2_PLAYERS_IN_AREA);
-        _SetLocalInt(OBJECT_SELF, H2_PLAYERS_IN_AREA, playercount - 1);
-    }
-}
-
-// ----- Placeable Events -----
 
 void pw_OnPlaceableHeartbeat()
 {
@@ -263,7 +270,8 @@ void pw_playerdataitem()
         object oPC = GetItemActivator();
         _SetLocalObject(oPC, H2_PLAYER_DATA_ITEM_TARGET_OBJECT, GetItemActivatedTarget());
         _SetLocalLocation(oPC, H2_PLAYER_DATA_ITEM_TARGET_LOCATION, GetItemActivatedTargetLocation());
-        AssignCommand(oPC, ActionStartConversation(oPC, H2_PLAYER_DATA_ITEM_CONV, TRUE, FALSE));
+        //TODO conversation for playerdataitem?
+        //AssignCommand(oPC, ActionStartConversation(oPC, H2_PLAYER_DATA_ITEM_CONV, TRUE, FALSE));
     }
 }
 
@@ -276,9 +284,13 @@ void pw_ExportPCs_OnTimerExpire()
 
 void pw_SavePCLocation_OnTimerExpire()
 {
-    if (GetIsObjectValid(OBJECT_SELF) && _GetIsPC(OBJECT_SELF))
+    object oPlayer, oModule = GetModule();
+    int i, nCount = CountObjectList(GetModule(), PLAYER_ROSTER);
+
+    for (i = 0; i < nCount; i++)
     {
-        location loc = GetLocation(OBJECT_SELF);
-        h2_SavePCLocation(OBJECT_SELF);
+        oPlayer = GetListObject(oModule, i, PLAYER_ROSTER);
+        if (GetIsObjectValid(oPlayer) && _GetIsPC(oPlayer))
+            h2_SavePCLocation(oPlayer);
     }
 }

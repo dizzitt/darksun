@@ -1,21 +1,12 @@
 // -----------------------------------------------------------------------------
 //    File: rest_l_plugin.nss
 //  System: Rest (library)
-//     URL: 
-// Authors: Edward A. Burke (tinygiant) <af.hog.pilot@gmail.com>
 // -----------------------------------------------------------------------------
 // Description:
 //  Library functions for PW Subsystem
 // -----------------------------------------------------------------------------
 // Builder Use:
 //  None!  Leave me alone.
-// -----------------------------------------------------------------------------
-// Acknowledgment:
-// -----------------------------------------------------------------------------
-//  Revision:
-//      Date:
-//    Author:
-//   Summary:
 // -----------------------------------------------------------------------------
 
 #include "util_i_library"
@@ -29,12 +20,16 @@
 
 void OnLibraryLoad()
 {
+    if (!H2_USE_REST_SYSTEM)
+        return;
+
     object oPlugin = GetPlugin("pw");
 
     // ----- Module Events -----
     RegisterEventScripts(oPlugin, MODULE_EVENT_ON_PLAYER_REST_CANCELLED, "rest_OnPlayerRestCancelled", 4.0);
     RegisterEventScripts(oPlugin, MODULE_EVENT_ON_PLAYER_REST_FINISHED,  "rest_OnPlayerRestFinished",  4.0);
     RegisterEventScripts(oPlugin, MODULE_EVENT_ON_PLAYER_REST_STARTED,   "rest_OnPlayerRestStarted",   4.0);
+    RegisterEventScripts(oPlugin, MODULE_EVENT_ON_CLIENT_ENTER,          "rest_OnClientEnter",         4.0);
 
     // ----- Custom Events -----
     if (H2_REQUIRE_REST_TRIGGER_OR_CAMPFIRE)
@@ -47,6 +42,7 @@ void OnLibraryLoad()
     RegisterLibraryScript("rest_OnPlayerRestCancelled", 1);
     RegisterLibraryScript("rest_OnPlayerRestFinished",  2);
     RegisterLibraryScript("rest_OnPlayerRestStarted",   3);
+    RegisterLibraryScript("rest_OnClientEnter",         0);
 
     // ----- Custom Events -----
     if (H2_REQUIRE_REST_TRIGGER_OR_CAMPFIRE)
@@ -67,6 +63,7 @@ void OnLibraryScript(string sScript, int nEntry)
         case 1: rest_OnPlayerRestCancelled(); break;
         case 2: rest_OnPlayerRestFinished();  break;
         case 3: rest_OnPlayerRestStarted();   break;
+        case 0: rest_OnClientEnter();         break;
 
         // ----- Custom Events -----
         case 4: rest_OnTriggerEnter();        break;

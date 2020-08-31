@@ -1,8 +1,6 @@
 // -----------------------------------------------------------------------------
 //    File: htf_i_text.nss
 //  System: Hunger, Thirst, Fatigue (text/language)
-//     URL: 
-// Authors: Edward A. Burke (tinygiant) <af.hog.pilot@gmail.com>
 // -----------------------------------------------------------------------------
 // Description:
 //  Text/Language Constants for PW Subsystem
@@ -12,13 +10,7 @@
 //  another file and include it instead of this file, as long as the constant
 //  string names are identical.
 // -----------------------------------------------------------------------------
-// Acknowledgment:
-// -----------------------------------------------------------------------------
-//  Revision:
-//      Date:
-//    Author:
-//   Summary:
-// -----------------------------------------------------------------------------
+
 
 // -----------------------------------------------------------------------------
 //                                   Constants

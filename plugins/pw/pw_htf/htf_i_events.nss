@@ -1,21 +1,12 @@
 // -----------------------------------------------------------------------------
 //    File: htf_i_events.nss
 //  System: Hunger, Thirst, Fatigue (events)
-//     URL: 
-// Authors: Edward A. Burke (tinygiant) <af.hog.pilot@gmail.com>
 // -----------------------------------------------------------------------------
 // Description:
 //  Event functions for PW Subsystem.
 // -----------------------------------------------------------------------------
 // Builder Use:
 //  None!  Leave me alone.
-// -----------------------------------------------------------------------------
-// Acknowledgment:
-// -----------------------------------------------------------------------------
-//  Revision:
-//      Date:
-//    Author:
-//   Summary:
 // -----------------------------------------------------------------------------
 
 #include "x2_inc_switches"
@@ -53,7 +44,6 @@ void hungerthirst_OnPlayerDeath()
     _DeleteLocalFloat(oPC, H2_HT_CURR_ALCOHOL);
     int timerID = _GetLocalInt(oPC, H2_HT_DRUNK_TIMERID);
     KillTimer(timerID);
-    //h2_KillTimer(timerID);
     _DeleteLocalInt(oPC, H2_HT_DRUNK_TIMERID);
     _DeleteLocalInt(oPC, H2_HT_IS_DEHYDRATED);
     _DeleteLocalInt(oPC, H2_HT_IS_STARVING);
@@ -67,7 +57,6 @@ void hungerthirst_OnPlayerRestFinished()
     _DeleteLocalFloat(oPC, H2_HT_CURR_ALCOHOL);
     int timerID = _GetLocalInt(oPC, H2_HT_DRUNK_TIMERID);
     KillTimer(timerID);
-    //h2_KillTimer(timerID);
     _DeleteLocalInt(oPC, H2_HT_DRUNK_TIMERID);
 }
 
@@ -90,6 +79,18 @@ void htf_OnPlaceableUsed()
     SendMessageToPC(oPC, H2_TEXT_TAKE_A_DRINK);
     AssignCommand(oPC, ActionPlayAnimation(ANIMATION_FIREFORGET_DRINK));
     h2_ConsumeFoodItem(oPC, OBJECT_SELF);
+}
+
+void hungerthirst_OnTriggerEnter()
+{
+    object oPC = GetEnteringObject();
+    SetLocalObject(oPC, H2_HT_TRIGGER, OBJECT_SELF);
+}
+
+void hungerthirst_OnTriggerExit()
+{
+    object oPC = GetExitingObject();
+    DeleteLocalObject(oPC, H2_HT_TRIGGER);
 }
 
 // ----- Tag-based Scripting -----

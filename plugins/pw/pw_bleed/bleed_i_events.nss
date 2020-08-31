@@ -1,21 +1,12 @@
 // -----------------------------------------------------------------------------
 //    File: bleed_i_events.nss
 //  System: Bleed Persistent World Subsystem (events)
-//     URL: 
-// Authors: Edward A. Burke (tinygiant) <af.hog.pilot@gmail.com>
 // -----------------------------------------------------------------------------
 // Description:
 //  Event functions for PW Subsystem
 // -----------------------------------------------------------------------------
 // Builder Use:
 //  None!  Leave me alone.
-// -----------------------------------------------------------------------------
-// Acknowledgment:
-// -----------------------------------------------------------------------------
-//  Revision:
-//      Date:
-//    Author:
-//   Summary:
 // -----------------------------------------------------------------------------
 
 #include "x2_inc_switches"
@@ -82,6 +73,18 @@ void bleed_OnPlayerRestStarted()
     }
 }
 
+void bleed_OnPlayerDeath()
+{
+    object oPC = GetLastPlayerDied();
+    int timerID = _GetLocalInt(oPC, H2_BLEED_TIMER_ID);
+
+    if (timerID)
+    {
+        _DeleteLocalInt(oPC, H2_BLEED_TIMER_ID);
+        KillTimer(timerID);
+    }
+}
+
 void bleed_OnPlayerDying()
 {
     object oPC = GetLastPlayerDying();
@@ -102,6 +105,7 @@ void bleed_healwidget()
         object oTarget = GetItemActivatedTarget();
         if (GetObjectType(oTarget) != OBJECT_TYPE_CREATURE)
             return;
+            
         h2_UseHealWidgetOnTarget(oTarget);
     }
 }
@@ -119,7 +123,6 @@ void bleed_OnTimerExpire()
         _DeleteLocalInt(oPC, H2_BLEED_TIMER_ID);
         _DeleteLocalInt(oPC, H2_TIME_OF_LAST_BLEED_CHECK);
         KillTimer(nTimerID);
-        //h2_KillTimer(nTimerID);
     }
     else
     {
@@ -129,16 +132,16 @@ void bleed_OnTimerExpire()
             h2_MakePlayerFullyRecovered(oPC);
             return;
         }
+
         int nLastHitPoints = _GetLocalInt(oPC, H2_LAST_HIT_POINTS);
         if (nCurrHitPoints > nLastHitPoints)
         {
             h2_StabilizePlayer(oPC);
             return;
         }
+
         if (nCurrHitPoints > -10)
-        {
             h2_CheckForSelfStabilize(oPC);
-        }
         else
         {
             _SetLocalInt(oPC, H2_PLAYER_STATE, H2_PLAYER_STATE_DEAD);

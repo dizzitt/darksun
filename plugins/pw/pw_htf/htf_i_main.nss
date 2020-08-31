@@ -1,8 +1,6 @@
 // -----------------------------------------------------------------------------
 //    File: htf_i_main.nss
 //  System: Hunger, Thirst, Fatigue (core)
-//     URL: 
-// Authors: Edward A. Burke (tinygiant) <af.hog.pilot@gmail.com>
 // -----------------------------------------------------------------------------
 // Description:
 //  Core functions for PW Subsystem.
@@ -10,18 +8,13 @@
 // Builder Use:
 //  None!  Leave me alone.
 // -----------------------------------------------------------------------------
-// Acknowledgment:
-// -----------------------------------------------------------------------------
-//  Revision:
-//      Date:
-//    Author:
-//   Summary:
-// -----------------------------------------------------------------------------
 
 #include "pw_i_core"
 #include "htf_i_const"
 #include "htf_i_config"
 #include "htf_i_text"
+#include "util_i_color"
+#include "util_i_libraries"
 
 // -----------------------------------------------------------------------------
 //                              Function Prototypes
@@ -39,7 +32,6 @@ float h2_GetHungerDecrement()
 float h2_GetThirstDecrement(object oPC)
 {
     int conScore = GetAbilityScore(oPC, ABILITY_CONSTITUTION, TRUE);
-
     return 1.0 / (H2_HT_BASE_THIRST_HOURS + conScore);
 }
 
@@ -49,13 +41,13 @@ void h2_DisplayHTInfoBars(object oPC)
 
     int thirstCount = FloatToInt(_GetLocalFloat(oPC, H2_HT_CURR_THIRST) * 100.0);
     int hungerCount = FloatToInt(_GetLocalFloat(oPC, H2_HT_CURR_HUNGER) * 100.0);
-    
-    string greenBar = StringToRGBString(GetSubString(H2_HT_INFO_BAR, 0, hungerCount), H2_HT_COLOR_GREEN);
-    string redBar = StringToRGBString(GetSubString(H2_HT_INFO_BAR, hungerCount, 100 -  hungerCount), H2_HT_COLOR_RED);
+
+    string greenBar = HexColorString(GetSubString(H2_HT_INFO_BAR, 0, hungerCount), H2_HT_COLOR_GREEN);
+    string redBar = HexColorString(GetSubString(H2_HT_INFO_BAR, hungerCount, 100 -  hungerCount), H2_HT_COLOR_RED);
     SendMessageToPC(oPC, H2_TEXT_HUNGER + greenBar + redBar);
     
-    greenBar = StringToRGBString(GetSubString(H2_HT_INFO_BAR, 0, thirstCount), H2_HT_COLOR_GREEN);
-    redBar = StringToRGBString(GetSubString(H2_HT_INFO_BAR, thirstCount, 100 - thirstCount), H2_HT_COLOR_RED);
+    greenBar = HexColorString(GetSubString(H2_HT_INFO_BAR, 0, thirstCount), H2_HT_COLOR_GREEN);
+    redBar = HexColorString(GetSubString(H2_HT_INFO_BAR, thirstCount, 100 - thirstCount), H2_HT_COLOR_RED);
     SendMessageToPC(oPC, H2_TEXT_THIRST + greenBar + redBar);
 }
 
@@ -66,11 +58,8 @@ void h2_InitHungerThirstCheck(object oPC)
     if (!_GetLocalInt(oPC, H2_HT_IS_STARVING) && _GetLocalFloat(oPC, H2_HT_CURR_HUNGER) == 0.0)
         _SetLocalFloat(oPC, H2_HT_CURR_HUNGER, 1.0);
 
-    int timerID = CreateTimer(oPC, H2_HT_ON_TIMER_EXPIRE, 120.0, 0, 0);
-    //int timerID = h2_CreateTimer(oPC, H2_HT_TIMER_SCRIPT, HoursToSeconds(1), FALSE);
-    //int timerID = h2_CreateTimer(oPC, H2_HT_TIMER_SCRIPT, 10.0, FALSE);
+    int timerID = CreateTimer(oPC, H2_HT_ON_TIMER_EXPIRE, HoursToSeconds(1), 0, 0);
     StartTimer(timerID, FALSE);
-    //h2_StartTimer(timerID);
 
     if (_GetIsPC(oPC) && H2_HT_DISPLAY_INFO_BARS)
         h2_DisplayHTInfoBars(oPC);
@@ -114,7 +103,7 @@ void h2_DoThirstFortitudeCheck(object oPC)
         nonlethaldamage += d6();
         _SetLocalInt(oPC, H2_HT_THIRST_NONLETHAL_DAMAGE, nonlethaldamage);
         if (nonlethaldamage > GetMaxHitPoints(oPC))
-            ExecuteScript(H2_HT_DAMAGE_SCRIPT, oPC);
+            RunLibraryScript(H2_HT_DAMAGE_SCRIPT, oPC);
     }
     _SetLocalInt(oPC, H2_HT_THIRST_SAVE_COUNT, thirstSaveCount + 1);
 }
@@ -138,7 +127,7 @@ void h2_DoHungerFortitudeCheck(object oPC)
         nonlethaldamage +=  d6();
         _SetLocalInt(oPC, H2_HT_HUNGER_NONLETHAL_DAMAGE, nonlethaldamage);
         if (nonlethaldamage > GetMaxHitPoints(oPC))
-            ExecuteScript(H2_HT_DAMAGE_SCRIPT, oPC);
+            RunLibraryScript(H2_HT_DAMAGE_SCRIPT, oPC);
     }
     _SetLocalInt(oPC, H2_HT_HUNGER_SAVE_COUNT, hungerSaveCount + 1);
 }
@@ -150,7 +139,6 @@ void h2_PerformHungerThirstCheck(object oPC, float fCustomThirstDecrement = -1.0
         _DeleteLocalFloat(oPC, H2_HT_CURR_ALCOHOL);
         int timerID = _GetLocalInt(oPC, H2_HT_DRUNK_TIMERID);
         KillTimer(timerID);
-        //h2_KillTimer(timerID);
         _DeleteLocalInt(oPC, H2_HT_DRUNK_TIMERID);
         return;
     }
@@ -184,7 +172,6 @@ void h2_PerformHungerThirstCheck(object oPC, float fCustomThirstDecrement = -1.0
     {
         int timerID = _GetLocalInt(oPC, H2_HT_DRUNK_TIMERID);
         KillTimer(timerID);
-        //h2_KillTimer(timerID);
         _DeleteLocalInt(oPC, H2_HT_DRUNK_TIMERID);
     }
     _SetLocalFloat(oPC, H2_HT_CURR_THIRST, currThirst);
@@ -219,10 +206,8 @@ void h2_ApplyAlchoholEffects(object oPC, object oItem)
         if (_GetLocalInt(oPC, H2_HT_DRUNK_TIMERID) == 0 && currAlcohol >= 0.4)
         {
             int timerID = CreateTimer(oPC, H2_HT_DRUNK_ON_TIMER_EXPIRE, 150.0, 0, 30);
-            //int timerID = h2_CreateTimer(oPC, H2_HT_DRUNK_TIMER_SCRIPT, 150.0);
             _SetLocalInt(oPC, H2_HT_DRUNK_TIMERID, timerID);
             StartTimer(timerID, TRUE);
-            //h2_StartTimer(timerID);
         }
 
         int dropRate = 26 - GetAbilityScore(oPC, ABILITY_CONSTITUTION, TRUE);
@@ -462,8 +447,8 @@ void h2_DisplayFatigueInfoBar(object oPC)
     if(_GetIsDM(oPC)) return;
 
     int fatigueCount = FloatToInt(_GetLocalFloat(oPC, H2_CURR_FATIGUE) * 100.0);
-    string greenBar = h2_ColorText(GetSubString(H2_FATIGUE_INFO_BAR, 0, fatigueCount), H2_COLOR_GREEN);
-    string redBar = h2_ColorText(GetSubString(H2_FATIGUE_INFO_BAR, fatigueCount, 100 - fatigueCount), H2_COLOR_RED);
+    string greenBar = HexColorString(GetSubString(H2_FATIGUE_INFO_BAR, 0, fatigueCount), H2_HT_COLOR_GREEN);
+    string redBar = HexColorString(GetSubString(H2_FATIGUE_INFO_BAR, fatigueCount, 100 - fatigueCount), H2_HT_COLOR_RED);
     SendMessageToPC(oPC, H2_TEXT_FATIGUE + greenBar + redBar);
 }
 
@@ -472,11 +457,8 @@ void h2_InitFatigueCheck(object oPC)
     if (!_GetLocalInt(oPC, H2_IS_FATIGUED) && _GetLocalFloat(oPC, H2_CURR_FATIGUE) == 0.0)
         _SetLocalFloat(oPC, H2_CURR_FATIGUE, 1.0);
 
-    int timerID = CreateTimer(oPC, H2_FATIGUE_ON_TIMER_EXPIRE, 120.0, 0, 0);
-    //int timerID = h2_CreateTimer(oPC, H2_FATIGUE_TIMER_SCRIPT, HoursToSeconds(1), FALSE);
-    //int timerID = h2_CreateTimer(oPC, H2_FATIGUE_TIMER_SCRIPT, 10.0, FALSE);
+    int timerID = CreateTimer(oPC, H2_FATIGUE_ON_TIMER_EXPIRE, HoursToSeconds(1), 0, 0);
     StartTimer(timerID, FALSE);
-    //h2_StartTimer(timerID);
 
     if (_GetIsPC(oPC) && H2_FATIGUE_DISPLAY_INFO_BAR)
         h2_DisplayFatigueInfoBar(oPC);

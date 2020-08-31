@@ -1,8 +1,6 @@
 // -----------------------------------------------------------------------------
 //    File: crowd_i_config.nss
 //  System: Simulated Population (configuration)
-//     URL: 
-// Authors: Edward A. Burke (tinygiant) <af.hog.pilot@gmail.com>
 // -----------------------------------------------------------------------------
 // Description:
 //  Configuration File for PW Subsystem.
@@ -10,17 +8,13 @@
 // Builder Use:
 //  Set the constants below as directed in the comments for each constant.
 // -----------------------------------------------------------------------------
-// Acknowledgment:
-// -----------------------------------------------------------------------------
-//  Revision:
-//      Date:
-//    Author:
-//   Summary:
-// -----------------------------------------------------------------------------
 
 // -----------------------------------------------------------------------------
 //                                   Variables
 // -----------------------------------------------------------------------------
+
+// Set this to false if you do not want to use the crowd system.
+const int PW_USE_CROWD_SYSTEM = TRUE;
 
 // The crowd/simulated population system uses custom game objects with specific
 //  variables to initialize crowd objects.  CROWD_ITEM_PREFIX is the prefix

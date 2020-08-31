@@ -1,8 +1,6 @@
 // -----------------------------------------------------------------------------
 //    File: loot_i_const.nss
 //  System: PC Corpse Loot (constants)
-//     URL: 
-// Authors: Edward A. Burke (tinygiant) <af.hog.pilot@gmail.com>
 // -----------------------------------------------------------------------------
 // Description:
 //  Constants for PW Subsystem.
@@ -10,16 +8,9 @@
 // Builder Use:
 //  None!  Leave me alone.
 // -----------------------------------------------------------------------------
-// Acknowledgment:
-// -----------------------------------------------------------------------------
-//  Revision:
-//      Date:
-//    Author:
-//   Summary:
-// -----------------------------------------------------------------------------
 
 // -----------------------------------------------------------------------------
 //                                   Constants
 // -----------------------------------------------------------------------------
 
-// There are not constants associated with this system.
+// There are no constants associated with this system.

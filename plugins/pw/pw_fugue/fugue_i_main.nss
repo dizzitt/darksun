@@ -1,21 +1,12 @@
 // -----------------------------------------------------------------------------
 //    File: fugue_i_main.nss
 //  System: Fugue Death and Resurrection (core)
-//     URL: 
-// Authors: Edward A. Burke (tinygiant) <af.hog.pilot@gmail.com>
 // -----------------------------------------------------------------------------
 // Description:
 //  Core functions for PW Subsystem.
 // -----------------------------------------------------------------------------
 // Builder Use:
 //  None!  Leave me alone.
-// -----------------------------------------------------------------------------
-// Acknowledgment:
-// -----------------------------------------------------------------------------
-//  Revision:
-//      Date:
-//    Author:
-//   Summary:
 // -----------------------------------------------------------------------------
 
 // -----------------------------------------------------------------------------
@@ -45,6 +36,7 @@ void h2_SendPlayerToFugue(object oPC)
     SendMessageToPC(oPC, H2_TEXT_YOU_HAVE_DIED);
     ApplyEffectToObject(DURATION_TYPE_INSTANT, EffectResurrection(), oPC);
     ApplyEffectToObject(DURATION_TYPE_INSTANT, EffectHeal(GetMaxHitPoints(oPC)), oPC);
+
     h2_RemoveEffects(oPC);
     ClearAllActions();
     AssignCommand(oPC, JumpToObject(oFugueWP));

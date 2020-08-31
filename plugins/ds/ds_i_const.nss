@@ -9,13 +9,8 @@
 
 #include "util_i_datapoint"
 
-const string MODULE_DATAPOINT = "MODULE_DATAPOINT";
-const string PLAYER_DATAPOINT = "h2_playerdata";
 const string ENCOUNTER_DATAPOINT = "ENCOUNTER_DATAPOINT";
-
-object       MODULE           = GetDatapoint(MODULE_DATAPOINT);
 object       ENCOUNTERS       = GetDatapoint(ENCOUNTER_DATAPOINT);
-object       oModule          = GetModule();
 
 // Race Constants
 const int DS_RACIAL_TYPE_DWARF =      0;

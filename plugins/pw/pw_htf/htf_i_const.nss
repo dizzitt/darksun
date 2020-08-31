@@ -1,8 +1,6 @@
 // -----------------------------------------------------------------------------
 //    File: htf_i_const.nss
 //  System: Hunger, Thirst, Fatigue (constants)
-//     URL: 
-// Authors: Edward A. Burke (tinygiant) <af.hog.pilot@gmail.com>
 // -----------------------------------------------------------------------------
 // Description:
 //  Constants for PW Subsystem.
@@ -10,13 +8,7 @@
 // Builder Use:
 //  None!  Leave me alone.
 // -----------------------------------------------------------------------------
-// Acknowledgment:
-// -----------------------------------------------------------------------------
-//  Revision:
-//      Date:
-//    Author:
-//   Summary:
-// -----------------------------------------------------------------------------
+
 
 // -----------------------------------------------------------------------------
 //                                   Constants
@@ -52,12 +44,12 @@ const string H2_HT_TRIGGER = "H2_HT_TRIGGER";
 const string H2_HT_MAX_CHARGES = "H2_HT_MAX_CHARGES";
 const string H2_HT_CURR_CHARGES = "H2_HT_CURR_CHARGES";
 const string H2_HT_CANTEEN_SOURCE = "H2_HT_CANTEEN_SOURCE";
-const string H2_HT_COLOR_RED = "700";
-const string H2_HT_COLOR_GREEN = "070";
 const string H2_HT_ON_TIMER_EXPIRE = "HT_OnTimerExpire";
 const string H2_HT_DRUNK_ON_TIMER_EXPIRE = "HT_Drunk_OnTimerExpire";
 
-//f
+const int H2_HT_COLOR_RED = COLOR_RED;
+const int H2_HT_COLOR_GREEN = COLOR_GREEN;
+
 
 const string H2_CURR_FATIGUE = "H2_CURR_FATIGUE";
 const string H2_IS_FATIGUED = "H2_IS_FATIGUED";

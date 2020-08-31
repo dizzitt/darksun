@@ -1,8 +1,6 @@
 // -----------------------------------------------------------------------------
 //    File: bleed_i_config.nss
 //  System: Bleed Persistent World Subsystem (configuration)
-//     URL: 
-// Authors: Edward A. Burke (tinygiant) <af.hog.pilot@gmail.com>
 // -----------------------------------------------------------------------------
 // Description:
 //  Configuration values for PW Subsystem
@@ -10,13 +8,9 @@
 // Builder Use:
 //  Everything!  Set these values to work in your world!
 // -----------------------------------------------------------------------------
-// Acknowledgment:
-// -----------------------------------------------------------------------------
-//  Revision:
-//      Date:
-//    Author:
-//   Summary:
-// -----------------------------------------------------------------------------
+
+// Set this to false if you don't want to use bleed system.
+const int H2_USE_BLEED_SYSTEM = TRUE;
 
 //Amount of time in seconds between when the player character bleeds while dying.
 //Note this is seconds in real time, not game time.
@@ -26,7 +20,8 @@ const float H2_BLEED_DELAY = 6.0;
 //Amount of time in seconds between when a stable player character nexts checks to see if they begin to recover.
 //Note this is seconds in real time, not game time.
 //Recommended Equation: [Minutes per game hour] * 60 seconds = HoursToSeconds(1).
-float H2_STABLE_DELAY = HoursToSeconds(1);
+//float H2_STABLE_DELAY = HoursToSeconds(1);
+float H2_STABLE_DELAY = H2_BLEED_DELAY * 2.0;
 
 //Percent chance a player character will self stabilize and stop bleedng when dying.
 //Range of values is 0 - 100
@@ -49,4 +44,3 @@ const int H2_FIRST_AID_DC = 15;
 //Heal check DC to provide long term care to an injured character.
 //Default value is 15.
 const int H2_LONG_TERM_CARE_DC = 15;
-//End function and constant declarations.

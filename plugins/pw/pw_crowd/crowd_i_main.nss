@@ -1,8 +1,6 @@
 // -----------------------------------------------------------------------------
 //    File: crowd_i_main.nss
 //  System: Simulated Population (core)
-//     URL: 
-// Authors: Edward A. Burke (tinygiant) <af.hog.pilot@gmail.com>
 // -----------------------------------------------------------------------------
 // Description:
 //  Core functions for PW Subsystem.
@@ -10,21 +8,13 @@
 // Builder Use:
 //  None!  Leave me alone.
 // -----------------------------------------------------------------------------
-// Acknowledgment:
-// -----------------------------------------------------------------------------
-//  Revision:
-//      Date:
-//    Author:
-//   Summary:
-// -----------------------------------------------------------------------------
 
 #include "crowd_i_config"
 #include "crowd_i_const"
 #include "crowd_i_text"
-#include "util_i_math"
 #include "core_i_framework"
-#include "dsutil_i_data"
-#include "dsutil_i_varlist"
+#include "util_i_varlists"
+#include "util_i_data"
 
 // -----------------------------------------------------------------------------
 //                              Function Prototypes
@@ -163,7 +153,6 @@ void InitializeCrowds(object oArea = OBJECT_SELF)
     Debug(dbg);
 
     string sCrowds = _GetLocalString(oArea, CROWD_CSV);
-
     int i, nIndex, nCount = CountList(sCrowds);
     if (!nCount)
     {
@@ -177,8 +166,6 @@ void InitializeCrowds(object oArea = OBJECT_SELF)
         if ((nIndex = FindListItem(_GetLocalString(CROWDS, CROWD_ITEM_LOADED_CSV), sCrowd)) > -1)
         {
             CopyListObject(CROWDS, AREA_CROWDS, CROWD_ITEM_OBJECT_LIST, AREA_CROWD_ITEM_OBJECT_LIST, nIndex, TRUE);
-            CopyListItem(CROWD_ITEM_LOADED_CSV, AREA_CROWD_ITEM_LOADED_CSV, nIndex, TRUE);
-
             Debug(dbg + "Crowd item " + CROWD_ITEM_PREFIX + sCrowd + " loaded on " + GetName(oArea));
         }
     }

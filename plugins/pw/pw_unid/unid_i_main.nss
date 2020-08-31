@@ -1,8 +1,6 @@
 // -----------------------------------------------------------------------------
 //    File: unid_i_main.nss
 //  System: UnID Item on Drop (core)
-//     URL: 
-// Authors: Edward A. Burke (tinygiant) <af.hog.pilot@gmail.com>
 // -----------------------------------------------------------------------------
 // Description:
 //  Core functions for PW Subsystem.
@@ -10,17 +8,11 @@
 // Builder Use:
 //  None!  Leave me alone.
 // -----------------------------------------------------------------------------
-// Acknowledgment:
-// -----------------------------------------------------------------------------
-//  Revision:
-//      Date:
-//    Author:
-//   Summary:
-// -----------------------------------------------------------------------------
 
 #include "unid_i_config"
 #include "unid_i_const"
 #include "unid_i_text"
+#include "util_i_data"
 
 // -----------------------------------------------------------------------------
 //                              Function Prototypes
@@ -50,7 +42,7 @@ void h2_UnID(object oItem)
 void h2_UnIDOnDrop(object oItem)
 {
     if (GetItemPossessor(oItem) == OBJECT_INVALID &&
-        !GetLocalInt(oItem, H2_NO_UNID) &&
+        !_GetLocalInt(oItem, H2_NO_UNID) &&
         GetGoldPieceValue(oItem) > H2_UNID_MINIMUM_VALUE)
     {
         DelayCommand(IntToFloat(H2_UNID_DELAY), h2_UnID(oItem));
