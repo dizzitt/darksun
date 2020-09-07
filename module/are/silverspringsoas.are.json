@@ -100,11 +100,11 @@
   },
   "OnExit": {
     "type": "resref",
-    "value": ""
+    "value": "destroy_sskey"
   },
   "OnHeartbeat": {
     "type": "resref",
-    "value": ""
+    "value": "spawn_sample_hb"
   },
   "OnUserDefined": {
     "type": "resref",

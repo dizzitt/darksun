@@ -47,6 +47,88 @@
           "type": "byte",
           "value": 6
         },
+        "LIST": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "corpse"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "invis_corpse_bdy"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "corpse"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "invis_corpse_bon"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "corpse"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "invis_corpse_obj"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "corpse"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "invis_corpse_pch"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "corpse"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "invis_corpse_pot"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "corpse"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "invis_corpse_scr"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "corpse"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "invis_corpse_tre"
+              }
+            }
+          ]
+        },
         "STRREF": {
           "type": "dword",
           "value": 6782
@@ -227,6 +309,33 @@
           "type": "byte",
           "value": 12
         },
+        "LIST": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Active Spawn"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "spawn_ban_a"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Deactivated Spawn"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "spawn_ban_d"
+              }
+            }
+          ]
+        },
         "STRREF": {
           "type": "dword",
           "value": 6787
@@ -268,6 +377,28 @@
               "LIST": {
                 "type": "list",
                 "value": [
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "ASG SpawnKit Area Config (Optional)"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "asgspawnkitareac"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "ASG Spawnkit No Auto Reveal Map"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "asg_noautomap"
+                    }
+                  },
                   {
                     "__struct_id": 0,
                     "NAME": {
