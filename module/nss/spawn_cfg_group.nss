@@ -38,34 +38,34 @@ string GetTemplateByCR(int nCR, string sGroupType)
   if (sGroupType == "outdoor")
   {
     switch (nCR)
-    {     
+    {
     case 1:
       switch(d6(1))
       {
-        case 1: sRetTemplate = "NW_SKELETON"; break; 
-        case 2: sRetTemplate = "NW_ZOMBIE01"; break; 
-        case 3: sRetTemplate = "NW_NIXIE"; break; 
-        case 4: sRetTemplate = "NW_ORCA"; break; 
-        case 5: sRetTemplate = "NW_ORCB"; break; 
-        case 6: sRetTemplate = "NW_BTLFIRE"; break; 
+        case 1: sRetTemplate = "NW_SKELETON"; break;
+        case 2: sRetTemplate = "NW_ZOMBIE01"; break;
+        case 3: sRetTemplate = "NW_NIXIE"; break;
+        case 4: sRetTemplate = "NW_ORCA"; break;
+        case 5: sRetTemplate = "NW_ORCB"; break;
+        case 6: sRetTemplate = "NW_BTLFIRE"; break;
       }
       break;
     case 2:
       switch(d4(1))
       {
-        case 1: sRetTemplate = "NW_KOBOLD004"; break; 
-        case 2: sRetTemplate = "NW_KOBOLD005"; break; 
-        case 3: sRetTemplate = "NW_KOBOLD003"; break; 
-        case 4: sRetTemplate = "NW_PIXIE"; break; 
+        case 1: sRetTemplate = "NW_KOBOLD004"; break;
+        case 2: sRetTemplate = "NW_KOBOLD005"; break;
+        case 3: sRetTemplate = "NW_KOBOLD003"; break;
+        case 4: sRetTemplate = "NW_PIXIE"; break;
     }
       break;
     case 3:
       switch(d4(1))
       {
-        case 1: sRetTemplate = "NW_BTLBOMB"; break; 
-        case 2: sRetTemplate = "NW_BTLFIRE002"; break; 
-        case 3: sRetTemplate = "NW_BTLSTINK"; break; 
-        case 4: sRetTemplate = "NW_NYMPH"; break; 
+        case 1: sRetTemplate = "NW_BTLBOMB"; break;
+        case 2: sRetTemplate = "NW_BTLFIRE002"; break;
+        case 3: sRetTemplate = "NW_BTLSTINK"; break;
+        case 4: sRetTemplate = "NW_NYMPH"; break;
       }
       break;
     default:
@@ -77,18 +77,18 @@ string GetTemplateByCR(int nCR, string sGroupType)
   else if (sGroupType == "crypt")
   {
     switch (nCR)
-    {     
+    {
     case 1:
       switch(d4(1))
       {
-        case 1: 
-        case 2: sRetTemplate = "NW_SKELETON"; break; 
-        case 3: sRetTemplate = "NW_ZOMBIE01"; break; 
-        case 4: sRetTemplate = "NW_ZOMBIE02"; break; 
+        case 1:
+        case 2: sRetTemplate = "NW_SKELETON"; break;
+        case 3: sRetTemplate = "NW_ZOMBIE01"; break;
+        case 4: sRetTemplate = "NW_ZOMBIE02"; break;
       }
       break;
     case 2:
-      sRetTemplate = "NW_GHOUL"; 
+      sRetTemplate = "NW_GHOUL";
       break;
     case 3:
       sRetTemplate = "NW_SHADOW";
@@ -108,7 +108,7 @@ string GetTemplateByCR(int nCR, string sGroupType)
 }
 
 
-// Convert a given EL equivalent and its encounter level, 
+// Convert a given EL equivalent and its encounter level,
 // return the corresponding CR
 float ConvertELEquivToCR(float fEquiv, float fEncounterLevel)
 {
@@ -137,8 +137,8 @@ float ConvertCRToELEquiv(float fCR, float fEncounterLevel)
 
   float fEquiv, fExponent, fDenom;
 
-  fExponent = fEncounterLevel - fCR; 
-  fExponent *= 0.5; 
+  fExponent = fEncounterLevel - fCR;
+  fExponent *= 0.5;
   fDenom = pow(2.0, fExponent);
   fEquiv =  1.0 / fDenom;
 
@@ -165,7 +165,7 @@ string SpawnGroup(object oSpawn, string sTemplate)
     {
       float fEncounterLevel;
       int nScaledInProgress = GetLocalInt(oSpawn, "ScaledInProgress");
-      string sGroupType = GetStringRight(sTemplate, 
+      string sGroupType = GetStringRight(sTemplate,
           GetStringLength(sTemplate) - 7);
 
       // First Time in for this encounter?
@@ -177,7 +177,7 @@ string SpawnGroup(object oSpawn, string sTemplate)
         int nTotalPCLevel = 0;
 
         object oArea = GetArea(OBJECT_SELF);
-        
+
         object oPC = GetFirstObjectInArea(oArea);
         while (oPC != OBJECT_INVALID)
         {
@@ -203,7 +203,7 @@ string SpawnGroup(object oSpawn, string sTemplate)
         // We're done when the CRs chosen add up to the
         // desired encounter level
         SetLocalInt(oSpawn, "ScaledCallCount", 0);
-        SetLocalInt(oSpawn, "ScaledInProgress", TRUE); 
+        SetLocalInt(oSpawn, "ScaledInProgress", TRUE);
       }
 
 
@@ -232,7 +232,7 @@ string SpawnGroup(object oSpawn, string sTemplate)
         sRetTemplate = GetTemplateByCR(nCR, sGroupType);
 
 
-        // Convert CR to Encounter Level equivalent so it can be correctly 
+        // Convert CR to Encounter Level equivalent so it can be correctly
         // subtracted.  This does the real scaling work
         float fELEquiv = ConvertCRToELEquiv(IntToFloat(nCR), fEncounterLevel);
         float fElRemaining = 1.0 - fELEquiv;
@@ -245,10 +245,10 @@ string SpawnGroup(object oSpawn, string sTemplate)
       SetLocalInt(oSpawn, "ScaledCallCount", nScaledCallCount);
 
       nSpawnNumber = GetLocalInt(oSpawn, "f_SpawnNumber");
-      
-      if (nScaledCallCount >= nSpawnNumber) 
+
+      if (nScaledCallCount >= nSpawnNumber)
       {
-        // reset... 
+        // reset...
         SetLocalInt(oSpawn, "ScaledInProgress", FALSE);
       }
     }
@@ -532,6 +532,23 @@ string SpawnGroup(object oSpawn, string sTemplate)
             break;
         }
     }
+   // toramund_guards
+   if (sTemplate == "toramund_guards")
+   {
+       switch(d3(1))
+       {
+       case 1:
+       sRetTemplate = "toramundchief001";
+       break;
+       case 2:
+       sRetTemplate = "hagen001";
+       break;
+       case 3:
+       sRetTemplate = "hagwin002";
+       break;
+    }
+ }
+
 
 
 // -------------------------------------------

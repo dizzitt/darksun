@@ -21,6 +21,72 @@
                     "__struct_id": 0,
                     "NAME": {
                       "type": "cexostring",
+                      "value": "Agafya Outfit"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "009"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Amir Outfit"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "008"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Citizen Outfit"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "013"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "001"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 12923
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "004"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 12923
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "010"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 12923
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
                       "value": "Commoner's Outfit"
                     },
                     "RESREF": {
@@ -54,11 +120,66 @@
                     "__struct_id": 0,
                     "NAME": {
                       "type": "cexostring",
-                      "value": "Rogue's Tunic"
+                      "value": "Commoner's Outfit"
                     },
                     "RESREF": {
                       "type": "resref",
+                      "value": "clothing005"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Dariem Outfit"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "007"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Ellian Outfit"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "cloth034"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Ivan Outfit"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "011"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Kled Guard Outfit"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "cloth012"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
                       "value": "cloth005"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 12905
                     }
                   },
                   {
@@ -70,6 +191,28 @@
                     "STRREF": {
                       "type": "dword",
                       "value": 12914
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Sun cleric outfit"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "002"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Sydaria Tunic"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "cloth033"
                     }
                   }
                 ]
@@ -125,6 +268,39 @@
                     "__struct_id": 0,
                     "RESREF": {
                       "type": "resref",
+                      "value": "aarcl016"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 12835
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Leather Armor +2"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "aarcl006"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "aarcl015"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 12841
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
                       "value": "aarcl003"
                     },
                     "STRREF": {
@@ -153,6 +329,17 @@
                       "type": "resref",
                       "value": "aarcl005"
                     }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "aarcl017"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 12836
+                    }
                   }
                 ]
               },
@@ -166,6 +353,22 @@
               "ID": {
                 "type": "byte",
                 "value": 7
+              },
+              "LIST": {
+                "type": "list",
+                "value": [
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Basettu Breastplate +1"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "aarcl011"
+                    }
+                  }
+                ]
               },
               "STRREF": {
                 "type": "dword",
@@ -194,6 +397,22 @@
                       "type": "byte",
                       "value": 11
                     },
+                    "LIST": {
+                      "type": "list",
+                      "value": [
+                        {
+                          "__struct_id": 0,
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "ashlw003"
+                          },
+                          "STRREF": {
+                            "type": "dword",
+                            "value": 1550
+                          }
+                        }
+                      ]
+                    },
                     "STRREF": {
                       "type": "dword",
                       "value": 6822
@@ -205,6 +424,33 @@
                       "type": "byte",
                       "value": 10
                     },
+                    "LIST": {
+                      "type": "list",
+                      "value": [
+                        {
+                          "__struct_id": 0,
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "ashsw003"
+                          },
+                          "STRREF": {
+                            "type": "dword",
+                            "value": 179
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "ashsw004"
+                          },
+                          "STRREF": {
+                            "type": "dword",
+                            "value": 179
+                          }
+                        }
+                      ]
+                    },
                     "STRREF": {
                       "type": "dword",
                       "value": 6741
@@ -215,6 +461,22 @@
                     "ID": {
                       "type": "byte",
                       "value": 12
+                    },
+                    "LIST": {
+                      "type": "list",
+                      "value": [
+                        {
+                          "__struct_id": 0,
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "ashto003"
+                          },
+                          "STRREF": {
+                            "type": "dword",
+                            "value": 1551
+                          }
+                        }
+                      ]
                     },
                     "STRREF": {
                       "type": "dword",
@@ -253,6 +515,17 @@
                     "__struct_id": 0,
                     "RESREF": {
                       "type": "resref",
+                      "value": "it_crewps026"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 13242
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
                       "value": "it_crewps025"
                     },
                     "STRREF": {
@@ -276,6 +549,28 @@
                     "RESREF": {
                       "type": "resref",
                       "value": "it_crewps028"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 13249
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_crewps030"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 13249
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_crewps031"
                     },
                     "STRREF": {
                       "type": "dword",
@@ -358,6 +653,50 @@
                     "RESREF": {
                       "type": "resref",
                       "value": "it_crewpsp019"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 13270
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_crewpsp020"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 13270
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_crewpsp021"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 13270
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_crewpsp023"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 13270
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_crewpsp024"
                     },
                     "STRREF": {
                       "type": "dword",
@@ -482,6 +821,66 @@
                       "type": "byte",
                       "value": 18
                     },
+                    "LIST": {
+                      "type": "list",
+                      "value": [
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Cloak "
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "maarcl061"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "maarcl057"
+                          },
+                          "STRREF": {
+                            "type": "dword",
+                            "value": 13804
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "maarcl058"
+                          },
+                          "STRREF": {
+                            "type": "dword",
+                            "value": 13802
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "maarcl062"
+                          },
+                          "STRREF": {
+                            "type": "dword",
+                            "value": 13802
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "maarcl064"
+                          },
+                          "STRREF": {
+                            "type": "dword",
+                            "value": 13802
+                          }
+                        }
+                      ]
+                    },
                     "STRREF": {
                       "type": "dword",
                       "value": 6747
@@ -529,11 +928,231 @@
                     "__struct_id": 0,
                     "NAME": {
                       "type": "cexostring",
+                      "value": "Bottle of Wine"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "h2_fooditem013"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
                       "value": "Bowl of Gruel"
                     },
                     "RESREF": {
                       "type": "resref",
                       "value": "h2_fooditem003"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyec025"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90756
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyec002"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90752
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyec004"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90754
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyec027"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90757
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyec050"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90771
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyec046"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90770
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyec037"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90765
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyec039"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90767
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyec031"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90760
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyec035"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90763
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyec028"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90758
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyec033"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90761
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyec022"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90755
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyec036"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90764
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyec038"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90766
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyec030"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90759
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyec041"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90768
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyec043"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90769
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyec034"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90762
                     }
                   },
                   {
@@ -545,6 +1164,17 @@
                     "RESREF": {
                       "type": "resref",
                       "value": "h2_fooditem009"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Common Meal"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "h2_fooditem014"
                     }
                   },
                   {
@@ -578,6 +1208,424 @@
                     "RESREF": {
                       "type": "resref",
                       "value": "h2_fooditem"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Kank Egg"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "h2_fooditem016"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Kank Pie"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "h2_fooditem011"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyel025"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90776
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyel002"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90772
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyel027"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90777
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyel004"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90774
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyel050"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90791
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyel046"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90790
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyel037"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90785
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyel039"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90787
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyel031"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90780
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyel035"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90783
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyel028"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90778
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyel033"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90781
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyel022"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90775
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyel036"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90784
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyel038"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90786
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyel030"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90779
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyel041"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90788
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyel043"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90789
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyel034"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90782
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyem005"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90795
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyem002"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90792
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyem033"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90803
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyem018"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90798
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyem042"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90807
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyem030"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90802
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyem026"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90800
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyem034"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90804
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyem020"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90799
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyem012"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90797
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyem044"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90808
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyem004"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90794
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyem027"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90801
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyem039"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90806
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyem010"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90796
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyem038"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90805
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_dyem050"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 90809
                     }
                   },
                   {
@@ -633,6 +1681,17 @@
                     "RESREF": {
                       "type": "resref",
                       "value": "h2_fooditem010"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Trail Rations"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "h2_fooditem015"
                     }
                   }
                 ]
@@ -693,6 +1752,22 @@
                 "type": "byte",
                 "value": 20
               },
+              "LIST": {
+                "type": "list",
+                "value": [
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_medkit006"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 13362
+                    }
+                  }
+                ]
+              },
               "STRREF": {
                 "type": "dword",
                 "value": 6748
@@ -722,6 +1797,17 @@
                     "__struct_id": 0,
                     "NAME": {
                       "type": "cexostring",
+                      "value": "Canteen"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "h2_canteen002"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
                       "value": "Firewood"
                     },
                     "RESREF": {
@@ -738,6 +1824,17 @@
                     "RESREF": {
                       "type": "resref",
                       "value": "h2_lantern"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_contain008"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 12321
                     }
                   },
                   {
@@ -786,6 +1883,17 @@
                   },
                   {
                     "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Torch"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "h2_torch002"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
                     "RESREF": {
                       "type": "resref",
                       "value": "it_torch003"
@@ -822,6 +1930,28 @@
                     "RESREF": {
                       "type": "resref",
                       "value": "it_torch006"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 180
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_torch007"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 180
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_torch009"
                     },
                     "STRREF": {
                       "type": "dword",
@@ -881,6 +2011,17 @@
                     "__struct_id": 0,
                     "RESREF": {
                       "type": "resref",
+                      "value": "it_mpotion028"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 13411
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
                       "value": "it_mpotion029"
                     },
                     "STRREF": {
@@ -904,6 +2045,28 @@
                     "RESREF": {
                       "type": "resref",
                       "value": "it_mpotion031"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 13411
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_mpotion035"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 13411
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_mpotion036"
                     },
                     "STRREF": {
                       "type": "dword",
@@ -1736,6 +2899,55 @@
                       "type": "byte",
                       "value": 27
                     },
+                    "LIST": {
+                      "type": "list",
+                      "value": [
+                        {
+                          "__struct_id": 0,
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "wamar003"
+                          },
+                          "STRREF": {
+                            "type": "dword",
+                            "value": 1517
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "wamar004"
+                          },
+                          "STRREF": {
+                            "type": "dword",
+                            "value": 1517
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "wammar013"
+                          },
+                          "STRREF": {
+                            "type": "dword",
+                            "value": 40583
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Bone Arrow"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "wamar002"
+                          }
+                        }
+                      ]
+                    },
                     "STRREF": {
                       "type": "dword",
                       "value": 6757
@@ -1747,6 +2959,33 @@
                       "type": "byte",
                       "value": 28
                     },
+                    "LIST": {
+                      "type": "list",
+                      "value": [
+                        {
+                          "__struct_id": 0,
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "wambo003"
+                          },
+                          "STRREF": {
+                            "type": "dword",
+                            "value": 1519
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "wambo004"
+                          },
+                          "STRREF": {
+                            "type": "dword",
+                            "value": 1519
+                          }
+                        }
+                      ]
+                    },
                     "STRREF": {
                       "type": "dword",
                       "value": 6758
@@ -1757,6 +2996,22 @@
                     "ID": {
                       "type": "byte",
                       "value": 29
+                    },
+                    "LIST": {
+                      "type": "list",
+                      "value": [
+                        {
+                          "__struct_id": 0,
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "wambu003"
+                          },
+                          "STRREF": {
+                            "type": "dword",
+                            "value": 1521
+                          }
+                        }
+                      ]
                     },
                     "STRREF": {
                       "type": "dword",
@@ -1784,6 +3039,17 @@
                     "LIST": {
                       "type": "list",
                       "value": [
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Bone Greataxe"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "waxgr005"
+                          }
+                        },
                         {
                           "__struct_id": 0,
                           "NAME": {
@@ -1835,6 +3101,28 @@
                         },
                         {
                           "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Bone Waraxe"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "wdwraxe006"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Dariems Waraxe"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "wdwraxe005"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
                           "RESREF": {
                             "type": "resref",
                             "value": "wdwraxe002"
@@ -1864,6 +3152,17 @@
                           "RESREF": {
                             "type": "resref",
                             "value": "stoneaxe"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Stone Handaxe"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "waxhn004"
                           }
                         }
                       ]
@@ -1924,7 +3223,40 @@
                           },
                           "RESREF": {
                             "type": "resref",
-                            "value": "wswdg002"
+                            "value": "bonedagger2"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Bone Dagger"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "bonedagger1"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Bone Dagger"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "bonedagger3"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Bone Dagger"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "bonedagger4"
                           }
                         },
                         {
@@ -1936,6 +3268,50 @@
                           "RESREF": {
                             "type": "resref",
                             "value": "wswdg003"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Obsidian Dagger"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "obsidiandagger1"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Obsidian Dagger"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "obsidiandagge2"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Stone Dagger"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "wswdg005"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Stone Dagger"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "wswdg006"
                           }
                         }
                       ]
@@ -1950,6 +3326,22 @@
                     "ID": {
                       "type": "byte",
                       "value": 35
+                    },
+                    "LIST": {
+                      "type": "list",
+                      "value": [
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Stone Great Sword"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "stonegreatswor1"
+                          }
+                        }
+                      ]
                     },
                     "STRREF": {
                       "type": "dword",
@@ -1973,7 +3365,40 @@
                           },
                           "RESREF": {
                             "type": "resref",
-                            "value": "wswls002"
+                            "value": "bonelongsword1"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Bone Longsword"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "bonelongsword2"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Bone Longsword"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "bonelongsword3"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Bone Longsword"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "bonelongsword4"
                           }
                         },
                         {
@@ -1985,6 +3410,61 @@
                           "RESREF": {
                             "type": "resref",
                             "value": "wswls003"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Obsidian Longsword"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "wswls006"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Obsidian Longsword"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "wswls007"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Steel Longsword +1"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "wswls005"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Steel Longsword +2"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "wswls004"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Stone Longsword"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "stonelongsword1"
                           }
                         }
                       ]
@@ -2022,6 +3502,17 @@
                           },
                           "RESREF": {
                             "type": "resref",
+                            "value": "boneshortsw1"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Bone Short Sword +1"
+                          },
+                          "RESREF": {
+                            "type": "resref",
                             "value": "wswss002"
                           }
                         },
@@ -2033,29 +3524,29 @@
                           },
                           "RESREF": {
                             "type": "resref",
-                            "value": "wswss004"
+                            "value": "obsidianshorts1"
                           }
                         },
                         {
                           "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Stone Short Sword"
+                          },
                           "RESREF": {
                             "type": "resref",
-                            "value": "wswss003"
-                          },
-                          "STRREF": {
-                            "type": "dword",
-                            "value": 106
+                            "value": "stoneshort001"
                           }
                         },
                         {
                           "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Stone Short Sword"
+                          },
                           "RESREF": {
                             "type": "resref",
-                            "value": "wswss005"
-                          },
-                          "STRREF": {
-                            "type": "dword",
-                            "value": 106
+                            "value": "stoneshort2"
                           }
                         }
                       ]
@@ -2096,6 +3587,28 @@
                             "type": "resref",
                             "value": "wblcl002"
                           }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Bone Club"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "wblcl004"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Bone Club"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "wblcl005"
+                          }
                         }
                       ]
                     },
@@ -2134,6 +3647,17 @@
                             "type": "resref",
                             "value": "wblhw002"
                           }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Stone Warhammer"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "wblhw004"
+                          }
                         }
                       ]
                     },
@@ -2160,6 +3684,17 @@
                           "STRREF": {
                             "type": "dword",
                             "value": 177
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Stone Mace"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "wblml003"
                           }
                         }
                       ]
@@ -2192,6 +3727,22 @@
               "ID": {
                 "type": "byte",
                 "value": 46
+              },
+              "LIST": {
+                "type": "list",
+                "value": [
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "wdbqs003"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 1544
+                    }
+                  }
+                ]
               },
               "STRREF": {
                 "type": "dword",
@@ -2260,6 +3811,33 @@
                 "type": "byte",
                 "value": 51
               },
+              "LIST": {
+                "type": "list",
+                "value": [
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Bone Halberd"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "wplhb002"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "wplss004"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 1552
+                    }
+                  }
+                ]
+              },
               "STRREF": {
                 "type": "dword",
                 "value": 489
@@ -2275,6 +3853,33 @@
                     "ID": {
                       "type": "byte",
                       "value": 43
+                    },
+                    "LIST": {
+                      "type": "list",
+                      "value": [
+                        {
+                          "__struct_id": 0,
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "wbwxh004"
+                          },
+                          "STRREF": {
+                            "type": "dword",
+                            "value": 173
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "wbwxl004"
+                          },
+                          "STRREF": {
+                            "type": "dword",
+                            "value": 174
+                          }
+                        }
+                      ]
                     },
                     "STRREF": {
                       "type": "dword",
@@ -2294,11 +3899,44 @@
                           "__struct_id": 0,
                           "RESREF": {
                             "type": "resref",
-                            "value": "wbwln002"
+                            "value": "wbwln003"
                           },
                           "STRREF": {
                             "type": "dword",
                             "value": 170
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "wbwln005"
+                          },
+                          "STRREF": {
+                            "type": "dword",
+                            "value": 170
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "wbwln006"
+                          },
+                          "STRREF": {
+                            "type": "dword",
+                            "value": 170
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Sydaria Longbow"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "wbwln007"
                           }
                         }
                       ]
@@ -2327,6 +3965,28 @@
                             "type": "dword",
                             "value": 171
                           }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "wbwsh004"
+                          },
+                          "STRREF": {
+                            "type": "dword",
+                            "value": 171
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "wbwsh005"
+                          },
+                          "STRREF": {
+                            "type": "dword",
+                            "value": 171
+                          }
                         }
                       ]
                     },
@@ -2340,6 +4000,22 @@
                     "ID": {
                       "type": "byte",
                       "value": 62
+                    },
+                    "LIST": {
+                      "type": "list",
+                      "value": [
+                        {
+                          "__struct_id": 0,
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "wbwsl003"
+                          },
+                          "STRREF": {
+                            "type": "dword",
+                            "value": 1555
+                          }
+                        }
+                      ]
                     },
                     "STRREF": {
                       "type": "dword",

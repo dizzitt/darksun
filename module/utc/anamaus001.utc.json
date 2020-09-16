@@ -134,7 +134,7 @@
   },
   "Conversation": {
     "type": "resref",
-    "value": ""
+    "value": "ss_store1"
   },
   "CRAdjust": {
     "type": "int",
@@ -169,6 +169,10 @@
     "value": [
       {
         "__struct_id": 2,
+        "Dropable": {
+          "type": "byte",
+          "value": 1
+        },
         "EquippedRes": {
           "type": "resref",
           "value": "nw_cloth017"
@@ -178,7 +182,7 @@
   },
   "FactionID": {
     "type": "word",
-    "value": 3
+    "value": 5
   },
   "FeatList": {
     "type": "list",
@@ -290,7 +294,7 @@
         },
         "InventoryRes": {
           "type": "resref",
-          "value": "aarcl002"
+          "value": "wswls006"
         },
         "Repos_PosX": {
           "type": "word",

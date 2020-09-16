@@ -134,7 +134,7 @@
   },
   "Conversation": {
     "type": "resref",
-    "value": ""
+    "value": "ss_store5"
   },
   "CRAdjust": {
     "type": "int",

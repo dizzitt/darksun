@@ -1,7 +1,7 @@
 //
 //   NESS
-//   Patrol Scripts v8.1.3 
-// 
+//   Patrol Scripts v8.1.3
+//
 //
 #include "spawn_functions"
 //
@@ -52,11 +52,56 @@ void main()
             ActionDoCommand(DoPlaceableObjectAction(oLight, PLACEABLE_ACTION_USE));
         }
     }
-    //
 
+       // dwarf guard checks door
+    if (nPatrolScript == 99)
+      {
+        int nRoll = d3(1);
+        if (nRoll == 1)
+      {
+        object oDoor = GetNearestObject(OBJECT_TYPE_DOOR, oStop, d3(1));
+        float fDist = GetDistanceBetween(oStop, oDoor);
+        if (oDoor != OBJECT_INVALID && GetDistanceBetween(oStop, oDoor) < 16.0)
+      {
+      // goto door and examine it
+      ActionSpeakString("Think I'll check that door over there.");
+      ActionMoveToObject(oDoor, FALSE, 0.5);
+      ActionPlayAnimation(ANIMATION_LOOPING_GET_MID, 1.0, 3.0);
+      switch (d3(1))
+      {
+      case 1:
+      ActionSpeakString("Dee dum, dee dum, looks OK");
+      break;
+      case 2:
+      ActionDoCommand(SpeakString("Yup, seems to be locked real good."));
+      break;
+      case 3:
+      ActionSpeakString("Hay, you in the house, lock you doors!");
+      break;
+      }
+     }
+    }
+   }
+         // NPC fills and drink water from Silver Springs
+    if (nPatrolScript == 98)
+       {
+       object oFill = GetNearestObjectByTag("fill_1", oStop);
+       float fDist = GetDistanceBetween(oStop, oFill);
+       if (oFill != OBJECT_INVALID && GetDistanceBetween(oStop, oFill) < 30.0)
+       {
+       // goto door and examine it
+       ActionSpeakString("Think I'll fill my canteen and have a drink.");
+       {
+       ActionMoveToObject(oFill, FALSE, 0.5);
+       ActionPlayAnimation(ANIMATION_LOOPING_GET_LOW, 1.0, 3.0);
+       ActionPlayAnimation(ANIMATION_FIREFORGET_DRINK);
+      }
+     }
+    }
 
 // -------------------------------------------
 // Only Make Modifications Between These Lines
 //
 
 }
+

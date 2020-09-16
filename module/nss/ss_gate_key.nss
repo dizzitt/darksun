@@ -12,10 +12,17 @@ void main()
     // Get the PC who is in this conversation.
     object oPC = GetPCSpeaker();
 
-    // Take 1 gold from the PC.
-    TakeGoldFromCreature(1, oPC, TRUE);
+    // If the PC does not have the item "SilverSpringKey".
+    if ( GetItemPossessedBy(oPC, "SilverSpringKey") == OBJECT_INVALID )
+    {
+        // If the PC has at least 1 gold.
+        if ( GetGold(oPC) >= 1 )
+        {
+            // Take 1 gold from the PC.
+            TakeGoldFromCreature(1, oPC, TRUE);
 
-    // Give "silverspringkey" to the PC.
-    CreateItemOnObject("silverspringkey", oPC);
+            // Give "silverspringkey" to the PC.
+            CreateItemOnObject("silverspringkey", oPC);
+        }
+    }
 }
-

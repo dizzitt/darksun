@@ -1,7 +1,7 @@
 #include "nw_i0_plot"
 void main()
 {
-    object oStore = GetNearestObjectByTag("store01");
+    object oStore = GetNearestObjectByTag("SS_store02");
     if (GetObjectType(oStore) == OBJECT_TYPE_STORE)
     {
         gplotAppraiseOpenStore(oStore, GetPCSpeaker());

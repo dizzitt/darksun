@@ -134,7 +134,7 @@
   },
   "Conversation": {
     "type": "resref",
-    "value": ""
+    "value": "ss_store7"
   },
   "CRAdjust": {
     "type": "int",
@@ -290,7 +290,7 @@
         },
         "InventoryRes": {
           "type": "resref",
-          "value": "aarcl002"
+          "value": "wswls006"
         },
         "Repos_PosX": {
           "type": "word",

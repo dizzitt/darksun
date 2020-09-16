@@ -18,4 +18,34 @@
 void main()
 {
     ExecuteScript("asg_a_onexit",OBJECT_SELF);
+    {
+    float cleanupdelay = 30.0;  //if you change this it alters how long before
+    // the area cleans up, if you do change it INCLUDE THE DECIMAL, or it won't
+    // work
+    if(!GetIsPC(GetExitingObject()) ) {
+        return; }
+    object oPC = GetExitingObject();
+    if (!GetIsPC(oPC))
+        return;
+    oPC = GetFirstPC();
+    while (oPC != OBJECT_INVALID)
+    {
+        if (OBJECT_SELF == GetArea(oPC))
+            return;
+        else oPC = GetNextPC();
+    }
+    DelayCommand(cleanupdelay, ExecuteScript("areacleanup", OBJECT_SELF));
+
+   {
+    // Get the creature who triggered this event.
+    object oPC = GetExitingObject();
+
+    // Only fire for (real) PCs.
+    if ( !GetIsPC(oPC)  ||  GetIsDMPossessed(oPC) )
+        return;
+
+    // Destroy an object (not fully effective until this script ends).
+    DestroyObject(GetObjectByTag("SilverSpringKey"));
+  }
+ }
 }

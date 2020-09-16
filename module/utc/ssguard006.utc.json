@@ -90,7 +90,7 @@
   },
   "ChallengeRating": {
     "type": "float",
-    "value": 8.0
+    "value": 3.0
   },
   "ClassList": {
     "type": "list",
@@ -103,7 +103,7 @@
         },
         "ClassLevel": {
           "type": "short",
-          "value": 10
+          "value": 3
         }
       }
     ]
@@ -142,7 +142,7 @@
   },
   "CurrentHitPoints": {
     "type": "short",
-    "value": 59
+    "value": 30
   },
   "DecayTime": {
     "type": "dword",
@@ -179,14 +179,14 @@
         }
       },
       {
-        "__struct_id": 16,
+        "__struct_id": 2048,
         "Dropable": {
           "type": "byte",
           "value": 1
         },
         "EquippedRes": {
           "type": "resref",
-          "value": "wswls002"
+          "value": "wamar002"
         }
       }
     ]
@@ -395,7 +395,7 @@
   },
   "HitPoints": {
     "type": "short",
-    "value": 59
+    "value": 30
   },
   "Int": {
     "type": "byte",
@@ -491,6 +491,25 @@
           "type": "word",
           "value": 0
         }
+      },
+      {
+        "__struct_id": 4,
+        "Dropable": {
+          "type": "byte",
+          "value": 1
+        },
+        "InventoryRes": {
+          "type": "resref",
+          "value": "wbwln003"
+        },
+        "Repos_PosX": {
+          "type": "word",
+          "value": 4
+        },
+        "Repos_Posy": {
+          "type": "word",
+          "value": 0
+        }
       }
     ]
   },
@@ -510,7 +529,7 @@
   },
   "MaxHitPoints": {
     "type": "short",
-    "value": 69
+    "value": 33
   },
   "NaturalAC": {
     "type": "byte",
@@ -803,7 +822,7 @@
   },
   "SoundSetFile": {
     "type": "word",
-    "value": 0
+    "value": 155
   },
   "SpecAbilityList": {
     "type": "list",
