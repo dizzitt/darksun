@@ -146,7 +146,7 @@
   },
   "DecayTime": {
     "type": "dword",
-    "value": 5000
+    "value": 180000
   },
   "Deity": {
     "type": "cexostring",
@@ -169,6 +169,10 @@
     "value": [
       {
         "__struct_id": 2,
+        "Dropable": {
+          "type": "byte",
+          "value": 1
+        },
         "EquippedRes": {
           "type": "resref",
           "value": "001"
@@ -178,7 +182,7 @@
   },
   "FactionID": {
     "type": "word",
-    "value": 3
+    "value": 6
   },
   "FeatList": {
     "type": "list",
@@ -354,9 +358,13 @@
     "value": [
       {
         "__struct_id": 0,
+        "Dropable": {
+          "type": "byte",
+          "value": 1
+        },
         "InventoryRes": {
           "type": "resref",
-          "value": "it_torch007"
+          "value": "it_mpotion028"
         },
         "Repos_PosX": {
           "type": "word",
@@ -369,9 +377,13 @@
       },
       {
         "__struct_id": 1,
+        "Dropable": {
+          "type": "byte",
+          "value": 1
+        },
         "InventoryRes": {
           "type": "resref",
-          "value": "it_mpotion028"
+          "value": "it_mpotion035"
         },
         "Repos_PosX": {
           "type": "word",
@@ -384,9 +396,13 @@
       },
       {
         "__struct_id": 2,
+        "Dropable": {
+          "type": "byte",
+          "value": 1
+        },
         "InventoryRes": {
           "type": "resref",
-          "value": "it_mpotion035"
+          "value": "it_mpotion036"
         },
         "Repos_PosX": {
           "type": "word",
@@ -399,9 +415,13 @@
       },
       {
         "__struct_id": 3,
+        "Dropable": {
+          "type": "byte",
+          "value": 1
+        },
         "InventoryRes": {
           "type": "resref",
-          "value": "it_mpotion036"
+          "value": "wblcl005"
         },
         "Repos_PosX": {
           "type": "word",
@@ -426,7 +446,7 @@
   },
   "Lootable": {
     "type": "byte",
-    "value": 0
+    "value": 1
   },
   "MaxHitPoints": {
     "type": "short",
@@ -470,55 +490,55 @@
   },
   "ScriptAttacked": {
     "type": "resref",
-    "value": "x2_def_attacked"
+    "value": "hook_creature09"
   },
   "ScriptDamaged": {
     "type": "resref",
-    "value": "x2_def_ondamage"
+    "value": "hook_creature04"
   },
   "ScriptDeath": {
     "type": "resref",
-    "value": "x2_def_ondeath"
+    "value": "hook_creature05"
   },
   "ScriptDialogue": {
     "type": "resref",
-    "value": "x2_def_onconv"
+    "value": "hook_creature03"
   },
   "ScriptDisturbed": {
     "type": "resref",
-    "value": "x2_def_ondisturb"
+    "value": "hook_creature06"
   },
   "ScriptEndRound": {
     "type": "resref",
-    "value": "x2_def_endcombat"
+    "value": "hook_creature02"
   },
   "ScriptHeartbeat": {
     "type": "resref",
-    "value": "x2_def_heartbeat"
+    "value": "hook_creature07"
   },
   "ScriptOnBlocked": {
     "type": "resref",
-    "value": "x2_def_onblocked"
+    "value": "hook_creature01"
   },
   "ScriptOnNotice": {
     "type": "resref",
-    "value": "x2_def_percept"
+    "value": "hook_creature08"
   },
   "ScriptRested": {
     "type": "resref",
-    "value": "x2_def_rested"
+    "value": "hook_creature10"
   },
   "ScriptSpawn": {
     "type": "resref",
-    "value": "x2_def_spawn"
+    "value": "hook_creature11"
   },
   "ScriptSpellAt": {
     "type": "resref",
-    "value": "x2_def_spellcast"
+    "value": "hook_creature12"
   },
   "ScriptUserDefine": {
     "type": "resref",
-    "value": "x2_def_userdef"
+    "value": "hook_creature13"
   },
   "SkillList": {
     "type": "list",

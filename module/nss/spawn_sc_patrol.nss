@@ -99,6 +99,382 @@ void main()
      }
     }
 
+     if (nPatrolScript == 97)
+        {
+         object oTarget;
+         object oSpawn;
+        // Destroy an object (not fully effective until this script ends).
+        DestroyObject(GetObjectByTag("Falhace_2"));
+         {
+         // Spawn "falhace001".
+         oTarget = GetWaypointByTag("SS_Camp_1");
+         oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "falhace001", GetLocation(oTarget));
+          // Have the spawn perform a sequence of actions.
+         AssignCommand(oSpawn, ActionSit(GetNearestObjectByTag("SS_Chair1")));
+         }
+        }
+
+     if (nPatrolScript == 96)
+        {
+         object oTarget;
+         object oSpawn;
+        // Destroy an object (not fully effective until this script ends).
+        DestroyObject(GetObjectByTag("VihKus_2"));
+         {
+         // Spawn "VihKus".
+         oTarget = GetWaypointByTag("SS_Camp_1");
+         oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "vihkus001", GetLocation(oTarget));
+          // Have the spawn perform a sequence of actions.
+         AssignCommand(oSpawn, ActionSit(GetNearestObjectByTag("SS_Chair1")));
+         }
+        }
+
+      if (nPatrolScript == 95)
+        {
+         object oTarget;
+         object oSpawn;
+        // Destroy an object (not fully effective until this script ends).
+        DestroyObject(GetObjectByTag("Mion_2"));
+         {
+         // Spawn "Mion".
+         oTarget = GetWaypointByTag("SS_Camp_1");
+         oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "mion001", GetLocation(oTarget));
+          // Have the spawn perform a sequence of actions.
+         AssignCommand(oSpawn, ActionSit(GetNearestObjectByTag("SS_Chair1")));
+         }
+        }
+
+       if (nPatrolScript == 94)
+        {
+         object oTarget;
+         object oSpawn;
+        // Destroy an object (not fully effective until this script ends).
+        DestroyObject(GetObjectByTag("Heldelia_2"));
+         {
+         // Spawn "Heldelia".
+         oTarget = GetWaypointByTag("SS_Camp_1");
+         oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "heldelia001", GetLocation(oTarget));
+          // Have the spawn perform a sequence of actions.
+         AssignCommand(oSpawn, ActionSit(GetNearestObjectByTag("SS_Chair1")));
+         }
+        }
+
+        if (nPatrolScript == 93)
+        {
+         object oTarget;
+         object oSpawn;
+        // Destroy an object (not fully effective until this script ends).
+        DestroyObject(GetObjectByTag("Sorisana_2"));
+         {
+         // Spawn "Sorisana".
+         oTarget = GetWaypointByTag("SS_Camp_1");
+         oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "sorisana001", GetLocation(oTarget));
+          // Have the spawn perform a sequence of actions.
+         AssignCommand(oSpawn, ActionSit(GetNearestObjectByTag("SS_Chair1")));
+         }
+        }
+
+       if (nPatrolScript == 92)
+        {
+         object oTarget;
+         object oSpawn;
+        // Destroy an object (not fully effective until this script ends).
+        DestroyObject(GetObjectByTag("Theodas_2"));
+         {
+         // Spawn "Theodas".
+         oTarget = GetWaypointByTag("SS_Camp_1");
+         oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "theodas001", GetLocation(oTarget));
+          // Have the spawn perform a sequence of actions.
+         AssignCommand(oSpawn, ActionSit(GetNearestObjectByTag("SS_Chair1")));
+         }
+        }
+
+       if (nPatrolScript == 91)
+        {
+         object oTarget;
+         object oSpawn;
+        // Destroy an object (not fully effective until this script ends).
+        DestroyObject(GetObjectByTag("Cyran_2"));
+         {
+         // Spawn "Cyran".
+         oTarget = GetWaypointByTag("SS_Camp_1");
+         oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "cyran001", GetLocation(oTarget));
+          // Have the spawn perform a sequence of actions.
+         AssignCommand(oSpawn, ActionSit(GetNearestObjectByTag("SS_Chair1")));
+         }
+        }
+        if (nPatrolScript == 90)
+        {
+         object oTarget;
+         object oSpawn;
+        // Destroy an object (not fully effective until this script ends).
+        DestroyObject(GetObjectByTag("Omrog_2"));
+         {
+         // Spawn "Omrog".
+         oTarget = GetWaypointByTag("SS_Camp_2");
+         oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "omrog001", GetLocation(oTarget));
+          // Have the spawn perform a sequence of actions.
+         AssignCommand(oSpawn, ActionSit(GetNearestObjectByTag("SS_Chair2")));
+         }
+        }
+         if (nPatrolScript == 89)
+        {
+         object oTarget;
+         object oSpawn;
+        // Destroy an object (not fully effective until this script ends).
+        DestroyObject(GetObjectByTag("Rilla_2"));
+         {
+         // Spawn "Rilla".
+         oTarget = GetWaypointByTag("SS_Camp_2");
+         oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "rilla001", GetLocation(oTarget));
+          // Have the spawn perform a sequence of actions.
+         AssignCommand(oSpawn, ActionSit(GetNearestObjectByTag("SS_Chair2")));
+         }
+        }
+
+         if (nPatrolScript == 88)
+        {
+         object oTarget;
+         object oSpawn;
+        // Destroy an object (not fully effective until this script ends).
+        DestroyObject(GetObjectByTag("Rotwin_2"));
+         {
+         // Spawn "Rotwin".
+         oTarget = GetWaypointByTag("SS_Camp_2");
+         oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "rotwin001", GetLocation(oTarget));
+          // Have the spawn perform a sequence of actions.
+         AssignCommand(oSpawn, ActionSit(GetNearestObjectByTag("SS_Chair2")));
+         }
+        }
+
+        if (nPatrolScript == 87)
+         {
+         object oTarget;
+         object oSpawn;
+         // Destroy an object (not fully effective until this script ends).
+         DestroyObject(GetObjectByTag("Wylen_2"));
+         {
+         // Spawn "Wylen".
+         oTarget = GetWaypointByTag("SS_Camp_2");
+         oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "wylen001", GetLocation(oTarget));
+          // Have the spawn perform a sequence of actions.
+         AssignCommand(oSpawn, ActionSit(GetNearestObjectByTag("SS_Chair2")));
+        }
+       }
+          if (nPatrolScript == 86)
+         {
+         object oTarget;
+         object oSpawn;
+         // Destroy an object (not fully effective until this script ends).
+         DestroyObject(GetObjectByTag("Asuth_2"));
+         {
+         // Spawn "Asuth".
+         oTarget = GetWaypointByTag("SS_Camp_2");
+         oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "asuth001", GetLocation(oTarget));
+          // Have the spawn perform a sequence of actions.
+         AssignCommand(oSpawn, ActionSit(GetNearestObjectByTag("SS_Chair2")));
+        }
+       }
+
+       if (nPatrolScript == 85)
+         {
+         object oTarget;
+         object oSpawn;
+         // Destroy an object (not fully effective until this script ends).
+         DestroyObject(GetObjectByTag("Vulmer_2"));
+         {
+         // Spawn "Vulmer".
+         oTarget = GetWaypointByTag("SS_Camp_2");
+         oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "vulmer001", GetLocation(oTarget));
+          // Have the spawn perform a sequence of actions.
+         AssignCommand(oSpawn, ActionSit(GetNearestObjectByTag("SS_Chair2")));
+        }
+       }
+        if (nPatrolScript == 84)
+         {
+         object oTarget;
+         object oSpawn;
+         // Destroy an object (not fully effective until this script ends).
+         DestroyObject(GetObjectByTag("Brouzzit_2"));
+         {
+         // Spawn "Brouzzit".
+         oTarget = GetWaypointByTag("SS_Camp_3");
+         oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "brouzzit001", GetLocation(oTarget));
+          // Have the spawn perform a sequence of actions.
+         AssignCommand(oSpawn, ActionSit(GetNearestObjectByTag("SS_Chair3")));
+        }
+       }
+
+        if (nPatrolScript == 83)
+         {
+         object oTarget;
+         object oSpawn;
+         // Destroy an object (not fully effective until this script ends).
+         DestroyObject(GetObjectByTag("Wexler_2"));
+         {
+         // Spawn "Wexler".
+         oTarget = GetWaypointByTag("SS_Camp_2");
+         oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "wexler001", GetLocation(oTarget));
+          // Have the spawn perform a sequence of actions.
+         AssignCommand(oSpawn, ActionSit(GetNearestObjectByTag("SS_Chair2")));
+        }
+       }
+
+        if (nPatrolScript == 82)
+         {
+         object oTarget;
+         object oSpawn;
+         // Destroy an object (not fully effective until this script ends).
+         DestroyObject(GetObjectByTag("Ralnor_2"));
+         {
+         // Spawn "Ralnor".
+         oTarget = GetWaypointByTag("SS_Camp_3");
+         oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "ralnor001", GetLocation(oTarget));
+          // Have the spawn perform a sequence of actions.
+         AssignCommand(oSpawn, ActionSit(GetNearestObjectByTag("SS_Chair3")));
+        }
+       }
+
+        if (nPatrolScript == 81)
+         {
+         object oTarget;
+         object oSpawn;
+         // Destroy an object (not fully effective until this script ends).
+         DestroyObject(GetObjectByTag("Fylson_2"));
+         {
+         // Spawn "Fylson".
+         oTarget = GetWaypointByTag("SS_Camp_3");
+         oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "fylson001", GetLocation(oTarget));
+          // Have the spawn perform a sequence of actions.
+         AssignCommand(oSpawn, ActionSit(GetNearestObjectByTag("SS_Chair3")));
+        }
+       }
+
+         if (nPatrolScript == 80)
+         {
+         object oTarget;
+         object oSpawn;
+         // Destroy an object (not fully effective until this script ends).
+         DestroyObject(GetObjectByTag("Bellas_2"));
+         {
+         // Spawn "Bellas".
+         oTarget = GetWaypointByTag("SS_Camp_3");
+         oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "bellas001", GetLocation(oTarget));
+          // Have the spawn perform a sequence of actions.
+         AssignCommand(oSpawn, ActionSit(GetNearestObjectByTag("SS_Chair3")));
+        }
+       }
+
+        if (nPatrolScript == 79)
+         {
+         object oTarget;
+         object oSpawn;
+         // Destroy an object (not fully effective until this script ends).
+         DestroyObject(GetObjectByTag("Pelleas_2"));
+         {
+         // Spawn "Pelleas".
+         oTarget = GetWaypointByTag("SS_Camp_3");
+         oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "pelleas001", GetLocation(oTarget));
+          // Have the spawn perform a sequence of actions.
+         AssignCommand(oSpawn, ActionSit(GetNearestObjectByTag("SS_Chair3")));
+        }
+       }
+
+         if (nPatrolScript == 78)
+         {
+         object oTarget;
+         object oSpawn;
+         // Destroy an object (not fully effective until this script ends).
+         DestroyObject(GetObjectByTag("Raosk_2"));
+         {
+         // Spawn "Raosk".
+         oTarget = GetWaypointByTag("SS_Camp_3");
+         oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "raosk001", GetLocation(oTarget));
+          // Have the spawn perform a sequence of actions.
+         AssignCommand(oSpawn, ActionSit(GetNearestObjectByTag("SS_Chair3")));
+        }
+       }
+
+         if (nPatrolScript == 77)
+         {
+         object oTarget;
+         object oSpawn;
+         // Destroy an object (not fully effective until this script ends).
+         DestroyObject(GetObjectByTag("Drex_2"));
+         {
+         // Spawn "Osdal".
+         oTarget = GetWaypointByTag("SS_Camp_4");
+         oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "drex001", GetLocation(oTarget));
+
+         }
+       }
+
+         if (nPatrolScript == 76)
+         {
+         object oTarget;
+         object oSpawn;
+         // Destroy an object (not fully effective until this script ends).
+         DestroyObject(GetObjectByTag("Osdal_2"));
+         {
+         // Spawn "Osdal".
+         oTarget = GetWaypointByTag("SS_Camp_3");
+         oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "osdal001", GetLocation(oTarget));
+          // Have the spawn perform a sequence of actions.
+         AssignCommand(oSpawn, ActionSit(GetNearestObjectByTag("SS_Chair3")));
+        }
+       }
+
+         if (nPatrolScript == 75)
+         {
+         object oTarget;
+         object oSpawn;
+         // Destroy an object (not fully effective until this script ends).
+         DestroyObject(GetObjectByTag("Theftala_2"));
+         {
+         // Spawn "Theftala".
+         oTarget = GetWaypointByTag("SS_Camp_5");
+         oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "theftala001", GetLocation(oTarget));
+        }
+       }
+
+          if (nPatrolScript == 74)
+         {
+         object oTarget;
+         object oSpawn;
+         // Destroy an object (not fully effective until this script ends).
+         DestroyObject(GetObjectByTag("Everia_2"));
+         {
+         // Spawn "Theftala".
+         oTarget = GetWaypointByTag("SS_Camp_5");
+         oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "everia001", GetLocation(oTarget));
+        }
+       }
+
+          if (nPatrolScript == 73)
+         {
+         object oTarget;
+         object oSpawn;
+         // Destroy an object (not fully effective until this script ends).
+         DestroyObject(GetObjectByTag("Orwick_2"));
+         {
+         // Spawn "Theftala".
+         oTarget = GetWaypointByTag("SS_Camp_5");
+         oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "orwick001", GetLocation(oTarget));
+        }
+       }
+
+            if (nPatrolScript == 72)
+         {
+         object oTarget;
+         object oSpawn;
+         // Destroy an object (not fully effective until this script ends).
+         DestroyObject(GetObjectByTag("Chokishk_2"));
+         {
+         // Spawn "Theftala".
+         oTarget = GetWaypointByTag("SS_Camp_5");
+         oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "chokishk001", GetLocation(oTarget));
+        }
+       }
 // -------------------------------------------
 // Only Make Modifications Between These Lines
 //

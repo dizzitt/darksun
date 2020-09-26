@@ -6,7 +6,7 @@
   },
   "ArmorPart_Belt": {
     "type": "byte",
-    "value": 0
+    "value": 9
   },
   "ArmorPart_LBicep": {
     "type": "byte",
@@ -26,7 +26,7 @@
   },
   "ArmorPart_LShin": {
     "type": "byte",
-    "value": 4
+    "value": 17
   },
   "ArmorPart_LShoul": {
     "type": "byte",
@@ -34,7 +34,7 @@
   },
   "ArmorPart_LThigh": {
     "type": "byte",
-    "value": 16
+    "value": 15
   },
   "ArmorPart_Neck": {
     "type": "byte",
@@ -42,7 +42,7 @@
   },
   "ArmorPart_Pelvis": {
     "type": "byte",
-    "value": 27
+    "value": 37
   },
   "ArmorPart_RBicep": {
     "type": "byte",
@@ -66,7 +66,7 @@
   },
   "ArmorPart_RShin": {
     "type": "byte",
-    "value": 4
+    "value": 17
   },
   "ArmorPart_RShoul": {
     "type": "byte",
@@ -74,11 +74,11 @@
   },
   "ArmorPart_RThigh": {
     "type": "byte",
-    "value": 16
+    "value": 15
   },
   "ArmorPart_Torso": {
     "type": "byte",
-    "value": 7
+    "value": 42
   },
   "BaseItem": {
     "type": "int",
@@ -102,7 +102,7 @@
   },
   "Cost": {
     "type": "dword",
-    "value": 1
+    "value": 10
   },
   "Cursed": {
     "type": "byte",
@@ -132,7 +132,7 @@
     "id": 12928,
     "type": "cexolocstring",
     "value": {
-      "0": "Sydaria Tunic"
+      "0": "Orwick's Tunic"
     }
   },
   "Metal1Color": {

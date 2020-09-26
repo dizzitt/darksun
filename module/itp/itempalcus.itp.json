@@ -153,6 +153,17 @@
                     "__struct_id": 0,
                     "NAME": {
                       "type": "cexostring",
+                      "value": "Everia Tunic"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "cloth035"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
                       "value": "Ivan Outfit"
                     },
                     "RESREF": {
@@ -169,6 +180,17 @@
                     "RESREF": {
                       "type": "resref",
                       "value": "cloth012"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Orwick's Tunic"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "cloth033"
                     }
                   },
                   {
@@ -202,17 +224,6 @@
                     "RESREF": {
                       "type": "resref",
                       "value": "002"
-                    }
-                  },
-                  {
-                    "__struct_id": 0,
-                    "NAME": {
-                      "type": "cexostring",
-                      "value": "Sydaria Tunic"
-                    },
-                    "RESREF": {
-                      "type": "resref",
-                      "value": "cloth033"
                     }
                   }
                 ]
@@ -284,6 +295,17 @@
                     "RESREF": {
                       "type": "resref",
                       "value": "aarcl006"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Leather Strap Armor"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "leatherstrapar1"
                     }
                   },
                   {
@@ -366,6 +388,17 @@
                     "RESREF": {
                       "type": "resref",
                       "value": "aarcl011"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Heavy Studded Leather Breastplate +3"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "aarcl012"
                     }
                   }
                 ]
@@ -576,6 +609,17 @@
                       "type": "dword",
                       "value": 13249
                     }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_crewps033"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 13249
+                    }
                   }
                 ]
               },
@@ -697,6 +741,28 @@
                     "RESREF": {
                       "type": "resref",
                       "value": "it_crewpsp024"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 13270
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_crewpsp025"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 13270
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_crewpsp026"
                     },
                     "STRREF": {
                       "type": "dword",
@@ -3223,7 +3289,7 @@
                           },
                           "RESREF": {
                             "type": "resref",
-                            "value": "bonedagger2"
+                            "value": "bonedagger1"
                           }
                         },
                         {
@@ -3234,7 +3300,7 @@
                           },
                           "RESREF": {
                             "type": "resref",
-                            "value": "bonedagger1"
+                            "value": "bonedagger2"
                           }
                         },
                         {
@@ -3278,7 +3344,7 @@
                           },
                           "RESREF": {
                             "type": "resref",
-                            "value": "obsidiandagger1"
+                            "value": "obsidiandagge2"
                           }
                         },
                         {
@@ -3289,7 +3355,7 @@
                           },
                           "RESREF": {
                             "type": "resref",
-                            "value": "obsidiandagge2"
+                            "value": "obsidiandagger1"
                           }
                         },
                         {
@@ -3416,6 +3482,17 @@
                           "__struct_id": 0,
                           "NAME": {
                             "type": "cexostring",
+                            "value": "Bone Longsword +4"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "bonelongsword002"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
                             "value": "Obsidian Longsword"
                           },
                           "RESREF": {
@@ -3479,6 +3556,22 @@
                     "ID": {
                       "type": "byte",
                       "value": 37
+                    },
+                    "LIST": {
+                      "type": "list",
+                      "value": [
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Scimitar of Speed +5"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "wswmsc006"
+                          }
+                        }
+                      ]
                     },
                     "STRREF": {
                       "type": "dword",
@@ -3645,18 +3738,29 @@
                           },
                           "RESREF": {
                             "type": "resref",
-                            "value": "wblhw002"
+                            "value": "wblhw004"
                           }
                         },
                         {
                           "__struct_id": 0,
                           "NAME": {
                             "type": "cexostring",
-                            "value": "Stone Warhammer"
+                            "value": "Stone Warhammer +2"
                           },
                           "RESREF": {
                             "type": "resref",
-                            "value": "wblhw004"
+                            "value": "wblhw005"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Stone Warhammer +5"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "wblhw002"
                           }
                         }
                       ]

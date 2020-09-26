@@ -178,7 +178,7 @@
   },
   "FactionID": {
     "type": "word",
-    "value": 3
+    "value": 5
   },
   "FeatList": {
     "type": "list",
@@ -359,55 +359,55 @@
   },
   "ScriptAttacked": {
     "type": "resref",
-    "value": ""
+    "value": "hook_creature09"
   },
   "ScriptDamaged": {
     "type": "resref",
-    "value": ""
+    "value": "hook_creature04"
   },
   "ScriptDeath": {
     "type": "resref",
-    "value": ""
+    "value": "hook_creature05"
   },
   "ScriptDialogue": {
     "type": "resref",
-    "value": ""
+    "value": "hook_creature03"
   },
   "ScriptDisturbed": {
     "type": "resref",
-    "value": ""
+    "value": "hook_creature06"
   },
   "ScriptEndRound": {
     "type": "resref",
-    "value": ""
+    "value": "hook_creature02"
   },
   "ScriptHeartbeat": {
     "type": "resref",
-    "value": ""
+    "value": "hook_creature07"
   },
   "ScriptOnBlocked": {
     "type": "resref",
-    "value": ""
+    "value": "hook_creature01"
   },
   "ScriptOnNotice": {
     "type": "resref",
-    "value": ""
+    "value": "hook_creature08"
   },
   "ScriptRested": {
     "type": "resref",
-    "value": ""
+    "value": "hook_creature10"
   },
   "ScriptSpawn": {
     "type": "resref",
-    "value": ""
+    "value": "hook_creature11"
   },
   "ScriptSpellAt": {
     "type": "resref",
-    "value": ""
+    "value": "hook_creature12"
   },
   "ScriptUserDefine": {
     "type": "resref",
-    "value": ""
+    "value": "hook_creature13"
   },
   "SkillList": {
     "type": "list",

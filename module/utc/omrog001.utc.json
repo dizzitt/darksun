@@ -134,7 +134,7 @@
   },
   "Conversation": {
     "type": "resref",
-    "value": ""
+    "value": "omrog_1"
   },
   "CRAdjust": {
     "type": "int",
@@ -192,7 +192,7 @@
   },
   "FactionID": {
     "type": "word",
-    "value": 2
+    "value": 6
   },
   "FeatList": {
     "type": "list",
@@ -400,55 +400,55 @@
   },
   "ScriptAttacked": {
     "type": "resref",
-    "value": "nw_c2_default5"
+    "value": "hook_creature09"
   },
   "ScriptDamaged": {
     "type": "resref",
-    "value": "nw_c2_default6"
+    "value": "hook_creature04"
   },
   "ScriptDeath": {
     "type": "resref",
-    "value": "nw_c2_default7"
+    "value": "hook_creature05"
   },
   "ScriptDialogue": {
     "type": "resref",
-    "value": "nw_c2_default4"
+    "value": "hook_creature03"
   },
   "ScriptDisturbed": {
     "type": "resref",
-    "value": "nw_c2_default8"
+    "value": "hook_creature06"
   },
   "ScriptEndRound": {
     "type": "resref",
-    "value": "nw_c2_default3"
+    "value": "hook_creature02"
   },
   "ScriptHeartbeat": {
     "type": "resref",
-    "value": "nw_c2_default1"
+    "value": "hook_creature07"
   },
   "ScriptOnBlocked": {
     "type": "resref",
-    "value": "nw_c2_defaulte"
+    "value": "hook_creature01"
   },
   "ScriptOnNotice": {
     "type": "resref",
-    "value": "nw_c2_default2"
+    "value": "hook_creature08"
   },
   "ScriptRested": {
     "type": "resref",
-    "value": "nw_c2_defaulta"
+    "value": "hook_creature10"
   },
   "ScriptSpawn": {
     "type": "resref",
-    "value": "nw_c2_default9"
+    "value": "hook_creature11"
   },
   "ScriptSpellAt": {
     "type": "resref",
-    "value": "nw_c2_defaultb"
+    "value": "hook_creature12"
   },
   "ScriptUserDefine": {
     "type": "resref",
-    "value": "nw_c2_defaultd"
+    "value": "hook_creature13"
   },
   "SkillList": {
     "type": "list",

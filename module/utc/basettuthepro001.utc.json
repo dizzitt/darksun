@@ -134,7 +134,7 @@
   },
   "Conversation": {
     "type": "resref",
-    "value": ""
+    "value": "basettu_pow_1"
   },
   "CRAdjust": {
     "type": "int",
@@ -598,7 +598,7 @@
   },
   "ScriptAttacked": {
     "type": "resref",
-    "value": "x2_def_attacked"
+    "value": "hook_creature09"
   },
   "ScriptDamaged": {
     "type": "resref",
@@ -606,47 +606,47 @@
   },
   "ScriptDeath": {
     "type": "resref",
-    "value": "x2_def_ondeath"
+    "value": "hook_creature05"
   },
   "ScriptDialogue": {
     "type": "resref",
-    "value": "x2_def_onconv"
+    "value": "hook_creature03"
   },
   "ScriptDisturbed": {
     "type": "resref",
-    "value": "x2_def_ondisturb"
+    "value": "hook_creature06"
   },
   "ScriptEndRound": {
     "type": "resref",
-    "value": "x2_def_endcombat"
+    "value": "hook_creature02"
   },
   "ScriptHeartbeat": {
     "type": "resref",
-    "value": "x2_def_heartbeat"
+    "value": "hook_creature07"
   },
   "ScriptOnBlocked": {
     "type": "resref",
-    "value": "x2_def_onblocked"
+    "value": "hook_creature01"
   },
   "ScriptOnNotice": {
     "type": "resref",
-    "value": "x2_def_percept"
+    "value": "hook_creature08"
   },
   "ScriptRested": {
     "type": "resref",
-    "value": "x2_def_rested"
+    "value": "hook_creature10"
   },
   "ScriptSpawn": {
     "type": "resref",
-    "value": "x2_def_spawn"
+    "value": "hook_creature11"
   },
   "ScriptSpellAt": {
     "type": "resref",
-    "value": "x2_def_spellcast"
+    "value": "hook_creature12"
   },
   "ScriptUserDefine": {
     "type": "resref",
-    "value": "x2_def_userdef"
+    "value": "hook_creature13"
   },
   "SkillList": {
     "type": "list",
@@ -851,7 +851,7 @@
   },
   "SoundSetFile": {
     "type": "word",
-    "value": 364
+    "value": 171
   },
   "SpecAbilityList": {
     "type": "list",
@@ -871,7 +871,7 @@
   },
   "Tag": {
     "type": "cexostring",
-    "value": "Basettutheprotectorofthewall"
+    "value": "Basettu_PoW_1"
   },
   "Tail_New": {
     "type": "dword",
@@ -884,6 +884,26 @@
   "TemplateResRef": {
     "type": "resref",
     "value": "basettuthepro001"
+  },
+  "VarTable": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "OnDamaged"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 3
+        },
+        "Value": {
+          "type": "cexostring",
+          "value": "ondam_2es"
+        }
+      }
+    ]
   },
   "WalkRate": {
     "type": "int",
