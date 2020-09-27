@@ -6,7 +6,7 @@
   },
   "ArmorPart_Belt": {
     "type": "byte",
-    "value": 0
+    "value": 9
   },
   "ArmorPart_LBicep": {
     "type": "byte",
@@ -34,7 +34,7 @@
   },
   "ArmorPart_LThigh": {
     "type": "byte",
-    "value": 16
+    "value": 7
   },
   "ArmorPart_Neck": {
     "type": "byte",
@@ -74,11 +74,11 @@
   },
   "ArmorPart_RThigh": {
     "type": "byte",
-    "value": 16
+    "value": 7
   },
   "ArmorPart_Torso": {
     "type": "byte",
-    "value": 7
+    "value": 40
   },
   "BaseItem": {
     "type": "int",
@@ -90,11 +90,11 @@
   },
   "Cloth1Color": {
     "type": "byte",
-    "value": 26
+    "value": 23
   },
   "Cloth2Color": {
     "type": "byte",
-    "value": 103
+    "value": 23
   },
   "Comment": {
     "type": "cexostring",
@@ -102,7 +102,7 @@
   },
   "Cost": {
     "type": "dword",
-    "value": 1
+    "value": 5
   },
   "Cursed": {
     "type": "byte",
@@ -126,13 +126,13 @@
   },
   "Leather2Color": {
     "type": "byte",
-    "value": 26
+    "value": 131
   },
   "LocalizedName": {
     "id": 12928,
     "type": "cexolocstring",
     "value": {
-      "0": "Everia Tunic"
+      "0": "Zaleria's Tunic"
     }
   },
   "Metal1Color": {

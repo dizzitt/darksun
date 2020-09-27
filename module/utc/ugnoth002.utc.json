@@ -741,7 +741,7 @@
   },
   "SoundSetFile": {
     "type": "word",
-    "value": 15
+    "value": 212
   },
   "SpecAbilityList": {
     "type": "list",
@@ -761,7 +761,7 @@
   },
   "Tag": {
     "type": "cexostring",
-    "value": "Ugnoth"
+    "value": "Ugnoth_2"
   },
   "Tail_New": {
     "type": "dword",

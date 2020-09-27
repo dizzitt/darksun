@@ -469,7 +469,7 @@
   },
   "Conversation": {
     "type": "resref",
-    "value": ""
+    "value": "beldak_1"
   },
   "CRAdjust": {
     "type": "int",
@@ -1052,7 +1052,7 @@
   },
   "SoundSetFile": {
     "type": "word",
-    "value": 65535
+    "value": 406
   },
   "SpecAbilityList": {
     "type": "list",
@@ -1072,7 +1072,7 @@
   },
   "Tag": {
     "type": "cexostring",
-    "value": "Beldak"
+    "value": "Beldak_1"
   },
   "Tail_New": {
     "type": "dword",

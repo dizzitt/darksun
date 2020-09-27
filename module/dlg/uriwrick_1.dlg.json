@@ -64,7 +64,7 @@
         "Text": {
           "type": "cexolocstring",
           "value": {
-            "0": "What do you want"
+            "0": "What"
           }
         }
       }
@@ -72,7 +72,7 @@
   },
   "NumWords": {
     "type": "dword",
-    "value": 4
+    "value": 1
   },
   "PreventZoomIn": {
     "type": "byte",

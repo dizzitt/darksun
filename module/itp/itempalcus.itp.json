@@ -153,17 +153,6 @@
                     "__struct_id": 0,
                     "NAME": {
                       "type": "cexostring",
-                      "value": "Everia Tunic"
-                    },
-                    "RESREF": {
-                      "type": "resref",
-                      "value": "cloth035"
-                    }
-                  },
-                  {
-                    "__struct_id": 0,
-                    "NAME": {
-                      "type": "cexostring",
                       "value": "Ivan Outfit"
                     },
                     "RESREF": {
@@ -224,6 +213,17 @@
                     "RESREF": {
                       "type": "resref",
                       "value": "002"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Zaleria's Tunic"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "cloth035"
                     }
                   }
                 ]

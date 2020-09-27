@@ -2,11 +2,11 @@
   "__data_type": "UTC ",
   "Appearance_Head": {
     "type": "byte",
-    "value": 1
+    "value": 3
   },
   "Appearance_Type": {
     "type": "word",
-    "value": 1208
+    "value": 1212
   },
   "ArmorPart_RFoot": {
     "type": "byte",
@@ -86,7 +86,7 @@
   },
   "Cha": {
     "type": "byte",
-    "value": 9
+    "value": 12
   },
   "ChallengeRating": {
     "type": "float",
@@ -99,7 +99,7 @@
         "__struct_id": 2,
         "Class": {
           "type": "int",
-          "value": 4
+          "value": 40
         },
         "ClassLevel": {
           "type": "short",
@@ -130,11 +130,11 @@
   },
   "Con": {
     "type": "byte",
-    "value": 16
+    "value": 14
   },
   "Conversation": {
     "type": "resref",
-    "value": "kathrall_1"
+    "value": "ss_store8"
   },
   "CRAdjust": {
     "type": "int",
@@ -142,7 +142,7 @@
   },
   "CurrentHitPoints": {
     "type": "short",
-    "value": 21
+    "value": 13
   },
   "DecayTime": {
     "type": "dword",
@@ -158,7 +158,7 @@
   },
   "Dex": {
     "type": "byte",
-    "value": 13
+    "value": 16
   },
   "Disarmable": {
     "type": "byte",
@@ -166,11 +166,23 @@
   },
   "Equip_ItemList": {
     "type": "list",
-    "value": []
+    "value": [
+      {
+        "__struct_id": 2,
+        "Dropable": {
+          "type": "byte",
+          "value": 1
+        },
+        "EquippedRes": {
+          "type": "resref",
+          "value": "nw_cloth027"
+        }
+      }
+    ]
   },
   "FactionID": {
     "type": "word",
-    "value": 2
+    "value": 5
   },
   "FeatList": {
     "type": "list",
@@ -179,77 +191,56 @@
         "__struct_id": 1,
         "Feat": {
           "type": "word",
-          "value": 2
+          "value": 236
         }
       },
       {
         "__struct_id": 1,
         "Feat": {
           "type": "word",
-          "value": 3
+          "value": 235
         }
       },
       {
         "__struct_id": 1,
         "Feat": {
           "type": "word",
-          "value": 4
+          "value": 240
         }
       },
       {
         "__struct_id": 1,
         "Feat": {
           "type": "word",
-          "value": 6
+          "value": 354
         }
       },
       {
         "__struct_id": 1,
         "Feat": {
           "type": "word",
-          "value": 10
+          "value": 237
         }
       },
       {
         "__struct_id": 1,
         "Feat": {
           "type": "word",
-          "value": 1089
+          "value": 238
         }
       },
       {
         "__struct_id": 1,
         "Feat": {
           "type": "word",
-          "value": 28
+          "value": 239
         }
       },
       {
         "__struct_id": 1,
         "Feat": {
           "type": "word",
-          "value": 32
-        }
-      },
-      {
-        "__struct_id": 1,
-        "Feat": {
-          "type": "word",
-          "value": 106
-        }
-      },
-      {
-        "__struct_id": 1,
-        "Feat": {
-          "type": "word",
-          "value": 45
-        }
-      },
-      {
-        "__struct_id": 1,
-        "Feat": {
-          "type": "word",
-          "value": 46
+          "value": 256
         }
       }
     ]
@@ -257,7 +248,7 @@
   "FirstName": {
     "type": "cexolocstring",
     "value": {
-      "0": "Kathrall"
+      "0": "Sontar"
     }
   },
   "fortbonus": {
@@ -270,19 +261,19 @@
   },
   "GoodEvil": {
     "type": "byte",
-    "value": 50
+    "value": 100
   },
   "HitPoints": {
     "type": "short",
-    "value": 21
+    "value": 13
   },
   "Int": {
     "type": "byte",
-    "value": 10
+    "value": 14
   },
   "Interruptable": {
     "type": "byte",
-    "value": 1
+    "value": 0
   },
   "IsImmortal": {
     "type": "byte",
@@ -303,68 +294,11 @@
         },
         "InventoryRes": {
           "type": "resref",
-          "value": "nw_it_mpotion001"
+          "value": "wswls006"
         },
         "Repos_PosX": {
           "type": "word",
           "value": 0
-        },
-        "Repos_Posy": {
-          "type": "word",
-          "value": 0
-        }
-      },
-      {
-        "__struct_id": 1,
-        "Dropable": {
-          "type": "byte",
-          "value": 1
-        },
-        "InventoryRes": {
-          "type": "resref",
-          "value": "nw_it_mpotion001"
-        },
-        "Repos_PosX": {
-          "type": "word",
-          "value": 1
-        },
-        "Repos_Posy": {
-          "type": "word",
-          "value": 0
-        }
-      },
-      {
-        "__struct_id": 2,
-        "Dropable": {
-          "type": "byte",
-          "value": 1
-        },
-        "InventoryRes": {
-          "type": "resref",
-          "value": "nw_it_mpotion001"
-        },
-        "Repos_PosX": {
-          "type": "word",
-          "value": 2
-        },
-        "Repos_Posy": {
-          "type": "word",
-          "value": 0
-        }
-      },
-      {
-        "__struct_id": 3,
-        "Dropable": {
-          "type": "byte",
-          "value": 1
-        },
-        "InventoryRes": {
-          "type": "resref",
-          "value": "boneshortsw1"
-        },
-        "Repos_PosX": {
-          "type": "word",
-          "value": 3
         },
         "Repos_Posy": {
           "type": "word",
@@ -381,7 +315,7 @@
   },
   "LawfulChaotic": {
     "type": "byte",
-    "value": 50
+    "value": 0
   },
   "Lootable": {
     "type": "byte",
@@ -389,7 +323,7 @@
   },
   "MaxHitPoints": {
     "type": "short",
-    "value": 30
+    "value": 13
   },
   "NaturalAC": {
     "type": "byte",
@@ -401,7 +335,7 @@
   },
   "PaletteID": {
     "type": "byte",
-    "value": 45
+    "value": 39
   },
   "PerceptionRange": {
     "type": "byte",
@@ -421,7 +355,7 @@
   },
   "Race": {
     "type": "byte",
-    "value": 27
+    "value": 29
   },
   "refbonus": {
     "type": "short",
@@ -493,13 +427,6 @@
         "__struct_id": 0,
         "Rank": {
           "type": "byte",
-          "value": 1
-        }
-      },
-      {
-        "__struct_id": 0,
-        "Rank": {
-          "type": "byte",
           "value": 0
         }
       },
@@ -507,14 +434,7 @@
         "__struct_id": 0,
         "Rank": {
           "type": "byte",
-          "value": 3
-        }
-      },
-      {
-        "__struct_id": 0,
-        "Rank": {
-          "type": "byte",
-          "value": 1
+          "value": 0
         }
       },
       {
@@ -535,13 +455,6 @@
         "__struct_id": 0,
         "Rank": {
           "type": "byte",
-          "value": 1
-        }
-      },
-      {
-        "__struct_id": 0,
-        "Rank": {
-          "type": "byte",
           "value": 0
         }
       },
@@ -556,7 +469,14 @@
         "__struct_id": 0,
         "Rank": {
           "type": "byte",
-          "value": 3
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
         }
       },
       {
@@ -640,7 +560,14 @@
         "__struct_id": 0,
         "Rank": {
           "type": "byte",
-          "value": 1
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
         }
       },
       {
@@ -661,14 +588,21 @@
         "__struct_id": 0,
         "Rank": {
           "type": "byte",
-          "value": 1
+          "value": 0
         }
       },
       {
         "__struct_id": 0,
         "Rank": {
           "type": "byte",
-          "value": 1
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
         }
       },
       {
@@ -682,7 +616,7 @@
   },
   "SoundSetFile": {
     "type": "word",
-    "value": 92
+    "value": 367
   },
   "SpecAbilityList": {
     "type": "list",
@@ -690,11 +624,11 @@
   },
   "StartingPackage": {
     "type": "byte",
-    "value": 4
+    "value": 0
   },
   "Str": {
     "type": "byte",
-    "value": 16
+    "value": 12
   },
   "Subrace": {
     "type": "cexostring",
@@ -702,7 +636,7 @@
   },
   "Tag": {
     "type": "cexostring",
-    "value": "Kathrall_1"
+    "value": "Sontar_1"
   },
   "Tail_New": {
     "type": "dword",
@@ -714,11 +648,11 @@
   },
   "TemplateResRef": {
     "type": "resref",
-    "value": "kathrall001"
+    "value": "sontar001"
   },
   "WalkRate": {
     "type": "int",
-    "value": 4
+    "value": 5
   },
   "willbonus": {
     "type": "short",
@@ -730,6 +664,6 @@
   },
   "Wis": {
     "type": "byte",
-    "value": 10
+    "value": 8
   }
 }

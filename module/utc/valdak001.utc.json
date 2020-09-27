@@ -134,7 +134,7 @@
   },
   "Conversation": {
     "type": "resref",
-    "value": ""
+    "value": "valdak_1"
   },
   "CRAdjust": {
     "type": "int",
@@ -727,7 +727,7 @@
   },
   "SoundSetFile": {
     "type": "word",
-    "value": 15
+    "value": 369
   },
   "SpecAbilityList": {
     "type": "list",
@@ -747,7 +747,7 @@
   },
   "Tag": {
     "type": "cexostring",
-    "value": "Valdak"
+    "value": "Valdak_1"
   },
   "Tail_New": {
     "type": "dword",

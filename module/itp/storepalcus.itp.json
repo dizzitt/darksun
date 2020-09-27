@@ -170,6 +170,17 @@
               "__struct_id": 0,
               "NAME": {
                 "type": "cexostring",
+                "value": "SS_store09"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "ssstore009"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
                 "value": "store01"
               },
               "RESREF": {

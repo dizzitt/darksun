@@ -1773,6 +1773,25 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
+                      "value": 2.0
+                    },
+                    "FACTION": {
+                      "type": "cexostring",
+                      "value": "The Silver Hand"
+                    },
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Sontar"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "sontar001"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "CR": {
+                      "type": "float",
                       "value": 7.0
                     },
                     "FACTION": {
@@ -2673,6 +2692,44 @@
                     "RESREF": {
                       "type": "resref",
                       "value": "vulmer002"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "CR": {
+                      "type": "float",
+                      "value": 14.0
+                    },
+                    "FACTION": {
+                      "type": "cexostring",
+                      "value": "Commoner"
+                    },
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Zaleria"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "zaleria001"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "CR": {
+                      "type": "float",
+                      "value": 14.0
+                    },
+                    "FACTION": {
+                      "type": "cexostring",
+                      "value": "Commoner"
+                    },
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Zaleria"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "zaleria002"
                     }
                   }
                 ]

@@ -310,7 +310,7 @@
   },
   "Conversation": {
     "type": "resref",
-    "value": ""
+    "value": "uriwrick_1"
   },
   "CRAdjust": {
     "type": "int",
@@ -764,7 +764,7 @@
   },
   "SoundSetFile": {
     "type": "word",
-    "value": 65535
+    "value": 131
   },
   "SpecAbilityList": {
     "type": "list",
@@ -784,7 +784,7 @@
   },
   "Tag": {
     "type": "cexostring",
-    "value": "Uriwrick"
+    "value": "Uriwrick_1"
   },
   "Tail_New": {
     "type": "dword",
