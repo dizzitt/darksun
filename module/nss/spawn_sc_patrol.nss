@@ -581,6 +581,44 @@ void main()
         }
        }
 
+                      if (nPatrolScript == 63)
+         {
+         object oTarget;
+         object oSpawn;
+         // Destroy an object (not fully effective until this script ends).
+         DestroyObject(GetObjectByTag("Gizzixoashk_2"));
+         {
+         // Spawn "Gizzixoashk".
+         oTarget = GetWaypointByTag("SS_Camp_6");
+         oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "gizzixoashk001", GetLocation(oTarget));
+        }
+       }
+
+                       if (nPatrolScript == 62)
+         {
+         object oTarget;
+         object oSpawn;
+         // Destroy an object (not fully effective until this script ends).
+         DestroyObject(GetObjectByTag("Joaquin_2"));
+         {
+         // Spawn "Joaquin".
+         oTarget = GetWaypointByTag("SS_Camp_6");
+         oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "joaquin001", GetLocation(oTarget));
+        }
+       }
+
+                        if (nPatrolScript == 61)
+         {
+         object oTarget;
+         object oSpawn;
+         // Destroy an object (not fully effective until this script ends).
+         DestroyObject(GetObjectByTag("Gurth_2"));
+         {
+         // Spawn "Gurth".
+         oTarget = GetWaypointByTag("SS_Camp_6");
+         oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "gurth001", GetLocation(oTarget));
+        }
+       }
 
 // -------------------------------------------
 // Only Make Modifications Between These Lines

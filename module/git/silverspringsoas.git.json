@@ -38351,7 +38351,7 @@
         },
         "XPosition": {
           "type": "float",
-          "value": 170.1873
+          "value": 170.4544
         },
         "YOrientation": {
           "type": "float",
@@ -38359,7 +38359,7 @@
         },
         "YPosition": {
           "type": "float",
-          "value": 180.7665
+          "value": 181.4534
         },
         "ZPosition": {
           "type": "float",
@@ -39255,7 +39255,7 @@
         },
         "XPosition": {
           "type": "float",
-          "value": 167.1891
+          "value": 167.2527
         },
         "YOrientation": {
           "type": "float",
@@ -39263,7 +39263,7 @@
         },
         "YPosition": {
           "type": "float",
-          "value": 183.1945
+          "value": 183.6146
         },
         "ZPosition": {
           "type": "float",
@@ -39857,7 +39857,7 @@
         },
         "XPosition": {
           "type": "float",
-          "value": 176.4402
+          "value": 176.7543
         },
         "YOrientation": {
           "type": "float",
@@ -39865,7 +39865,7 @@
         },
         "YPosition": {
           "type": "float",
-          "value": 173.7607
+          "value": 174.2991
         },
         "ZPosition": {
           "type": "float",
@@ -40159,7 +40159,7 @@
         },
         "XPosition": {
           "type": "float",
-          "value": 170.4027
+          "value": 170.4475
         },
         "YOrientation": {
           "type": "float",
@@ -40167,7 +40167,7 @@
         },
         "YPosition": {
           "type": "float",
-          "value": 197.9732
+          "value": 197.9285
         },
         "ZPosition": {
           "type": "float",
@@ -40461,7 +40461,7 @@
         },
         "XPosition": {
           "type": "float",
-          "value": 196.3277
+          "value": 196.2226
         },
         "YOrientation": {
           "type": "float",
@@ -40469,7 +40469,7 @@
         },
         "YPosition": {
           "type": "float",
-          "value": 110.1963
+          "value": 110.1122
         },
         "ZPosition": {
           "type": "float",
@@ -44149,7 +44149,7 @@
           "id": 14817,
           "type": "cexolocstring",
           "value": {
-            "0": "SP_PR18T3_SD30_IS1D0_DY17T20_HR16T17_PC05"
+            "0": "SP_PR46T0_SD30_IS1D0_PC05"
           }
         },
         "MapNote": {
@@ -44162,7 +44162,7 @@
         },
         "Tag": {
           "type": "cexostring",
-          "value": "uriwrick002"
+          "value": "gurth002"
         },
         "TemplateResRef": {
           "type": "resref",
@@ -44174,7 +44174,7 @@
         },
         "XPosition": {
           "type": "float",
-          "value": 198.7573
+          "value": 197.5725
         },
         "YOrientation": {
           "type": "float",
@@ -44182,7 +44182,7 @@
         },
         "YPosition": {
           "type": "float",
-          "value": 109.5839
+          "value": 109.5684
         },
         "ZPosition": {
           "type": "float",
@@ -44211,7 +44211,7 @@
           "id": 14817,
           "type": "cexolocstring",
           "value": {
-            "0": "SP_PR18T3_SD30_IS1D0_DY21T24_HR16T17_PC05"
+            "0": "SP_PR44T0_SD30_IS1D0_RS50_DY5T8_HR16T17_PC05"
           }
         },
         "MapNote": {
@@ -44224,7 +44224,7 @@
         },
         "Tag": {
           "type": "cexostring",
-          "value": "uriwrick002"
+          "value": "gizzixoashk002"
         },
         "TemplateResRef": {
           "type": "resref",
@@ -44236,7 +44236,7 @@
         },
         "XPosition": {
           "type": "float",
-          "value": 198.7762
+          "value": 196.2313
         },
         "YOrientation": {
           "type": "float",
@@ -44244,11 +44244,11 @@
         },
         "YPosition": {
           "type": "float",
-          "value": 109.4762
+          "value": 110.0873
         },
         "ZPosition": {
           "type": "float",
-          "value": 3.0
+          "value": 3.01
         }
       },
       {
@@ -44273,7 +44273,7 @@
           "id": 14817,
           "type": "cexolocstring",
           "value": {
-            "0": "SP_PR18T3_SD30_IS1D0_DY25T28_HR16T17_PC05"
+            "0": "SP_PR45T0_SD30_IS1D0_RS50_DY9T12_HR16T17_PC05"
           }
         },
         "MapNote": {
@@ -44286,7 +44286,7 @@
         },
         "Tag": {
           "type": "cexostring",
-          "value": "uriwrick002"
+          "value": "joaquin002"
         },
         "TemplateResRef": {
           "type": "resref",
@@ -44298,7 +44298,7 @@
         },
         "XPosition": {
           "type": "float",
-          "value": 198.8141
+          "value": 196.2197
         },
         "YOrientation": {
           "type": "float",
@@ -44306,11 +44306,11 @@
         },
         "YPosition": {
           "type": "float",
-          "value": 109.3519
+          "value": 110.1447
         },
         "ZPosition": {
           "type": "float",
-          "value": 3.0
+          "value": 3.01
         }
       },
       {
@@ -57617,6 +57617,1446 @@
         "YPosition": {
           "type": "float",
           "value": 139.8316
+        },
+        "ZPosition": {
+          "type": "float",
+          "value": 3.0
+        }
+      },
+      {
+        "__struct_id": 5,
+        "Appearance": {
+          "type": "byte",
+          "value": 1
+        },
+        "Description": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "HasMapNote": {
+          "type": "byte",
+          "value": 0
+        },
+        "LinkedTo": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "LocalizedName": {
+          "id": 14817,
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNote": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNoteEnabled": {
+          "type": "byte",
+          "value": 1
+        },
+        "Tag": {
+          "type": "cexostring",
+          "value": "PR44_SN01"
+        },
+        "TemplateResRef": {
+          "type": "resref",
+          "value": "nw_waypoint001"
+        },
+        "XOrientation": {
+          "type": "float",
+          "value": -0.1951
+        },
+        "XPosition": {
+          "type": "float",
+          "value": 202.0114
+        },
+        "YOrientation": {
+          "type": "float",
+          "value": 0.9808
+        },
+        "YPosition": {
+          "type": "float",
+          "value": 125.2299
+        },
+        "ZPosition": {
+          "type": "float",
+          "value": 3.352
+        }
+      },
+      {
+        "__struct_id": 5,
+        "Appearance": {
+          "type": "byte",
+          "value": 1
+        },
+        "Description": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "HasMapNote": {
+          "type": "byte",
+          "value": 0
+        },
+        "LinkedTo": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "LocalizedName": {
+          "id": 14817,
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNote": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNoteEnabled": {
+          "type": "byte",
+          "value": 1
+        },
+        "Tag": {
+          "type": "cexostring",
+          "value": "PR44_SN02"
+        },
+        "TemplateResRef": {
+          "type": "resref",
+          "value": "nw_waypoint001"
+        },
+        "XOrientation": {
+          "type": "float",
+          "value": -0.1951
+        },
+        "XPosition": {
+          "type": "float",
+          "value": 200.7481
+        },
+        "YOrientation": {
+          "type": "float",
+          "value": 0.9808
+        },
+        "YPosition": {
+          "type": "float",
+          "value": 139.7213
+        },
+        "ZPosition": {
+          "type": "float",
+          "value": 3.0
+        }
+      },
+      {
+        "__struct_id": 5,
+        "Appearance": {
+          "type": "byte",
+          "value": 1
+        },
+        "Description": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "HasMapNote": {
+          "type": "byte",
+          "value": 0
+        },
+        "LinkedTo": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "LocalizedName": {
+          "id": 14817,
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNote": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNoteEnabled": {
+          "type": "byte",
+          "value": 1
+        },
+        "Tag": {
+          "type": "cexostring",
+          "value": "PR44_SN03"
+        },
+        "TemplateResRef": {
+          "type": "resref",
+          "value": "nw_waypoint001"
+        },
+        "XOrientation": {
+          "type": "float",
+          "value": 0.9495
+        },
+        "XPosition": {
+          "type": "float",
+          "value": 195.9022
+        },
+        "YOrientation": {
+          "type": "float",
+          "value": -0.3137
+        },
+        "YPosition": {
+          "type": "float",
+          "value": 157.3709
+        },
+        "ZPosition": {
+          "type": "float",
+          "value": 3.0
+        }
+      },
+      {
+        "__struct_id": 5,
+        "Appearance": {
+          "type": "byte",
+          "value": 1
+        },
+        "Description": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "HasMapNote": {
+          "type": "byte",
+          "value": 0
+        },
+        "LinkedTo": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "LocalizedName": {
+          "id": 14817,
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNote": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNoteEnabled": {
+          "type": "byte",
+          "value": 1
+        },
+        "Tag": {
+          "type": "cexostring",
+          "value": "PR44_SN04"
+        },
+        "TemplateResRef": {
+          "type": "resref",
+          "value": "nw_waypoint001"
+        },
+        "XOrientation": {
+          "type": "float",
+          "value": -0.9988
+        },
+        "XPosition": {
+          "type": "float",
+          "value": 161.8194
+        },
+        "YOrientation": {
+          "type": "float",
+          "value": 0.0491
+        },
+        "YPosition": {
+          "type": "float",
+          "value": 166.9574
+        },
+        "ZPosition": {
+          "type": "float",
+          "value": 3.0
+        }
+      },
+      {
+        "__struct_id": 5,
+        "Appearance": {
+          "type": "byte",
+          "value": 1
+        },
+        "Description": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "HasMapNote": {
+          "type": "byte",
+          "value": 0
+        },
+        "LinkedTo": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "LocalizedName": {
+          "id": 14817,
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNote": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNoteEnabled": {
+          "type": "byte",
+          "value": 1
+        },
+        "Tag": {
+          "type": "cexostring",
+          "value": "PR44_SN05_PS015"
+        },
+        "TemplateResRef": {
+          "type": "resref",
+          "value": "nw_waypoint001"
+        },
+        "XOrientation": {
+          "type": "float",
+          "value": -0.9808
+        },
+        "XPosition": {
+          "type": "float",
+          "value": 141.5762
+        },
+        "YOrientation": {
+          "type": "float",
+          "value": -0.1951
+        },
+        "YPosition": {
+          "type": "float",
+          "value": 162.9644
+        },
+        "ZPosition": {
+          "type": "float",
+          "value": 3.0
+        }
+      },
+      {
+        "__struct_id": 5,
+        "Appearance": {
+          "type": "byte",
+          "value": 1
+        },
+        "Description": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "HasMapNote": {
+          "type": "byte",
+          "value": 0
+        },
+        "LinkedTo": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "LocalizedName": {
+          "id": 14817,
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNote": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNoteEnabled": {
+          "type": "byte",
+          "value": 1
+        },
+        "Tag": {
+          "type": "cexostring",
+          "value": "PR44_SN06_PS015"
+        },
+        "TemplateResRef": {
+          "type": "resref",
+          "value": "nw_waypoint001"
+        },
+        "XOrientation": {
+          "type": "float",
+          "value": 0.9952
+        },
+        "XPosition": {
+          "type": "float",
+          "value": 154.5063
+        },
+        "YOrientation": {
+          "type": "float",
+          "value": 0.098
+        },
+        "YPosition": {
+          "type": "float",
+          "value": 154.0708
+        },
+        "ZPosition": {
+          "type": "float",
+          "value": 3.0
+        }
+      },
+      {
+        "__struct_id": 5,
+        "Appearance": {
+          "type": "byte",
+          "value": 1
+        },
+        "Description": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "HasMapNote": {
+          "type": "byte",
+          "value": 0
+        },
+        "LinkedTo": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "LocalizedName": {
+          "id": 14817,
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNote": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNoteEnabled": {
+          "type": "byte",
+          "value": 1
+        },
+        "Tag": {
+          "type": "cexostring",
+          "value": "PR44_SN07"
+        },
+        "TemplateResRef": {
+          "type": "resref",
+          "value": "nw_waypoint001"
+        },
+        "XOrientation": {
+          "type": "float",
+          "value": -0.8701
+        },
+        "XPosition": {
+          "type": "float",
+          "value": 123.0285
+        },
+        "YOrientation": {
+          "type": "float",
+          "value": 0.4929
+        },
+        "YPosition": {
+          "type": "float",
+          "value": 148.8309
+        },
+        "ZPosition": {
+          "type": "float",
+          "value": 3.0
+        }
+      },
+      {
+        "__struct_id": 5,
+        "Appearance": {
+          "type": "byte",
+          "value": 1
+        },
+        "Description": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "HasMapNote": {
+          "type": "byte",
+          "value": 0
+        },
+        "LinkedTo": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "LocalizedName": {
+          "id": 14817,
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNote": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNoteEnabled": {
+          "type": "byte",
+          "value": 1
+        },
+        "Tag": {
+          "type": "cexostring",
+          "value": "PR44_SN08_SC063"
+        },
+        "TemplateResRef": {
+          "type": "resref",
+          "value": "nw_waypoint001"
+        },
+        "XOrientation": {
+          "type": "float",
+          "value": -0.8032
+        },
+        "XPosition": {
+          "type": "float",
+          "value": 122.9975
+        },
+        "YOrientation": {
+          "type": "float",
+          "value": 0.5957
+        },
+        "YPosition": {
+          "type": "float",
+          "value": 148.9
+        },
+        "ZPosition": {
+          "type": "float",
+          "value": 3.0
+        }
+      },
+      {
+        "__struct_id": 5,
+        "Appearance": {
+          "type": "byte",
+          "value": 1
+        },
+        "Description": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "HasMapNote": {
+          "type": "byte",
+          "value": 0
+        },
+        "LinkedTo": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "LocalizedName": {
+          "id": 14817,
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNote": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNoteEnabled": {
+          "type": "byte",
+          "value": 1
+        },
+        "Tag": {
+          "type": "cexostring",
+          "value": "PR45_SN01"
+        },
+        "TemplateResRef": {
+          "type": "resref",
+          "value": "nw_waypoint001"
+        },
+        "XOrientation": {
+          "type": "float",
+          "value": -0.1951
+        },
+        "XPosition": {
+          "type": "float",
+          "value": 202.0456
+        },
+        "YOrientation": {
+          "type": "float",
+          "value": 0.9808
+        },
+        "YPosition": {
+          "type": "float",
+          "value": 125.2
+        },
+        "ZPosition": {
+          "type": "float",
+          "value": 3.3624
+        }
+      },
+      {
+        "__struct_id": 5,
+        "Appearance": {
+          "type": "byte",
+          "value": 1
+        },
+        "Description": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "HasMapNote": {
+          "type": "byte",
+          "value": 0
+        },
+        "LinkedTo": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "LocalizedName": {
+          "id": 14817,
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNote": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNoteEnabled": {
+          "type": "byte",
+          "value": 1
+        },
+        "Tag": {
+          "type": "cexostring",
+          "value": "PR45_SN02"
+        },
+        "TemplateResRef": {
+          "type": "resref",
+          "value": "nw_waypoint001"
+        },
+        "XOrientation": {
+          "type": "float",
+          "value": -0.1951
+        },
+        "XPosition": {
+          "type": "float",
+          "value": 200.7866
+        },
+        "YOrientation": {
+          "type": "float",
+          "value": 0.9808
+        },
+        "YPosition": {
+          "type": "float",
+          "value": 139.7202
+        },
+        "ZPosition": {
+          "type": "float",
+          "value": 3.0
+        }
+      },
+      {
+        "__struct_id": 5,
+        "Appearance": {
+          "type": "byte",
+          "value": 1
+        },
+        "Description": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "HasMapNote": {
+          "type": "byte",
+          "value": 0
+        },
+        "LinkedTo": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "LocalizedName": {
+          "id": 14817,
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNote": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNoteEnabled": {
+          "type": "byte",
+          "value": 1
+        },
+        "Tag": {
+          "type": "cexostring",
+          "value": "PR45_SN03"
+        },
+        "TemplateResRef": {
+          "type": "resref",
+          "value": "nw_waypoint001"
+        },
+        "XOrientation": {
+          "type": "float",
+          "value": 0.9495
+        },
+        "XPosition": {
+          "type": "float",
+          "value": 195.8118
+        },
+        "YOrientation": {
+          "type": "float",
+          "value": -0.3137
+        },
+        "YPosition": {
+          "type": "float",
+          "value": 157.3957
+        },
+        "ZPosition": {
+          "type": "float",
+          "value": 3.0
+        }
+      },
+      {
+        "__struct_id": 5,
+        "Appearance": {
+          "type": "byte",
+          "value": 1
+        },
+        "Description": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "HasMapNote": {
+          "type": "byte",
+          "value": 0
+        },
+        "LinkedTo": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "LocalizedName": {
+          "id": 14817,
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNote": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNoteEnabled": {
+          "type": "byte",
+          "value": 1
+        },
+        "Tag": {
+          "type": "cexostring",
+          "value": "PR45_SN04"
+        },
+        "TemplateResRef": {
+          "type": "resref",
+          "value": "nw_waypoint001"
+        },
+        "XOrientation": {
+          "type": "float",
+          "value": -0.9988
+        },
+        "XPosition": {
+          "type": "float",
+          "value": 161.8345
+        },
+        "YOrientation": {
+          "type": "float",
+          "value": 0.0491
+        },
+        "YPosition": {
+          "type": "float",
+          "value": 166.958
+        },
+        "ZPosition": {
+          "type": "float",
+          "value": 3.0
+        }
+      },
+      {
+        "__struct_id": 5,
+        "Appearance": {
+          "type": "byte",
+          "value": 1
+        },
+        "Description": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "HasMapNote": {
+          "type": "byte",
+          "value": 0
+        },
+        "LinkedTo": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "LocalizedName": {
+          "id": 14817,
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNote": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNoteEnabled": {
+          "type": "byte",
+          "value": 1
+        },
+        "Tag": {
+          "type": "cexostring",
+          "value": "PR46_SN05_PS015"
+        },
+        "TemplateResRef": {
+          "type": "resref",
+          "value": "nw_waypoint001"
+        },
+        "XOrientation": {
+          "type": "float",
+          "value": -0.9808
+        },
+        "XPosition": {
+          "type": "float",
+          "value": 140.9787
+        },
+        "YOrientation": {
+          "type": "float",
+          "value": -0.1951
+        },
+        "YPosition": {
+          "type": "float",
+          "value": 164.3387
+        },
+        "ZPosition": {
+          "type": "float",
+          "value": 3.0
+        }
+      },
+      {
+        "__struct_id": 5,
+        "Appearance": {
+          "type": "byte",
+          "value": 1
+        },
+        "Description": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "HasMapNote": {
+          "type": "byte",
+          "value": 0
+        },
+        "LinkedTo": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "LocalizedName": {
+          "id": 14817,
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNote": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNoteEnabled": {
+          "type": "byte",
+          "value": 1
+        },
+        "Tag": {
+          "type": "cexostring",
+          "value": "PR45_SN06_PS015"
+        },
+        "TemplateResRef": {
+          "type": "resref",
+          "value": "nw_waypoint001"
+        },
+        "XOrientation": {
+          "type": "float",
+          "value": 0.9952
+        },
+        "XPosition": {
+          "type": "float",
+          "value": 154.4925
+        },
+        "YOrientation": {
+          "type": "float",
+          "value": 0.098
+        },
+        "YPosition": {
+          "type": "float",
+          "value": 154.0459
+        },
+        "ZPosition": {
+          "type": "float",
+          "value": 3.0
+        }
+      },
+      {
+        "__struct_id": 5,
+        "Appearance": {
+          "type": "byte",
+          "value": 1
+        },
+        "Description": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "HasMapNote": {
+          "type": "byte",
+          "value": 0
+        },
+        "LinkedTo": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "LocalizedName": {
+          "id": 14817,
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNote": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNoteEnabled": {
+          "type": "byte",
+          "value": 1
+        },
+        "Tag": {
+          "type": "cexostring",
+          "value": "PR45_SN07"
+        },
+        "TemplateResRef": {
+          "type": "resref",
+          "value": "nw_waypoint001"
+        },
+        "XOrientation": {
+          "type": "float",
+          "value": -0.8701
+        },
+        "XPosition": {
+          "type": "float",
+          "value": 123.0683
+        },
+        "YOrientation": {
+          "type": "float",
+          "value": 0.4929
+        },
+        "YPosition": {
+          "type": "float",
+          "value": 148.8806
+        },
+        "ZPosition": {
+          "type": "float",
+          "value": 3.0
+        }
+      },
+      {
+        "__struct_id": 5,
+        "Appearance": {
+          "type": "byte",
+          "value": 1
+        },
+        "Description": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "HasMapNote": {
+          "type": "byte",
+          "value": 0
+        },
+        "LinkedTo": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "LocalizedName": {
+          "id": 14817,
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNote": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNoteEnabled": {
+          "type": "byte",
+          "value": 1
+        },
+        "Tag": {
+          "type": "cexostring",
+          "value": "PR45_SN08_SC062"
+        },
+        "TemplateResRef": {
+          "type": "resref",
+          "value": "nw_waypoint001"
+        },
+        "XOrientation": {
+          "type": "float",
+          "value": -0.8032
+        },
+        "XPosition": {
+          "type": "float",
+          "value": 123.042
+        },
+        "YOrientation": {
+          "type": "float",
+          "value": 0.5957
+        },
+        "YPosition": {
+          "type": "float",
+          "value": 148.9074
+        },
+        "ZPosition": {
+          "type": "float",
+          "value": 3.0
+        }
+      },
+      {
+        "__struct_id": 5,
+        "Appearance": {
+          "type": "byte",
+          "value": 1
+        },
+        "Description": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "HasMapNote": {
+          "type": "byte",
+          "value": 0
+        },
+        "LinkedTo": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "LocalizedName": {
+          "id": 14817,
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNote": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNoteEnabled": {
+          "type": "byte",
+          "value": 1
+        },
+        "Tag": {
+          "type": "cexostring",
+          "value": "PR46_SN01"
+        },
+        "TemplateResRef": {
+          "type": "resref",
+          "value": "nw_waypoint001"
+        },
+        "XOrientation": {
+          "type": "float",
+          "value": -0.1951
+        },
+        "XPosition": {
+          "type": "float",
+          "value": 202.0018
+        },
+        "YOrientation": {
+          "type": "float",
+          "value": 0.9808
+        },
+        "YPosition": {
+          "type": "float",
+          "value": 125.1882
+        },
+        "ZPosition": {
+          "type": "float",
+          "value": 3.3504
+        }
+      },
+      {
+        "__struct_id": 5,
+        "Appearance": {
+          "type": "byte",
+          "value": 1
+        },
+        "Description": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "HasMapNote": {
+          "type": "byte",
+          "value": 0
+        },
+        "LinkedTo": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "LocalizedName": {
+          "id": 14817,
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNote": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNoteEnabled": {
+          "type": "byte",
+          "value": 1
+        },
+        "Tag": {
+          "type": "cexostring",
+          "value": "PR46_SN02"
+        },
+        "TemplateResRef": {
+          "type": "resref",
+          "value": "nw_waypoint001"
+        },
+        "XOrientation": {
+          "type": "float",
+          "value": -0.1951
+        },
+        "XPosition": {
+          "type": "float",
+          "value": 200.7551
+        },
+        "YOrientation": {
+          "type": "float",
+          "value": 0.9808
+        },
+        "YPosition": {
+          "type": "float",
+          "value": 139.7806
+        },
+        "ZPosition": {
+          "type": "float",
+          "value": 3.0
+        }
+      },
+      {
+        "__struct_id": 5,
+        "Appearance": {
+          "type": "byte",
+          "value": 1
+        },
+        "Description": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "HasMapNote": {
+          "type": "byte",
+          "value": 0
+        },
+        "LinkedTo": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "LocalizedName": {
+          "id": 14817,
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNote": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNoteEnabled": {
+          "type": "byte",
+          "value": 1
+        },
+        "Tag": {
+          "type": "cexostring",
+          "value": "PR46_SN03"
+        },
+        "TemplateResRef": {
+          "type": "resref",
+          "value": "nw_waypoint001"
+        },
+        "XOrientation": {
+          "type": "float",
+          "value": 0.9495
+        },
+        "XPosition": {
+          "type": "float",
+          "value": 195.8223
+        },
+        "YOrientation": {
+          "type": "float",
+          "value": -0.3137
+        },
+        "YPosition": {
+          "type": "float",
+          "value": 157.4588
+        },
+        "ZPosition": {
+          "type": "float",
+          "value": 3.0
+        }
+      },
+      {
+        "__struct_id": 5,
+        "Appearance": {
+          "type": "byte",
+          "value": 1
+        },
+        "Description": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "HasMapNote": {
+          "type": "byte",
+          "value": 0
+        },
+        "LinkedTo": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "LocalizedName": {
+          "id": 14817,
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNote": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNoteEnabled": {
+          "type": "byte",
+          "value": 1
+        },
+        "Tag": {
+          "type": "cexostring",
+          "value": "PR46_SN04"
+        },
+        "TemplateResRef": {
+          "type": "resref",
+          "value": "nw_waypoint001"
+        },
+        "XOrientation": {
+          "type": "float",
+          "value": -0.9988
+        },
+        "XPosition": {
+          "type": "float",
+          "value": 161.869
+        },
+        "YOrientation": {
+          "type": "float",
+          "value": 0.0491
+        },
+        "YPosition": {
+          "type": "float",
+          "value": 166.9381
+        },
+        "ZPosition": {
+          "type": "float",
+          "value": 3.0
+        }
+      },
+      {
+        "__struct_id": 5,
+        "Appearance": {
+          "type": "byte",
+          "value": 1
+        },
+        "Description": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "HasMapNote": {
+          "type": "byte",
+          "value": 0
+        },
+        "LinkedTo": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "LocalizedName": {
+          "id": 14817,
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNote": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNoteEnabled": {
+          "type": "byte",
+          "value": 1
+        },
+        "Tag": {
+          "type": "cexostring",
+          "value": "PR45_SN05_PS015"
+        },
+        "TemplateResRef": {
+          "type": "resref",
+          "value": "nw_waypoint001"
+        },
+        "XOrientation": {
+          "type": "float",
+          "value": -0.9808
+        },
+        "XPosition": {
+          "type": "float",
+          "value": 140.2532
+        },
+        "YOrientation": {
+          "type": "float",
+          "value": -0.1951
+        },
+        "YPosition": {
+          "type": "float",
+          "value": 163.2032
+        },
+        "ZPosition": {
+          "type": "float",
+          "value": 3.0
+        }
+      },
+      {
+        "__struct_id": 5,
+        "Appearance": {
+          "type": "byte",
+          "value": 1
+        },
+        "Description": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "HasMapNote": {
+          "type": "byte",
+          "value": 0
+        },
+        "LinkedTo": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "LocalizedName": {
+          "id": 14817,
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNote": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNoteEnabled": {
+          "type": "byte",
+          "value": 1
+        },
+        "Tag": {
+          "type": "cexostring",
+          "value": "PR46_SN06_PS015"
+        },
+        "TemplateResRef": {
+          "type": "resref",
+          "value": "nw_waypoint001"
+        },
+        "XOrientation": {
+          "type": "float",
+          "value": 0.9952
+        },
+        "XPosition": {
+          "type": "float",
+          "value": 154.4817
+        },
+        "YOrientation": {
+          "type": "float",
+          "value": 0.098
+        },
+        "YPosition": {
+          "type": "float",
+          "value": 154.0884
+        },
+        "ZPosition": {
+          "type": "float",
+          "value": 3.0
+        }
+      },
+      {
+        "__struct_id": 5,
+        "Appearance": {
+          "type": "byte",
+          "value": 1
+        },
+        "Description": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "HasMapNote": {
+          "type": "byte",
+          "value": 0
+        },
+        "LinkedTo": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "LocalizedName": {
+          "id": 14817,
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNote": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNoteEnabled": {
+          "type": "byte",
+          "value": 1
+        },
+        "Tag": {
+          "type": "cexostring",
+          "value": "PR46_SN07"
+        },
+        "TemplateResRef": {
+          "type": "resref",
+          "value": "nw_waypoint001"
+        },
+        "XOrientation": {
+          "type": "float",
+          "value": -0.8701
+        },
+        "XPosition": {
+          "type": "float",
+          "value": 123.1028
+        },
+        "YOrientation": {
+          "type": "float",
+          "value": 0.4929
+        },
+        "YPosition": {
+          "type": "float",
+          "value": 148.8792
+        },
+        "ZPosition": {
+          "type": "float",
+          "value": 3.0
+        }
+      },
+      {
+        "__struct_id": 5,
+        "Appearance": {
+          "type": "byte",
+          "value": 1
+        },
+        "Description": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "HasMapNote": {
+          "type": "byte",
+          "value": 0
+        },
+        "LinkedTo": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "LocalizedName": {
+          "id": 14817,
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNote": {
+          "type": "cexolocstring",
+          "value": {}
+        },
+        "MapNoteEnabled": {
+          "type": "byte",
+          "value": 1
+        },
+        "Tag": {
+          "type": "cexostring",
+          "value": "PR46_SN08_SC061"
+        },
+        "TemplateResRef": {
+          "type": "resref",
+          "value": "nw_waypoint001"
+        },
+        "XOrientation": {
+          "type": "float",
+          "value": -0.8032
+        },
+        "XPosition": {
+          "type": "float",
+          "value": 123.0746
+        },
+        "YOrientation": {
+          "type": "float",
+          "value": 0.5957
+        },
+        "YPosition": {
+          "type": "float",
+          "value": 148.907
         },
         "ZPosition": {
           "type": "float",

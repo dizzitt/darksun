@@ -164,6 +164,17 @@
                     "__struct_id": 0,
                     "NAME": {
                       "type": "cexostring",
+                      "value": "Joaquin's Tunic"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "cloth006"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
                       "value": "Kled Guard Outfit"
                     },
                     "RESREF": {

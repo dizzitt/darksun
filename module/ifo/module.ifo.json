@@ -107,7 +107,7 @@
   },
   "Mod_Entry_Area": {
     "type": "resref",
-    "value": "area"
+    "value": "silverspringsoas"
   },
   "Mod_Entry_Dir_X": {
     "type": "float",
@@ -119,15 +119,15 @@
   },
   "Mod_Entry_X": {
     "type": "float",
-    "value": 15.3233
+    "value": 190.121
   },
   "Mod_Entry_Y": {
     "type": "float",
-    "value": 16.0786
+    "value": 109.6879
   },
   "Mod_Entry_Z": {
     "type": "float",
-    "value": 0.0
+    "value": 3.0
   },
   "Mod_Expan_List": {
     "type": "list",
