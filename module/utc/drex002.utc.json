@@ -99,7 +99,7 @@
         "__struct_id": 2,
         "Class": {
           "type": "int",
-          "value": 4
+          "value": 46
         },
         "ClassLevel": {
           "type": "short",
@@ -441,7 +441,7 @@
   },
   "MaxHitPoints": {
     "type": "short",
-    "value": 121
+    "value": 114
   },
   "NaturalAC": {
     "type": "byte",
@@ -742,7 +742,7 @@
   },
   "StartingPackage": {
     "type": "byte",
-    "value": 4
+    "value": 46
   },
   "Str": {
     "type": "byte",

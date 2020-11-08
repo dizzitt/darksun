@@ -771,7 +771,7 @@
         },
         "InventoryRes": {
           "type": "resref",
-          "value": "wswdg003"
+          "value": "inixbonedagger4"
         },
         "Repos_PosX": {
           "type": "word",
@@ -800,7 +800,7 @@
   },
   "MaxHitPoints": {
     "type": "short",
-    "value": 24
+    "value": 33
   },
   "NaturalAC": {
     "type": "byte",

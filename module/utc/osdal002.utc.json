@@ -99,7 +99,7 @@
         "__struct_id": 2,
         "Class": {
           "type": "int",
-          "value": 4
+          "value": 46
         },
         "ClassLevel": {
           "type": "short",
@@ -728,7 +728,7 @@
   },
   "StartingPackage": {
     "type": "byte",
-    "value": 4
+    "value": 46
   },
   "Str": {
     "type": "byte",

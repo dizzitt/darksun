@@ -30,6 +30,30 @@
                       "type": "byte",
                       "value": 5
                     },
+                    "LIST": {
+                      "type": "list",
+                      "value": [
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 6.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Klar"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_s_klar"
+                          }
+                        }
+                      ]
+                    },
                     "STRREF": {
                       "type": "dword",
                       "value": 6695
@@ -40,6 +64,790 @@
                     "ID": {
                       "type": "byte",
                       "value": 6
+                    },
+                    "LIST": {
+                      "type": "list",
+                      "value": [
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 0.1667
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Animal"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kes' trekel"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "kestrekel001"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 0.25
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kes' trekel"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kestrek01"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 1.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kes' trekel"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kestrek02"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 2.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kes' trekel"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kestrek03"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 2.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kes' trekel"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kestrek04"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 3.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kes' trekel"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kestrek05"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 3.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kes' trekel"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kestrek06"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 4.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kes' trekel"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kestrek07"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 4.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kes' trekel"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kestrek08"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 5.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kes' trekel"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kestrek09"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 6.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kes' trekel"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kestrek10"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 6.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kes' trekel"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kestrek11"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 7.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kes' trekel"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kestrek12"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 7.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kes' trekel"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kestrek13"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 8.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kes' trekel"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kestrek14"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 8.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kes' trekel"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kestrek15"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 9.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kes' trekel"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kestrek16"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 9.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kes' trekel"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kestrek17"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 10.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kes' trekel"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kestrek18"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 10.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kes' trekel"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kestrek19"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 11.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kes' trekel"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kestrek20"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 0.5
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Sitak"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_sitak01"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 1.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Sitak"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_sitak02"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 2.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Sitak"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_sitak03"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 3.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Sitak"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_sitak04"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 3.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Sitak"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_sitak05"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 4.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Sitak"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_sitak06"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 4.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Sitak"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_sitak07"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 5.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Sitak"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_sitak08"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 6.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Sitak"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_sitak09"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 6.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Sitak"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_sitak10"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 7.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Sitak"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_sitak11"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 7.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Sitak"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_sitak12"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 8.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Sitak"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_sitak13"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 9.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Sitak"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_sitak14"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 9.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Sitak"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_sitak15"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 10.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Sitak"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_sitak16"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 10.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Sitak"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_sitak17"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 11.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Sitak"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_sitak18"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 11.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Sitak"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_sitak19"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 12.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Sitak"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_sitak20"
+                          }
+                        }
+                      ]
                     },
                     "STRREF": {
                       "type": "dword",
@@ -52,6 +860,87 @@
                       "type": "byte",
                       "value": 7
                     },
+                    "LIST": {
+                      "type": "list",
+                      "value": [
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 3.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": " Athasian Hyena"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_s_athhyena"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 3.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Jackal"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_s_jackal"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 4.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Rasclinn"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_s_rasclinn"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 3.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Zhackal"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_s_zhackal"
+                          }
+                        }
+                      ]
+                    },
                     "STRREF": {
                       "type": "dword",
                       "value": 6697
@@ -62,6 +951,410 @@
                     "ID": {
                       "type": "byte",
                       "value": 8
+                    },
+                    "LIST": {
+                      "type": "list",
+                      "value": [
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 11.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kirre"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_s_kirre"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 0.25
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kivit"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kivit01"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 1.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kivit"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kivit02"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 2.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kivit"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kivit03"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 2.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kivit"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kivit04"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 3.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kivit"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kivit05"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 3.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kivit"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kivit06"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 4.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kivit"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kivit07"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 4.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kivit"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kivit08"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 5.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kivit"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kivit09"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 5.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kivit"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kivit10"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 6.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kivit"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kivit11"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 6.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kivit"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kivit12"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 7.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kivit"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kivit13"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 7.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kivit"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kivit14"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 8.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kivit"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kivit15"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 8.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kivit"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kivit16"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 8.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kivit"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kivit17"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 9.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kivit"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kivit18"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 9.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kivit"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kivit19"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 10.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kivit"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_kivit20"
+                          }
+                        }
+                      ]
                     },
                     "STRREF": {
                       "type": "dword",
@@ -81,6 +1374,424 @@
                           "__struct_id": 0,
                           "CR": {
                             "type": "float",
+                            "value": 1.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Animal"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": " Jhakar"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "jhakar001"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 4.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Baazrag"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_s_baazrag"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 0.3333
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Critic Lizard"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_critliz01"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 1.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Critic Lizard"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_critliz02"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 2.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Critic Lizard"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_critliz03"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 2.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Critic Lizard"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_critliz04"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 3.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Critic Lizard"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_critliz05"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 3.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Critic Lizard"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_critliz06"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 4.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Critic Lizard"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_critliz07"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 4.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Critic Lizard"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_critliz08"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 5.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Critic Lizard"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_critliz09"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 6.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Critic Lizard"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_critliz10"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 6.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Critic Lizard"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_critliz11"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 7.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Critic Lizard"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_critliz12"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 7.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Critic Lizard"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_critliz13"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 8.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Critic Lizard"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_critliz14"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 8.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Critic Lizard"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_critliz15"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 9.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Critic Lizard"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_critliz16"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 9.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Critic Lizard"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_critliz17"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 10.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Critic Lizard"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_critliz18"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 10.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Critic Lizard"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_critliz19"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 11.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Critic Lizard"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_critliz20"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
                             "value": 6.0
                           },
                           "FACTION": {
@@ -94,6 +1805,25 @@
                           "RESREF": {
                             "type": "resref",
                             "value": "crodlu001"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 9.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Desert Worm"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_s_desworm"
                           }
                         },
                         {
@@ -138,6 +1868,405 @@
                           "__struct_id": 0,
                           "CR": {
                             "type": "float",
+                            "value": 0.25
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Floating Polyp"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_flopo01"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 1.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Floating Polyp"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_flopo02"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 2.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Floating Polyp"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_flopo03"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 2.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Floating Polyp"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_flopo04"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 3.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Floating Polyp"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_flopo05"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 3.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Floating Polyp"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_flopo06"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 4.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Floating Polyp"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_flopo07"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 4.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Floating Polyp"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_flopo08"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 5.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Floating Polyp"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_flopo09"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 5.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Floating Polyp"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_flopo10"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 6.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Floating Polyp"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_flopo11"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 6.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Floating Polyp"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_flopo12"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 7.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Floating Polyp"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_flopo13"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 7.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Floating Polyp"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_flopo14"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 8.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Floating Polyp"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_flopo15"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 8.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Floating Polyp"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_flopo16"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 9.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Floating Polyp"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_flopo17"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 9.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Floating Polyp"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_flopo18"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 10.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Floating Polyp"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_flopo19"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 10.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Floating Polyp"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_flopo20"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 7.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Fordorran"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_s_fordorran"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
                             "value": 6.0
                           },
                           "FACTION": {
@@ -157,6 +2286,405 @@
                           "__struct_id": 0,
                           "CR": {
                             "type": "float",
+                            "value": 0.25
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Jankz"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_jankz01"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 1.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Jankz"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_jankz02"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 2.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Jankz"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_jankz03"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 2.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Jankz"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_jankz04"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 3.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Jankz"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_jankz05"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 3.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Jankz"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_jankz06"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 4.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Jankz"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_jankz07"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 5.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Jankz"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_jankz08"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 5.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Jankz"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_jankz09"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 6.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Jankz"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_jankz10"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 6.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Jankz"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_jankz11"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 7.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Jankz"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_jankz12"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 7.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Jankz"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_jankz13"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 8.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Jankz"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_jankz14"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 8.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Jankz"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_jankz15"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 9.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Jankz"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_jankz16"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 10.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Jankz"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_jankz17"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 10.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Jankz"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_jankz18"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 11.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Jankz"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_jankz19"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 11.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Jankz"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_jankz20"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 5.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Jhakar"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_s_jhakar"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
                             "value": 6.0
                           },
                           "FACTION": {
@@ -170,6 +2698,63 @@
                           "RESREF": {
                             "type": "resref",
                             "value": "kank001"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 11.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Kludz"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_s_kludz"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 1.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Animal"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Red Scorpion"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "redscorpion001"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 7.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Sand Howler"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_s_sandhowler"
                           }
                         },
                         {
@@ -209,6 +2794,804 @@
                             "type": "resref",
                             "value": "kank_kled"
                           }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 1.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Wrab"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_wrab01"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 1.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Wrab"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_wrab02"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 2.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Wrab"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_wrab03"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 2.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Wrab"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_wrab04"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 3.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Wrab"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_wrab05"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 3.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Wrab"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_wrab06"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 4.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Wrab"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_wrab07"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 5.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Wrab"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_wrab08"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 5.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Wrab"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_wrab09"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 6.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Wrab"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_wrab10"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 6.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Wrab"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_wrab11"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 7.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Wrab"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_wrab12"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 7.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Wrab"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_wrab13"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 8.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Wrab"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_wrab14"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 8.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Wrab"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_wrab15"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 9.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Wrab"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_wrab16"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 9.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Wrab"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_wrab17"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 10.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Wrab"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_wrab18"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 10.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Wrab"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_wrab19"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 10.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Wrab"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_wrab20"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 1.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Z'tal"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_ztal01"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 2.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Z'tal"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_ztal02"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 2.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Z'tal"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_ztal03"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 2.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Z'tal"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_ztal04"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 3.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Z'tal"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_ztal05"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 3.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Z'tal"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_ztal06"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 4.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Z'tal"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_ztal07"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 4.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Z'tal"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_ztal08"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 5.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Z'tal"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_ztal09"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 5.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Z'tal"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_ztal10"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 6.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Z'tal"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_ztal11"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 6.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Z'tal"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_ztal12"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 7.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Z'tal"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_ztal13"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 7.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Z'tal"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_ztal14"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 8.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Z'tal"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_ztal15"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 8.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Z'tal"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_ztal16"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 9.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Z'tal"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_ztal17"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 9.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Z'tal"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_ztal18"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 10.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Z'tal"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_ztal19"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 10.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Z'tal"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_fm_ztal20"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 1.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Animal"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Z'tal"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "ztal001"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 1.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Animal"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Z'tal"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "ztal002"
+                          }
                         }
                       ]
                     },
@@ -229,6 +3612,68 @@
               "ID": {
                 "type": "byte",
                 "value": 20
+              },
+              "LIST": {
+                "type": "list",
+                "value": [
+                  {
+                    "__struct_id": 0,
+                    "CR": {
+                      "type": "float",
+                      "value": 11.0
+                    },
+                    "FACTION": {
+                      "type": "cexostring",
+                      "value": "Hostile"
+                    },
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Obsidian Golem"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "nw_s_obsgol"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "CR": {
+                      "type": "float",
+                      "value": 10.0
+                    },
+                    "FACTION": {
+                      "type": "cexostring",
+                      "value": "Hostile"
+                    },
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Sand Golem"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "nw_s_sangol"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "CR": {
+                      "type": "float",
+                      "value": 11.0
+                    },
+                    "FACTION": {
+                      "type": "cexostring",
+                      "value": "Hostile"
+                    },
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Stone Golem"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "nw_s_stonegol"
+                    }
+                  }
+                ]
               },
               "STRREF": {
                 "type": "dword",
@@ -252,6 +3697,30 @@
                 "type": "byte",
                 "value": 22
               },
+              "LIST": {
+                "type": "list",
+                "value": [
+                  {
+                    "__struct_id": 0,
+                    "CR": {
+                      "type": "float",
+                      "value": 15.0
+                    },
+                    "FACTION": {
+                      "type": "cexostring",
+                      "value": "Hostile"
+                    },
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Elder Earth Elemental"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "nw_s_eldearele"
+                    }
+                  }
+                ]
+              },
               "STRREF": {
                 "type": "dword",
                 "value": 6714
@@ -267,6 +3736,30 @@
                     "ID": {
                       "type": "byte",
                       "value": 34
+                    },
+                    "LIST": {
+                      "type": "list",
+                      "value": [
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 15.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "B'rohg"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_s_brohg"
+                          }
+                        }
+                      ]
                     },
                     "STRREF": {
                       "type": "dword",
@@ -397,7 +3890,7 @@
                           "__struct_id": 0,
                           "CR": {
                             "type": "float",
-                            "value": 2.0
+                            "value": 0.5
                           },
                           "FACTION": {
                             "type": "cexostring",
@@ -416,7 +3909,7 @@
                           "__struct_id": 0,
                           "CR": {
                             "type": "float",
-                            "value": 3.0
+                            "value": 2.0
                           },
                           "FACTION": {
                             "type": "cexostring",
@@ -429,6 +3922,25 @@
                           "RESREF": {
                             "type": "resref",
                             "value": "githearthclei001"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 14.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Ssurran"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_s_ssurran"
                           }
                         }
                       ]
@@ -456,6 +3968,87 @@
                       "type": "byte",
                       "value": 10
                     },
+                    "LIST": {
+                      "type": "list",
+                      "value": [
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 5.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Ankheg"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_s_ankheg"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 4.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Desert Beetle"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_s_desbeet"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 4.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Horned Beetle"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_s_hornbeet"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 8.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Sand Mite"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_s_sandmite"
+                          }
+                        }
+                      ]
+                    },
                     "STRREF": {
                       "type": "dword",
                       "value": 6701
@@ -466,6 +4059,30 @@
                     "ID": {
                       "type": "byte",
                       "value": 11
+                    },
+                    "LIST": {
+                      "type": "list",
+                      "value": [
+                        {
+                          "__struct_id": 0,
+                          "CR": {
+                            "type": "float",
+                            "value": 7.0
+                          },
+                          "FACTION": {
+                            "type": "cexostring",
+                            "value": "Commoner"
+                          },
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Desert Spider"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "nw_s_desspider"
+                          }
+                        }
+                      ]
                     },
                     "STRREF": {
                       "type": "dword",
@@ -484,6 +4101,87 @@
               "ID": {
                 "type": "byte",
                 "value": 49
+              },
+              "LIST": {
+                "type": "list",
+                "value": [
+                  {
+                    "__struct_id": 0,
+                    "CR": {
+                      "type": "float",
+                      "value": 6.0
+                    },
+                    "FACTION": {
+                      "type": "cexostring",
+                      "value": "Commoner"
+                    },
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Cilops"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "nw_s_cilops"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "CR": {
+                      "type": "float",
+                      "value": 23.0
+                    },
+                    "FACTION": {
+                      "type": "cexostring",
+                      "value": "Commoner"
+                    },
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Earth Drake"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "nw_s_eardrake"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "CR": {
+                      "type": "float",
+                      "value": 18.0
+                    },
+                    "FACTION": {
+                      "type": "cexostring",
+                      "value": "Hostile"
+                    },
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Fire Drake"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "nw_s_firedrake"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "CR": {
+                      "type": "float",
+                      "value": 19.0
+                    },
+                    "FACTION": {
+                      "type": "cexostring",
+                      "value": "Hostile"
+                    },
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Silt Horror"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "nw_s_silthor"
+                    }
+                  }
+                ]
               },
               "STRREF": {
                 "type": "dword",
@@ -693,7 +4391,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 3.0
+                      "value": 4.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -724,14 +4422,14 @@
                     },
                     "RESREF": {
                       "type": "resref",
-                      "value": "barunus"
+                      "value": "barunus001"
                     }
                   },
                   {
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 7.0
+                      "value": 10.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -750,7 +4448,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 7.0
+                      "value": 10.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -940,7 +4638,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 7.0
+                      "value": 9.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -994,7 +4692,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 10.0
+                      "value": 12.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -1013,26 +4711,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 8.0
-                    },
-                    "FACTION": {
-                      "type": "cexostring",
-                      "value": "The Silver Hand"
-                    },
-                    "NAME": {
-                      "type": "cexostring",
-                      "value": "Bellas"
-                    },
-                    "RESREF": {
-                      "type": "resref",
-                      "value": "bellas002"
-                    }
-                  },
-                  {
-                    "__struct_id": 0,
-                    "CR": {
-                      "type": "float",
-                      "value": 8.0
+                      "value": 3.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -1045,6 +4724,25 @@
                     "RESREF": {
                       "type": "resref",
                       "value": "bellas001"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "CR": {
+                      "type": "float",
+                      "value": 3.0
+                    },
+                    "FACTION": {
+                      "type": "cexostring",
+                      "value": "The Silver Hand"
+                    },
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Bellas"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "bellas002"
                     }
                   },
                   {
@@ -1071,6 +4769,25 @@
                     "CR": {
                       "type": "float",
                       "value": 4.0
+                    },
+                    "FACTION": {
+                      "type": "cexostring",
+                      "value": "The Silver Hand"
+                    },
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Connak"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "connak001"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "CR": {
+                      "type": "float",
+                      "value": 6.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -1583,7 +5300,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 9.0
+                      "value": 10.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -1602,7 +5319,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 9.0
+                      "value": 10.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -1634,6 +5351,44 @@
                     "RESREF": {
                       "type": "resref",
                       "value": "jaylin001"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "CR": {
+                      "type": "float",
+                      "value": 3.0
+                    },
+                    "FACTION": {
+                      "type": "cexostring",
+                      "value": "The Silver Hand"
+                    },
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Kelvhan"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "kelvhan001"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "CR": {
+                      "type": "float",
+                      "value": 3.0
+                    },
+                    "FACTION": {
+                      "type": "cexostring",
+                      "value": "The Silver Hand"
+                    },
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Lensa"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "lensa001"
                     }
                   },
                   {
@@ -1754,7 +5509,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 11.0
+                      "value": 10.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -1849,7 +5604,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 5.0
+                      "value": 7.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -1868,7 +5623,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 18.0
+                      "value": 16.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -2097,7 +5852,7 @@
                     },
                     "RESREF": {
                       "type": "resref",
-                      "value": "orwick002"
+                      "value": "orwick001"
                     }
                   },
                   {
@@ -2116,7 +5871,7 @@
                     },
                     "RESREF": {
                       "type": "resref",
-                      "value": "orwick001"
+                      "value": "orwick002"
                     }
                   },
                   {
@@ -2234,7 +5989,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 7.0
+                      "value": 6.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -2253,7 +6008,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 7.0
+                      "value": 5.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -2272,7 +6027,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 7.0
+                      "value": 5.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -2375,7 +6130,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 9.0
+                      "value": 12.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -2394,7 +6149,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 9.0
+                      "value": 12.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -2413,7 +6168,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 3.0
+                      "value": 5.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -2432,7 +6187,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 3.0
+                      "value": 5.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -2470,7 +6225,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 6.0
+                      "value": 7.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -2489,7 +6244,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 6.0
+                      "value": 7.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -2508,7 +6263,83 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 5.0
+                      "value": 11.0
+                    },
+                    "FACTION": {
+                      "type": "cexostring",
+                      "value": "Commoner"
+                    },
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Layla"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "layla001"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "CR": {
+                      "type": "float",
+                      "value": 11.0
+                    },
+                    "FACTION": {
+                      "type": "cexostring",
+                      "value": "Commoner"
+                    },
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Layla"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "layla002"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "CR": {
+                      "type": "float",
+                      "value": 14.0
+                    },
+                    "FACTION": {
+                      "type": "cexostring",
+                      "value": "Commoner"
+                    },
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Malvin"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "malvin001"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "CR": {
+                      "type": "float",
+                      "value": 14.0
+                    },
+                    "FACTION": {
+                      "type": "cexostring",
+                      "value": "Commoner"
+                    },
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Malvin"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "malvin002"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "CR": {
+                      "type": "float",
+                      "value": 3.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -2527,7 +6358,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 5.0
+                      "value": 3.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -2546,7 +6377,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 5.0
+                      "value": 7.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -2565,7 +6396,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 5.0
+                      "value": 7.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -2584,7 +6415,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 0.5
+                      "value": 1.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -2603,7 +6434,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 4.0
+                      "value": 5.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -2622,7 +6453,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 4.0
+                      "value": 5.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -2641,26 +6472,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 16.0
-                    },
-                    "FACTION": {
-                      "type": "cexostring",
-                      "value": "Commoner"
-                    },
-                    "NAME": {
-                      "type": "cexostring",
-                      "value": "Rilla"
-                    },
-                    "RESREF": {
-                      "type": "resref",
-                      "value": "rilla002"
-                    }
-                  },
-                  {
-                    "__struct_id": 0,
-                    "CR": {
-                      "type": "float",
-                      "value": 16.0
+                      "value": 25.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -2679,7 +6491,26 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 0.25
+                      "value": 25.0
+                    },
+                    "FACTION": {
+                      "type": "cexostring",
+                      "value": "Commoner"
+                    },
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Rilla"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "rilla002"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "CR": {
+                      "type": "float",
+                      "value": 0.125
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -2698,7 +6529,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 5.0
+                      "value": 7.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -2717,7 +6548,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 5.0
+                      "value": 7.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -2736,7 +6567,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 6.0
+                      "value": 9.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -2755,7 +6586,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 6.0
+                      "value": 9.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -2774,7 +6605,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 14.0
+                      "value": 17.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -2793,7 +6624,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 14.0
+                      "value": 17.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -2866,7 +6697,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 9.0
+                      "value": 13.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -2885,7 +6716,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 9.0
+                      "value": 13.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -3056,6 +6887,44 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
+                      "value": 11.0
+                    },
+                    "FACTION": {
+                      "type": "cexostring",
+                      "value": "Commoner"
+                    },
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Mok-Mas"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "mokmas001"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "CR": {
+                      "type": "float",
+                      "value": 11.0
+                    },
+                    "FACTION": {
+                      "type": "cexostring",
+                      "value": "Commoner"
+                    },
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Mok-Mas"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "mokmas002"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "CR": {
+                      "type": "float",
                       "value": 4.0
                     },
                     "FACTION": {
@@ -3094,7 +6963,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 14.0
+                      "value": 18.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -3113,7 +6982,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 14.0
+                      "value": 18.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -3132,7 +7001,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 6.0
+                      "value": 5.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -3151,7 +7020,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 6.0
+                      "value": 5.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -3208,7 +7077,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 4.0
+                      "value": 10.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -3227,7 +7096,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 4.0
+                      "value": 10.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -3246,7 +7115,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 8.0
+                      "value": 9.0
                     },
                     "FACTION": {
                       "type": "cexostring",
@@ -3265,7 +7134,7 @@
                     "__struct_id": 0,
                     "CR": {
                       "type": "float",
-                      "value": 8.0
+                      "value": 9.0
                     },
                     "FACTION": {
                       "type": "cexostring",

@@ -43,12 +43,12 @@
   "LocalizedName": {
     "type": "cexolocstring",
     "value": {
-      "0": "Canteen"
+      "0": "Waterskin"
     }
   },
   "ModelPart1": {
     "type": "byte",
-    "value": 30
+    "value": 22
   },
   "PaletteID": {
     "type": "byte",

@@ -730,7 +730,7 @@
         "__struct_id": 2,
         "Class": {
           "type": "int",
-          "value": 43
+          "value": 60
         },
         "ClassLevel": {
           "type": "short",
@@ -939,6 +939,20 @@
         "Feat": {
           "type": "word",
           "value": 303
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 105
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 45
         }
       },
       {
@@ -1487,6 +1501,26 @@
   "TemplateResRef": {
     "type": "resref",
     "value": "orwick001"
+  },
+  "VarTable": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "OnCreatureHeartbeat"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 3
+        },
+        "Value": {
+          "type": "cexostring",
+          "value": "npc_timer"
+        }
+      }
+    ]
   },
   "WalkRate": {
     "type": "int",

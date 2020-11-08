@@ -99,7 +99,7 @@
         "__struct_id": 2,
         "Class": {
           "type": "int",
-          "value": 0
+          "value": 47
         },
         "ClassLevel": {
           "type": "short",
@@ -401,7 +401,7 @@
   },
   "MaxHitPoints": {
     "type": "short",
-    "value": 72
+    "value": 65
   },
   "NaturalAC": {
     "type": "byte",
@@ -702,7 +702,7 @@
   },
   "StartingPackage": {
     "type": "byte",
-    "value": 0
+    "value": 15
   },
   "Str": {
     "type": "byte",
@@ -727,6 +727,26 @@
   "TemplateResRef": {
     "type": "resref",
     "value": "theodas001"
+  },
+  "VarTable": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "OnCreatureHeartbeat"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 3
+        },
+        "Value": {
+          "type": "cexostring",
+          "value": "npc_timer"
+        }
+      }
+    ]
   },
   "WalkRate": {
     "type": "int",

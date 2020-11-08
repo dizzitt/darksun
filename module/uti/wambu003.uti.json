@@ -39,7 +39,9 @@
   "LocalizedName": {
     "id": 1521,
     "type": "cexolocstring",
-    "value": {}
+    "value": {
+      "0": "Small Stone Rocks"
+    }
   },
   "ModelPart1": {
     "type": "byte",
@@ -67,7 +69,7 @@
   },
   "Tag": {
     "type": "cexostring",
-    "value": "NW_WAMBU001"
+    "value": "SmallStoneRocks"
   },
   "TemplateResRef": {
     "type": "resref",

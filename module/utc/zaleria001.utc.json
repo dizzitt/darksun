@@ -90,7 +90,7 @@
   },
   "ChallengeRating": {
     "type": "float",
-    "value": 14.0
+    "value": 17.0
   },
   "ClassList": {
     "type": "list",
@@ -570,7 +570,7 @@
         "__struct_id": 2,
         "Class": {
           "type": "int",
-          "value": 43
+          "value": 60
         },
         "ClassLevel": {
           "type": "short",
@@ -613,7 +613,7 @@
   },
   "CurrentHitPoints": {
     "type": "short",
-    "value": 57
+    "value": 78
   },
   "DecayTime": {
     "type": "dword",
@@ -673,6 +673,13 @@
         "__struct_id": 1,
         "Feat": {
           "type": "word",
+          "value": 418
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
           "value": 3
         }
       },
@@ -687,6 +694,13 @@
         "__struct_id": 1,
         "Feat": {
           "type": "word",
+          "value": 3165
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
           "value": 946
         }
       },
@@ -695,6 +709,104 @@
         "Feat": {
           "type": "word",
           "value": 1089
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 3112
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 3104
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 3105
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 3113
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 3114
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 3107
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 3108
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 3100
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 3101
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 3109
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 3110
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 3106
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 3102
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 3103
         }
       },
       {
@@ -743,6 +855,20 @@
         "__struct_id": 1,
         "Feat": {
           "type": "word",
+          "value": 48
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 50
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
           "value": 46
         }
       }
@@ -768,7 +894,7 @@
   },
   "HitPoints": {
     "type": "short",
-    "value": 57
+    "value": 78
   },
   "Int": {
     "type": "byte",
@@ -959,7 +1085,7 @@
   },
   "MaxHitPoints": {
     "type": "short",
-    "value": 97
+    "value": 118
   },
   "NaturalAC": {
     "type": "byte",
@@ -1084,6 +1210,27 @@
         "__struct_id": 0,
         "Rank": {
           "type": "byte",
+          "value": 23
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 12
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
           "value": 17
         }
       },
@@ -1105,13 +1252,6 @@
         "__struct_id": 0,
         "Rank": {
           "type": "byte",
-          "value": 17
-        }
-      },
-      {
-        "__struct_id": 0,
-        "Rank": {
-          "type": "byte",
           "value": 0
         }
       },
@@ -1126,7 +1266,7 @@
         "__struct_id": 0,
         "Rank": {
           "type": "byte",
-          "value": 0
+          "value": 12
         }
       },
       {
@@ -1140,21 +1280,7 @@
         "__struct_id": 0,
         "Rank": {
           "type": "byte",
-          "value": 0
-        }
-      },
-      {
-        "__struct_id": 0,
-        "Rank": {
-          "type": "byte",
-          "value": 0
-        }
-      },
-      {
-        "__struct_id": 0,
-        "Rank": {
-          "type": "byte",
-          "value": 0
+          "value": 12
         }
       },
       {
@@ -1175,7 +1301,7 @@
         "__struct_id": 0,
         "Rank": {
           "type": "byte",
-          "value": 0
+          "value": 12
         }
       },
       {
@@ -1286,6 +1412,26 @@
     "type": "resref",
     "value": "zaleria001"
   },
+  "VarTable": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "OnCreatureHeartbeat"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 3
+        },
+        "Value": {
+          "type": "cexostring",
+          "value": "npc_timer"
+        }
+      }
+    ]
+  },
   "WalkRate": {
     "type": "int",
     "value": 4
@@ -1300,6 +1446,6 @@
   },
   "Wis": {
     "type": "byte",
-    "value": 14
+    "value": 16
   }
 }

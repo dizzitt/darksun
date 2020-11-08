@@ -86,11 +86,11 @@
   },
   "Cha": {
     "type": "byte",
-    "value": 9
+    "value": 12
   },
   "ChallengeRating": {
     "type": "float",
-    "value": 10.0
+    "value": 12.0
   },
   "ClassList": {
     "type": "list",
@@ -99,7 +99,7 @@
         "__struct_id": 2,
         "Class": {
           "type": "int",
-          "value": 4
+          "value": 46
         },
         "ClassLevel": {
           "type": "short",
@@ -130,7 +130,7 @@
   },
   "Con": {
     "type": "byte",
-    "value": 16
+    "value": 18
   },
   "Conversation": {
     "type": "resref",
@@ -142,7 +142,7 @@
   },
   "CurrentHitPoints": {
     "type": "short",
-    "value": 70
+    "value": 120
   },
   "DecayTime": {
     "type": "dword",
@@ -405,7 +405,7 @@
   },
   "HitPoints": {
     "type": "short",
-    "value": 70
+    "value": 120
   },
   "Int": {
     "type": "byte",
@@ -558,7 +558,7 @@
   },
   "MaxHitPoints": {
     "type": "short",
-    "value": 82
+    "value": 156
   },
   "NaturalAC": {
     "type": "byte",
@@ -859,7 +859,7 @@
   },
   "StartingPackage": {
     "type": "byte",
-    "value": 4
+    "value": 46
   },
   "Str": {
     "type": "byte",

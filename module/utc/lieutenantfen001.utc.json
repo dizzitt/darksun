@@ -99,7 +99,7 @@
         "__struct_id": 2,
         "Class": {
           "type": "int",
-          "value": 4
+          "value": 46
         },
         "ClassLevel": {
           "type": "short",
@@ -468,7 +468,7 @@
         },
         "InventoryRes": {
           "type": "resref",
-          "value": "wswls006"
+          "value": "wswls008"
         },
         "Repos_PosX": {
           "type": "word",
@@ -497,7 +497,7 @@
   },
   "MaxHitPoints": {
     "type": "short",
-    "value": 50
+    "value": 57
   },
   "NaturalAC": {
     "type": "byte",
@@ -798,7 +798,7 @@
   },
   "StartingPackage": {
     "type": "byte",
-    "value": 4
+    "value": 46
   },
   "Str": {
     "type": "byte",

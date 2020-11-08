@@ -402,12 +402,12 @@ void main()
          // Destroy an object (not fully effective until this script ends).
          DestroyObject(GetObjectByTag("Drex_2"));
          {
-         // Spawn "Osdal".
+           // Spawn "Drex".
          oTarget = GetWaypointByTag("SS_Camp_4");
          oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "drex001", GetLocation(oTarget));
-
-         }
+        }
        }
+
 
          if (nPatrolScript == 76)
          {
@@ -534,11 +534,12 @@ void main()
          // Destroy an object (not fully effective until this script ends).
          DestroyObject(GetObjectByTag("Uriwrick_2"));
          {
-         // Spawn "Uriwrick".
+           // Spawn "Uriwrick".
          oTarget = GetWaypointByTag("SS_Camp_6");
          oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "uriwrick001", GetLocation(oTarget));
         }
        }
+
 
 
                        if (nPatrolScript == 66)
@@ -562,7 +563,7 @@ void main()
          // Destroy an object (not fully effective until this script ends).
          DestroyObject(GetObjectByTag("Beldak_2"));
          {
-         // Spawn "Beldak".
+          // Spawn "Beldak".
          oTarget = GetWaypointByTag("SS_Camp_7");
          oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "beldak001", GetLocation(oTarget));
         }
@@ -617,6 +618,45 @@ void main()
          // Spawn "Gurth".
          oTarget = GetWaypointByTag("SS_Camp_6");
          oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "gurth001", GetLocation(oTarget));
+        }
+       }
+
+                         if (nPatrolScript == 60)
+         {
+         object oTarget;
+         object oSpawn;
+         // Destroy an object (not fully effective until this script ends).
+         DestroyObject(GetObjectByTag("Layla_2"));
+         {
+         // Spawn "Layla".
+         oTarget = GetWaypointByTag("SS_Camp_6");
+         oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "layla001", GetLocation(oTarget));
+        }
+       }
+
+                           if (nPatrolScript == 59)
+         {
+         object oTarget;
+         object oSpawn;
+         // Destroy an object (not fully effective until this script ends).
+         DestroyObject(GetObjectByTag("MokMas_2"));
+         {
+         // Spawn "Mok-mas".
+         oTarget = GetWaypointByTag("SS_Camp_6");
+         oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "mokmas001", GetLocation(oTarget));
+        }
+       }
+
+                        if (nPatrolScript == 58)
+         {
+         object oTarget;
+         object oSpawn;
+         // Destroy an object (not fully effective until this script ends).
+         DestroyObject(GetObjectByTag("Malvin_2"));
+         {
+         // Spawn "Malvin".
+         oTarget = GetWaypointByTag("SS_Camp_6");
+         oSpawn = CreateObject(OBJECT_TYPE_CREATURE, "malvin001", GetLocation(oTarget));
         }
        }
 

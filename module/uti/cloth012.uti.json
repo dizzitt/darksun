@@ -38,7 +38,7 @@
   },
   "ArmorPart_Neck": {
     "type": "byte",
-    "value": 0
+    "value": 1
   },
   "ArmorPart_Pelvis": {
     "type": "byte",
@@ -145,7 +145,7 @@
   },
   "PaletteID": {
     "type": "byte",
-    "value": 5
+    "value": 6
   },
   "Plot": {
     "type": "byte",

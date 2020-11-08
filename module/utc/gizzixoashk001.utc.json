@@ -99,7 +99,7 @@
         "__struct_id": 2,
         "Class": {
           "type": "int",
-          "value": 4
+          "value": 47
         },
         "ClassLevel": {
           "type": "short",
@@ -134,7 +134,7 @@
   },
   "Conversation": {
     "type": "resref",
-    "value": ""
+    "value": "gizziixoashk_1"
   },
   "CRAdjust": {
     "type": "int",
@@ -278,6 +278,13 @@
         "Feat": {
           "type": "word",
           "value": 392
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 41
         }
       },
       {
@@ -765,7 +772,7 @@
   },
   "StartingPackage": {
     "type": "byte",
-    "value": 4
+    "value": 15
   },
   "Str": {
     "type": "byte",
@@ -790,6 +797,26 @@
   "TemplateResRef": {
     "type": "resref",
     "value": "gizzixoashk001"
+  },
+  "VarTable": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "OnCreatureHeartbeat"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 3
+        },
+        "Value": {
+          "type": "cexostring",
+          "value": "npc_timer"
+        }
+      }
+    ]
   },
   "WalkRate": {
     "type": "int",

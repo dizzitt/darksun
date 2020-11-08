@@ -90,7 +90,7 @@
   },
   "ChallengeRating": {
     "type": "float",
-    "value": 18.0
+    "value": 16.0
   },
   "ClassList": {
     "type": "list",
@@ -99,7 +99,7 @@
         "__struct_id": 2,
         "Class": {
           "type": "int",
-          "value": 4
+          "value": 46
         },
         "ClassLevel": {
           "type": "short",
@@ -561,7 +561,18 @@
         },
         "EquippedRes": {
           "type": "resref",
-          "value": "aarcl006"
+          "value": "studla006"
+        }
+      },
+      {
+        "__struct_id": 64,
+        "Dropable": {
+          "type": "byte",
+          "value": 1
+        },
+        "EquippedRes": {
+          "type": "resref",
+          "value": "maarcl058"
         }
       }
     ]
@@ -816,7 +827,7 @@
         "__struct_id": 0,
         "InventoryRes": {
           "type": "resref",
-          "value": "nw_it_torch001"
+          "value": "nw_it_mpotion001"
         },
         "Repos_PosX": {
           "type": "word",
@@ -859,9 +870,13 @@
       },
       {
         "__struct_id": 3,
+        "Dropable": {
+          "type": "byte",
+          "value": 1
+        },
         "InventoryRes": {
           "type": "resref",
-          "value": "nw_it_mpotion001"
+          "value": "nw_it_torch001"
         },
         "Repos_PosX": {
           "type": "word",
@@ -880,7 +895,7 @@
         },
         "InventoryRes": {
           "type": "resref",
-          "value": "nw_it_torch001"
+          "value": "nw_it_mpotion001"
         },
         "Repos_PosX": {
           "type": "word",
@@ -937,7 +952,7 @@
         },
         "InventoryRes": {
           "type": "resref",
-          "value": "nw_it_mpotion001"
+          "value": "nw_it_sparscr102"
         },
         "Repos_PosX": {
           "type": "word",
@@ -956,7 +971,7 @@
         },
         "InventoryRes": {
           "type": "resref",
-          "value": "nw_it_sparscr102"
+          "value": "nw_it_sparscr105"
         },
         "Repos_PosX": {
           "type": "word",
@@ -975,7 +990,7 @@
         },
         "InventoryRes": {
           "type": "resref",
-          "value": "nw_it_sparscr105"
+          "value": "nw_it_sparscr108"
         },
         "Repos_PosX": {
           "type": "word",
@@ -994,11 +1009,11 @@
         },
         "InventoryRes": {
           "type": "resref",
-          "value": "nw_it_sparscr108"
+          "value": "nw_it_sparscr109"
         },
         "Repos_PosX": {
           "type": "word",
-          "value": 8
+          "value": 7
         },
         "Repos_Posy": {
           "type": "word",
@@ -1013,11 +1028,11 @@
         },
         "InventoryRes": {
           "type": "resref",
-          "value": "nw_it_sparscr109"
+          "value": "wswls004"
         },
         "Repos_PosX": {
           "type": "word",
-          "value": 9
+          "value": 8
         },
         "Repos_Posy": {
           "type": "word",
@@ -1032,34 +1047,15 @@
         },
         "InventoryRes": {
           "type": "resref",
-          "value": "wswls004"
+          "value": "h2_torch"
         },
         "Repos_PosX": {
           "type": "word",
-          "value": 1
+          "value": 9
         },
         "Repos_Posy": {
           "type": "word",
-          "value": 2
-        }
-      },
-      {
-        "__struct_id": 13,
-        "Dropable": {
-          "type": "byte",
           "value": 1
-        },
-        "InventoryRes": {
-          "type": "resref",
-          "value": "wswss002"
-        },
-        "Repos_PosX": {
-          "type": "word",
-          "value": 2
-        },
-        "Repos_Posy": {
-          "type": "word",
-          "value": 2
         }
       }
     ]
@@ -1080,7 +1076,7 @@
   },
   "MaxHitPoints": {
     "type": "short",
-    "value": 61
+    "value": 81
   },
   "NaturalAC": {
     "type": "byte",
@@ -1381,7 +1377,7 @@
   },
   "StartingPackage": {
     "type": "byte",
-    "value": 4
+    "value": 9
   },
   "Str": {
     "type": "byte",

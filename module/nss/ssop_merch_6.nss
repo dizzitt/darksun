@@ -19,12 +19,6 @@ void main()
     // Only fire for (real) PCs.
     if ( !GetIsPC(oPC)  ||  GetIsDMPossessed(oPC) )
         return;
-
-    // Only fire once per PC.
-    if ( GetLocalInt(oPC, "DO_ONCE__" + GetTag(OBJECT_SELF)) )
-        return;
-    SetLocalInt(oPC, "DO_ONCE__" + GetTag(OBJECT_SELF), TRUE);
-
     // Have us say something.
     SpeakString("Come see what i have for sale, the most exotic of all in Athas.");
 }

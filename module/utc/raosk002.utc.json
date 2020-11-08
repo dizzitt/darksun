@@ -90,7 +90,7 @@
   },
   "ChallengeRating": {
     "type": "float",
-    "value": 14.0
+    "value": 18.0
   },
   "ClassList": {
     "type": "list",
@@ -99,22 +99,22 @@
         "__struct_id": 2,
         "Class": {
           "type": "int",
-          "value": 4
+          "value": 46
         },
         "ClassLevel": {
           "type": "short",
-          "value": 12
+          "value": 16
         }
       },
       {
         "__struct_id": 2,
         "Class": {
           "type": "int",
-          "value": 43
+          "value": 60
         },
         "ClassLevel": {
           "type": "short",
-          "value": 8
+          "value": 5
         }
       }
     ]
@@ -145,7 +145,7 @@
   },
   "Conversation": {
     "type": "resref",
-    "value": "raosk_1"
+    "value": ""
   },
   "CRAdjust": {
     "type": "int",
@@ -153,7 +153,7 @@
   },
   "CurrentHitPoints": {
     "type": "short",
-    "value": 98
+    "value": 151
   },
   "DecayTime": {
     "type": "dword",
@@ -213,6 +213,20 @@
         "__struct_id": 1,
         "Feat": {
           "type": "word",
+          "value": 311
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 418
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
           "value": 2
         }
       },
@@ -248,6 +262,13 @@
         "__struct_id": 1,
         "Feat": {
           "type": "word",
+          "value": 3165
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
           "value": 6
         }
       },
@@ -255,7 +276,28 @@
         "__struct_id": 1,
         "Feat": {
           "type": "word",
+          "value": 413
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 414
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
           "value": 10
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 13
         }
       },
       {
@@ -283,6 +325,13 @@
         "__struct_id": 1,
         "Feat": {
           "type": "word",
+          "value": 320
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
           "value": 26
         }
       },
@@ -304,6 +353,90 @@
         "__struct_id": 1,
         "Feat": {
           "type": "word",
+          "value": 3112
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 3104
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 3105
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 3113
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 3114
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 3108
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 3100
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 3101
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 3109
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 3106
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 3102
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 3103
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
           "value": 32
         }
       },
@@ -318,6 +451,13 @@
         "__struct_id": 1,
         "Feat": {
           "type": "word",
+          "value": 294
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
           "value": 106
         }
       },
@@ -325,7 +465,21 @@
         "__struct_id": 1,
         "Feat": {
           "type": "word",
+          "value": 48
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
           "value": 45
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 50
         }
       },
       {
@@ -364,7 +518,7 @@
   },
   "HitPoints": {
     "type": "short",
-    "value": 98
+    "value": 151
   },
   "Int": {
     "type": "byte",
@@ -393,7 +547,7 @@
         },
         "InventoryRes": {
           "type": "resref",
-          "value": "nw_it_torch001"
+          "value": "nw_it_mpotion001"
         },
         "Repos_PosX": {
           "type": "word",
@@ -450,7 +604,7 @@
         },
         "InventoryRes": {
           "type": "resref",
-          "value": "nw_it_mpotion001"
+          "value": "bonelongsword002"
         },
         "Repos_PosX": {
           "type": "word",
@@ -463,17 +617,28 @@
       },
       {
         "__struct_id": 4,
-        "Dropable": {
-          "type": "byte",
-          "value": 1
-        },
         "InventoryRes": {
           "type": "resref",
-          "value": "bonelongsword002"
+          "value": "nw_it_mpotion001"
         },
         "Repos_PosX": {
           "type": "word",
           "value": 4
+        },
+        "Repos_Posy": {
+          "type": "word",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 5,
+        "InventoryRes": {
+          "type": "resref",
+          "value": "nw_it_mpotion001"
+        },
+        "Repos_PosX": {
+          "type": "word",
+          "value": 5
         },
         "Repos_Posy": {
           "type": "word",
@@ -498,7 +663,7 @@
   },
   "MaxHitPoints": {
     "type": "short",
-    "value": 158
+    "value": 214
   },
   "NaturalAC": {
     "type": "byte",
@@ -602,7 +767,7 @@
         "__struct_id": 0,
         "Rank": {
           "type": "byte",
-          "value": 1
+          "value": 9
         }
       },
       {
@@ -623,7 +788,7 @@
         "__struct_id": 0,
         "Rank": {
           "type": "byte",
-          "value": 1
+          "value": 14
         }
       },
       {
@@ -637,7 +802,7 @@
         "__struct_id": 0,
         "Rank": {
           "type": "byte",
-          "value": 0
+          "value": 5
         }
       },
       {
@@ -693,7 +858,7 @@
         "__struct_id": 0,
         "Rank": {
           "type": "byte",
-          "value": 0
+          "value": 5
         }
       },
       {
@@ -714,7 +879,7 @@
         "__struct_id": 0,
         "Rank": {
           "type": "byte",
-          "value": 0
+          "value": 5
         }
       },
       {
@@ -799,7 +964,7 @@
   },
   "StartingPackage": {
     "type": "byte",
-    "value": 4
+    "value": 46
   },
   "Str": {
     "type": "byte",
@@ -839,6 +1004,6 @@
   },
   "Wis": {
     "type": "byte",
-    "value": 12
+    "value": 15
   }
 }

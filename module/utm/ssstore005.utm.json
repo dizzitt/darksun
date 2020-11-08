@@ -177,7 +177,7 @@
               },
               "InventoryRes": {
                 "type": "resref",
-                "value": "h2_canteen"
+                "value": "h2_firewood"
               },
               "Repos_PosX": {
                 "type": "word",
@@ -196,11 +196,11 @@
               },
               "InventoryRes": {
                 "type": "resref",
-                "value": "h2_firewood"
+                "value": "h2_torch"
               },
               "Repos_PosX": {
                 "type": "word",
-                "value": 8
+                "value": 9
               },
               "Repos_Posy": {
                 "type": "word",
@@ -215,30 +215,11 @@
               },
               "InventoryRes": {
                 "type": "resref",
-                "value": "h2_torch"
-              },
-              "Repos_PosX": {
-                "type": "word",
-                "value": 1
-              },
-              "Repos_Posy": {
-                "type": "word",
-                "value": 1
-              }
-            },
-            {
-              "__struct_id": 8,
-              "Infinite": {
-                "type": "byte",
-                "value": 1
-              },
-              "InventoryRes": {
-                "type": "resref",
                 "value": "h2_fooditem005"
               },
               "Repos_PosX": {
                 "type": "word",
-                "value": 2
+                "value": 1
               },
               "Repos_Posy": {
                 "type": "word",

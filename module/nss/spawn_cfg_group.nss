@@ -532,19 +532,40 @@ string SpawnGroup(object oSpawn, string sTemplate)
             break;
         }
     }
-   // toramund_guards
-   if (sTemplate == "toramund_guards")
+   // SS_Creature_Spawn
+   if (sTemplate == "SS_Creature_Spawn")
    {
-       switch(d3(1))
+       switch(d10(1))
        {
        case 1:
-       sRetTemplate = "toramundchief001";
+       sRetTemplate = "gith001";
        break;
        case 2:
-       sRetTemplate = "hagen001";
+       sRetTemplate = "githearthclei001";
        break;
        case 3:
-       sRetTemplate = "hagwin002";
+       sRetTemplate = "ztal002";
+       break;
+       case 4:
+       sRetTemplate = "ztal001";
+       break;
+       case 5:
+       sRetTemplate = "kestrekel001";
+       break;
+       case 6:
+       sRetTemplate = "kestrekel001";
+       break;
+       case 7:
+       sRetTemplate = "redscorpion001";
+       break;
+       case 8:
+       sRetTemplate = "redscorpion001";
+       break;
+       case 9:
+       sRetTemplate = "jhakar001";
+       break;
+       case 10:
+       sRetTemplate = "jhakar001";
        break;
     }
  }

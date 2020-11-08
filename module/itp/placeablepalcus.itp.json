@@ -181,6 +181,17 @@
                 "type": "resref",
                 "value": "invis_corpse_tre"
               }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Store 1"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "chest002"
+              }
             }
           ]
         },

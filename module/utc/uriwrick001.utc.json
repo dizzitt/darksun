@@ -275,7 +275,7 @@
         "__struct_id": 2,
         "Class": {
           "type": "int",
-          "value": 43
+          "value": 60
         },
         "ClassLevel": {
           "type": "short",
@@ -345,6 +345,10 @@
     "value": [
       {
         "__struct_id": 2,
+        "Dropable": {
+          "type": "byte",
+          "value": 1
+        },
         "EquippedRes": {
           "type": "resref",
           "value": "nw_it_creitem146"
@@ -455,6 +459,30 @@
     "type": "byte",
     "value": 0
   },
+  "ItemList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Dropable": {
+          "type": "byte",
+          "value": 1
+        },
+        "InventoryRes": {
+          "type": "resref",
+          "value": "bonedagger1"
+        },
+        "Repos_PosX": {
+          "type": "word",
+          "value": 0
+        },
+        "Repos_Posy": {
+          "type": "word",
+          "value": 0
+        }
+      }
+    ]
+  },
   "LastName": {
     "type": "cexolocstring",
     "value": {
@@ -471,7 +499,7 @@
   },
   "MaxHitPoints": {
     "type": "short",
-    "value": 29
+    "value": 36
   },
   "NaturalAC": {
     "type": "byte",
@@ -797,6 +825,26 @@
   "TemplateResRef": {
     "type": "resref",
     "value": "uriwrick001"
+  },
+  "VarTable": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "OnCreatureHeartbeat"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 3
+        },
+        "Value": {
+          "type": "cexostring",
+          "value": "npc_timer"
+        }
+      }
+    ]
   },
   "WalkRate": {
     "type": "int",

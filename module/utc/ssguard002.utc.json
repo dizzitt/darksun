@@ -99,7 +99,7 @@
         "__struct_id": 2,
         "Class": {
           "type": "int",
-          "value": 4
+          "value": 46
         },
         "ClassLevel": {
           "type": "short",
@@ -169,13 +169,9 @@
     "value": [
       {
         "__struct_id": 2,
-        "Dropable": {
-          "type": "byte",
-          "value": 1
-        },
         "EquippedRes": {
           "type": "resref",
-          "value": "aarcl004"
+          "value": "ssguardarmor004"
         }
       }
     ]
@@ -480,6 +476,25 @@
           "type": "word",
           "value": 0
         }
+      },
+      {
+        "__struct_id": 4,
+        "Dropable": {
+          "type": "byte",
+          "value": 1
+        },
+        "InventoryRes": {
+          "type": "resref",
+          "value": "stonelongsword1"
+        },
+        "Repos_PosX": {
+          "type": "word",
+          "value": 4
+        },
+        "Repos_Posy": {
+          "type": "word",
+          "value": 0
+        }
       }
     ]
   },
@@ -499,7 +514,7 @@
   },
   "MaxHitPoints": {
     "type": "short",
-    "value": 33
+    "value": 36
   },
   "NaturalAC": {
     "type": "byte",
@@ -800,7 +815,7 @@
   },
   "StartingPackage": {
     "type": "byte",
-    "value": 4
+    "value": 46
   },
   "Str": {
     "type": "byte",

@@ -1029,6 +1029,26 @@
     "type": "resref",
     "value": "heldelia001"
   },
+  "VarTable": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "OnCreatureHeartbeat"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 3
+        },
+        "Value": {
+          "type": "cexostring",
+          "value": "npc"
+        }
+      }
+    ]
+  },
   "WalkRate": {
     "type": "int",
     "value": 5

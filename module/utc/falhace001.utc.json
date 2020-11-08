@@ -99,7 +99,7 @@
         "__struct_id": 2,
         "Class": {
           "type": "int",
-          "value": 8
+          "value": 63
         },
         "ClassLevel": {
           "type": "short",
@@ -787,7 +787,7 @@
   },
   "StartingPackage": {
     "type": "byte",
-    "value": 8
+    "value": 63
   },
   "Str": {
     "type": "byte",
@@ -820,7 +820,7 @@
         "__struct_id": 0,
         "Name": {
           "type": "cexostring",
-          "value": "OnCreatureSpawn"
+          "value": "OnCreatureHeartbeat"
         },
         "Type": {
           "type": "dword",
@@ -828,7 +828,7 @@
         },
         "Value": {
           "type": "cexostring",
-          "value": "falhace_timer"
+          "value": "npc_timer"
         }
       }
     ]

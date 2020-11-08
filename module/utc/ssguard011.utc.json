@@ -99,7 +99,7 @@
         "__struct_id": 2,
         "Class": {
           "type": "int",
-          "value": 4
+          "value": 46
         },
         "ClassLevel": {
           "type": "short",
@@ -175,7 +175,7 @@
         },
         "EquippedRes": {
           "type": "resref",
-          "value": "aarcl004"
+          "value": "ssguardarmor006"
         }
       },
       {
@@ -510,6 +510,25 @@
           "type": "word",
           "value": 0
         }
+      },
+      {
+        "__struct_id": 5,
+        "Dropable": {
+          "type": "byte",
+          "value": 1
+        },
+        "InventoryRes": {
+          "type": "resref",
+          "value": "wswls006"
+        },
+        "Repos_PosX": {
+          "type": "word",
+          "value": 6
+        },
+        "Repos_Posy": {
+          "type": "word",
+          "value": 0
+        }
       }
     ]
   },
@@ -529,7 +548,7 @@
   },
   "MaxHitPoints": {
     "type": "short",
-    "value": 33
+    "value": 36
   },
   "NaturalAC": {
     "type": "byte",
@@ -830,7 +849,7 @@
   },
   "StartingPackage": {
     "type": "byte",
-    "value": 4
+    "value": 46
   },
   "Str": {
     "type": "byte",

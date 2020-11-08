@@ -78,7 +78,7 @@
   },
   "ArmorPart_Torso": {
     "type": "byte",
-    "value": 1
+    "value": 221
   },
   "BaseItem": {
     "type": "int",
@@ -102,7 +102,7 @@
   },
   "Cost": {
     "type": "dword",
-    "value": 1
+    "value": 0
   },
   "Cursed": {
     "type": "byte",
@@ -145,7 +145,7 @@
   },
   "PaletteID": {
     "type": "byte",
-    "value": 5
+    "value": 6
   },
   "Plot": {
     "type": "byte",
