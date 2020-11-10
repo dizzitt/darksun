@@ -1522,6 +1522,17 @@
                     "__struct_id": 0,
                     "NAME": {
                       "type": "cexostring",
+                      "value": "Crodlu Meat"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "h2_fooditem018"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
                       "value": "Egg"
                     },
                     "RESREF": {
@@ -1533,11 +1544,33 @@
                     "__struct_id": 0,
                     "NAME": {
                       "type": "cexostring",
+                      "value": "Erdlu Meat"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "h2_fooditem019"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
                       "value": "Fruit"
                     },
                     "RESREF": {
                       "type": "resref",
                       "value": "h2_fooditem"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Hunk of Meat"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "h2_fooditem017"
                     }
                   },
                   {
@@ -2138,6 +2171,17 @@
                     "__struct_id": 0,
                     "NAME": {
                       "type": "cexostring",
+                      "value": "Jankz Skin"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_mmidmisc007"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
                       "value": "Lantern"
                     },
                     "RESREF": {
@@ -2286,6 +2330,28 @@
                     "RESREF": {
                       "type": "resref",
                       "value": "h2_canteen"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Z'tal Bone"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_msmlmisc014"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Z'tal Skull"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "it_msmlmisc015"
                     }
                   }
                 ]

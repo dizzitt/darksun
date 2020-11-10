@@ -783,7 +783,7 @@
         },
         "Value": {
           "type": "cexostring",
-          "value": "npc_timer"
+          "value": "npc_timer2"
         }
       }
     ]

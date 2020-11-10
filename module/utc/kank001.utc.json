@@ -23,7 +23,7 @@
         "__struct_id": 2,
         "Class": {
           "type": "int",
-          "value": 12
+          "value": 27
         },
         "ClassLevel": {
           "type": "short",
@@ -173,7 +173,7 @@
   },
   "Lootable": {
     "type": "byte",
-    "value": 1
+    "value": 0
   },
   "MaxHitPoints": {
     "type": "short",

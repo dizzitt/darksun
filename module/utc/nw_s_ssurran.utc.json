@@ -492,7 +492,7 @@
   },
   "StartingPackage": {
     "type": "byte",
-    "value": 4
+    "value": 46
   },
   "Str": {
     "type": "byte",

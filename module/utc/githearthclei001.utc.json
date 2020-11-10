@@ -14,7 +14,7 @@
   },
   "ChallengeRating": {
     "type": "float",
-    "value": 2.0
+    "value": 3.0
   },
   "ClassList": {
     "type": "list",
@@ -23,11 +23,152 @@
         "__struct_id": 2,
         "Class": {
           "type": "int",
-          "value": 12
+          "value": 15
+        },
+        "ClassLevel": {
+          "type": "short",
+          "value": 1
+        }
+      },
+      {
+        "__struct_id": 2,
+        "Class": {
+          "type": "int",
+          "value": 2
         },
         "ClassLevel": {
           "type": "short",
           "value": 2
+        },
+        "MemorizedList0": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 3,
+              "Spell": {
+                "type": "word",
+                "value": 431
+              },
+              "SpellFlags": {
+                "type": "byte",
+                "value": 1
+              },
+              "SpellMetaMagic": {
+                "type": "byte",
+                "value": 0
+              }
+            },
+            {
+              "__struct_id": 3,
+              "Spell": {
+                "type": "word",
+                "value": 431
+              },
+              "SpellFlags": {
+                "type": "byte",
+                "value": 1
+              },
+              "SpellMetaMagic": {
+                "type": "byte",
+                "value": 0
+              }
+            },
+            {
+              "__struct_id": 3,
+              "Spell": {
+                "type": "word",
+                "value": 431
+              },
+              "SpellFlags": {
+                "type": "byte",
+                "value": 1
+              },
+              "SpellMetaMagic": {
+                "type": "byte",
+                "value": 0
+              }
+            },
+            {
+              "__struct_id": 3,
+              "Spell": {
+                "type": "word",
+                "value": 431
+              },
+              "SpellFlags": {
+                "type": "byte",
+                "value": 1
+              },
+              "SpellMetaMagic": {
+                "type": "byte",
+                "value": 0
+              }
+            }
+          ]
+        },
+        "MemorizedList1": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 3,
+              "Spell": {
+                "type": "word",
+                "value": 6
+              },
+              "SpellFlags": {
+                "type": "byte",
+                "value": 1
+              },
+              "SpellMetaMagic": {
+                "type": "byte",
+                "value": 0
+              }
+            },
+            {
+              "__struct_id": 3,
+              "Spell": {
+                "type": "word",
+                "value": 32
+              },
+              "SpellFlags": {
+                "type": "byte",
+                "value": 1
+              },
+              "SpellMetaMagic": {
+                "type": "byte",
+                "value": 0
+              }
+            },
+            {
+              "__struct_id": 3,
+              "Spell": {
+                "type": "word",
+                "value": 32
+              },
+              "SpellFlags": {
+                "type": "byte",
+                "value": 1
+              },
+              "SpellMetaMagic": {
+                "type": "byte",
+                "value": 0
+              }
+            },
+            {
+              "__struct_id": 3,
+              "Spell": {
+                "type": "word",
+                "value": 432
+              },
+              "SpellFlags": {
+                "type": "byte",
+                "value": 1
+              },
+              "SpellMetaMagic": {
+                "type": "byte",
+                "value": 0
+              }
+            }
+          ]
         }
       }
     ]
@@ -50,7 +191,7 @@
   },
   "CurrentHitPoints": {
     "type": "short",
-    "value": 12
+    "value": 30
   },
   "DecayTime": {
     "type": "dword",
@@ -76,6 +217,13 @@
     "type": "list",
     "value": [
       {
+        "__struct_id": 2,
+        "EquippedRes": {
+          "type": "resref",
+          "value": "nw_aarcl002"
+        }
+      },
+      {
         "__struct_id": 16,
         "Dropable": {
           "type": "byte",
@@ -84,6 +232,13 @@
         "EquippedRes": {
           "type": "resref",
           "value": "wblml003"
+        }
+      },
+      {
+        "__struct_id": 32,
+        "EquippedRes": {
+          "type": "resref",
+          "value": "nw_ashsw001"
         }
       }
     ]
@@ -95,6 +250,13 @@
   "FeatList": {
     "type": "list",
     "value": [
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 311
+        }
+      },
       {
         "__struct_id": 1,
         "Feat": {
@@ -114,6 +276,27 @@
         "Feat": {
           "type": "word",
           "value": 4
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 804
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 805
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 320
         }
       },
       {
@@ -180,7 +363,7 @@
   },
   "HitPoints": {
     "type": "short",
-    "value": 12
+    "value": 30
   },
   "Int": {
     "type": "byte",
@@ -276,6 +459,186 @@
           "type": "word",
           "value": 0
         }
+      },
+      {
+        "__struct_id": 4,
+        "InventoryRes": {
+          "type": "resref",
+          "value": "nw_wblml001"
+        },
+        "Repos_PosX": {
+          "type": "word",
+          "value": 4
+        },
+        "Repos_Posy": {
+          "type": "word",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 5,
+        "InventoryRes": {
+          "type": "resref",
+          "value": "nw_it_torch001"
+        },
+        "Repos_PosX": {
+          "type": "word",
+          "value": 5
+        },
+        "Repos_Posy": {
+          "type": "word",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 6,
+        "InventoryRes": {
+          "type": "resref",
+          "value": "nw_it_mpotion001"
+        },
+        "Repos_PosX": {
+          "type": "word",
+          "value": 6
+        },
+        "Repos_Posy": {
+          "type": "word",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 7,
+        "InventoryRes": {
+          "type": "resref",
+          "value": "nw_it_mpotion001"
+        },
+        "Repos_PosX": {
+          "type": "word",
+          "value": 7
+        },
+        "Repos_Posy": {
+          "type": "word",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 8,
+        "InventoryRes": {
+          "type": "resref",
+          "value": "nw_it_mpotion001"
+        },
+        "Repos_PosX": {
+          "type": "word",
+          "value": 8
+        },
+        "Repos_Posy": {
+          "type": "word",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 9,
+        "InventoryRes": {
+          "type": "resref",
+          "value": "nw_aarcl002"
+        },
+        "Repos_PosX": {
+          "type": "word",
+          "value": 0
+        },
+        "Repos_Posy": {
+          "type": "word",
+          "value": 2
+        }
+      },
+      {
+        "__struct_id": 10,
+        "InventoryRes": {
+          "type": "resref",
+          "value": "nw_wblml001"
+        },
+        "Repos_PosX": {
+          "type": "word",
+          "value": 9
+        },
+        "Repos_Posy": {
+          "type": "word",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 11,
+        "InventoryRes": {
+          "type": "resref",
+          "value": "nw_ashsw001"
+        },
+        "Repos_PosX": {
+          "type": "word",
+          "value": 2
+        },
+        "Repos_Posy": {
+          "type": "word",
+          "value": 2
+        }
+      },
+      {
+        "__struct_id": 12,
+        "InventoryRes": {
+          "type": "resref",
+          "value": "nw_it_torch001"
+        },
+        "Repos_PosX": {
+          "type": "word",
+          "value": 4
+        },
+        "Repos_Posy": {
+          "type": "word",
+          "value": 2
+        }
+      },
+      {
+        "__struct_id": 13,
+        "InventoryRes": {
+          "type": "resref",
+          "value": "nw_it_mpotion001"
+        },
+        "Repos_PosX": {
+          "type": "word",
+          "value": 6
+        },
+        "Repos_Posy": {
+          "type": "word",
+          "value": 2
+        }
+      },
+      {
+        "__struct_id": 14,
+        "InventoryRes": {
+          "type": "resref",
+          "value": "nw_it_mpotion001"
+        },
+        "Repos_PosX": {
+          "type": "word",
+          "value": 7
+        },
+        "Repos_Posy": {
+          "type": "word",
+          "value": 2
+        }
+      },
+      {
+        "__struct_id": 15,
+        "InventoryRes": {
+          "type": "resref",
+          "value": "nw_it_mpotion001"
+        },
+        "Repos_PosX": {
+          "type": "word",
+          "value": 8
+        },
+        "Repos_Posy": {
+          "type": "word",
+          "value": 2
+        }
       }
     ]
   },
@@ -291,11 +654,11 @@
   },
   "Lootable": {
     "type": "byte",
-    "value": 1
+    "value": 0
   },
   "MaxHitPoints": {
     "type": "short",
-    "value": 16
+    "value": 36
   },
   "NaturalAC": {
     "type": "byte",
@@ -399,7 +762,7 @@
         "__struct_id": 0,
         "Rank": {
           "type": "byte",
-          "value": 1
+          "value": 5
         }
       },
       {
@@ -420,7 +783,7 @@
         "__struct_id": 0,
         "Rank": {
           "type": "byte",
-          "value": 1
+          "value": 5
         }
       },
       {
@@ -596,7 +959,7 @@
   },
   "StartingPackage": {
     "type": "byte",
-    "value": 0
+    "value": 86
   },
   "Str": {
     "type": "byte",

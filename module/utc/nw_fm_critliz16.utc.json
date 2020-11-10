@@ -14,7 +14,7 @@
   },
   "ChallengeRating": {
     "type": "float",
-    "value": 9.0
+    "value": 8.0
   },
   "ClassList": {
     "type": "list",
@@ -23,7 +23,7 @@
         "__struct_id": 2,
         "Class": {
           "type": "int",
-          "value": 12
+          "value": 22
         },
         "ClassLevel": {
           "type": "short",
@@ -454,7 +454,7 @@
   },
   "StartingPackage": {
     "type": "byte",
-    "value": 74
+    "value": 93
   },
   "Str": {
     "type": "byte",

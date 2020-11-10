@@ -23,7 +23,7 @@
         "__struct_id": 2,
         "Class": {
           "type": "int",
-          "value": 12
+          "value": 46
         },
         "ClassLevel": {
           "type": "short",
@@ -217,10 +217,6 @@
     "value": [
       {
         "__struct_id": 0,
-        "Dropable": {
-          "type": "byte",
-          "value": 1
-        },
         "InventoryRes": {
           "type": "resref",
           "value": "nw_it_mpotion001"
@@ -236,10 +232,6 @@
       },
       {
         "__struct_id": 1,
-        "Dropable": {
-          "type": "byte",
-          "value": 1
-        },
         "InventoryRes": {
           "type": "resref",
           "value": "nw_it_mpotion001"
@@ -305,7 +297,7 @@
   },
   "Lootable": {
     "type": "byte",
-    "value": 1
+    "value": 0
   },
   "MaxHitPoints": {
     "type": "short",
@@ -610,7 +602,7 @@
   },
   "StartingPackage": {
     "type": "byte",
-    "value": 0
+    "value": 46
   },
   "Str": {
     "type": "byte",

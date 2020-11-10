@@ -535,7 +535,7 @@ string SpawnGroup(object oSpawn, string sTemplate)
    // SS_Creature_Spawn
    if (sTemplate == "SS_Creature_Spawn")
    {
-       switch(d10(1))
+        switch(d12(1))
        {
        case 1:
        sRetTemplate = "gith001";
@@ -565,12 +565,22 @@ string SpawnGroup(object oSpawn, string sTemplate)
        sRetTemplate = "jhakar001";
        break;
        case 10:
-       sRetTemplate = "jhakar001";
+       sRetTemplate = "jhakar002";
+       break;
+       case 11:
+       sRetTemplate = "jankz003";
+       break;
+       case 12:
+       sRetTemplate = "jankz004";
+       break;
+       case 13:
+       sRetTemplate = "skeletondray001";
+       break;
+       case 14:
+       sRetTemplate = "jankz004";
        break;
     }
- }
-
-
+   }
 
 // -------------------------------------------
 // Only Make Modifications Between These Lines
